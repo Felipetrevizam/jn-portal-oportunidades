@@ -145,6 +145,9 @@ def main() -> int:
                 "segundos": round(time.monotonic() - inicio, 1),
             }
             convertidos += 1
+            # Grava o índice a cada edital: execução interrompida (timeout do job)
+            # não perde o registro do que já foi convertido.
+            caminho_indice.write_text(json.dumps(indice, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
             print(f"convertido {op['id']}: {conv.paginas} pág ({conv.paginas_imagem} com OCR), prazo={prazo}")
         except Exception as erro:
             falhas += 1
