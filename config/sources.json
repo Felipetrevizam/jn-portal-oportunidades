@@ -504,6 +504,15 @@
       "frequency": "daily",
       "url": "https://inovativa.online/painel-de-oportunidades/",
       "priority": "P2"
+    },
+    {
+      "id": "fapeap",
+      "name": "FAPEAP",
+      "type": "fundacao_estadual",
+      "adapter": "fapeap",
+      "frequency": "daily",
+      "url": "https://fapeap.portal.ap.gov.br/",
+      "priority": "P2"
     }
   ]
 }

@@ -103,6 +103,10 @@ FONTES: list[Config] = [
     Config(id="araucaria", nome="Fundação Araucária", url="https://www.fappr.pr.gov.br/Programas-Abertos",
            financiador="Fundação Araucária", inicio_titulo=r"^CP \d+/\d{2}:\s", lista_abertas=True,
            geografia=("PR",), detalhe=False, prioridade="P1"),
+    Config(id="fapeap", nome="FAPEAP", url="https://fapeap.portal.ap.gov.br/", financiador="FAPEAP",
+           # Os programas com edital ficam no menu "Programas"; cada página traz o edital.
+           inicio_link=r"/pagina/programas/[a-z0-9-]+$", lixo=("script", "style", "noscript", "iframe", "svg"),
+           conteudo="body", lista_abertas=True, geografia=("AP",), max_detalhes=15),
     Config(id="facepe", nome="FACEPE", url="https://www2.facepe.br/editais/todos/?c=aberto", financiador="FACEPE",
            # A página de abertos lista os PDFs: "Edital nº 31/2026 ... (1 de outubro de 2026)".
            inicio_link=r"^\W*edital\s+n", lista_abertas=True, ano_minimo=ANO - 1, geografia=("PE",), detalhe=False),

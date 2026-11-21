@@ -413,11 +413,18 @@ class AdaptadorGenerico(BaseAdapter):
             raise ValueError(f"{cfg.nome}: nenhuma chamada reconhecida em {cfg.url}")
         resultado: list[dict[str, Any]] = []
         vistos: set[str] = set()
+        titulos: set[str] = set()
         for trecho in trechos:
             if cfg.ajustar:
                 trecho = cfg.ajustar(trecho)
                 if trecho is None:
                     continue
+            # Mesmo título repetido (menu desktop e mobile, card e link "ver mais")
+            # sem número que o diferencie: fica o primeiro.
+            chave_titulo = re.sub(r"\W+", " ", trecho.titulo.lower()).strip()
+            if chave_titulo in titulos and not extrair_numero(trecho.titulo):
+                continue
+            titulos.add(chave_titulo)
             item = self._oportunidade(trecho)
             if item and item["id"] not in vistos:
                 vistos.add(item["id"])
