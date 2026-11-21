@@ -159,17 +159,15 @@ BLOCOS = {"p", "li", "tr", "h1", "h2", "h3", "h4", "h5", "h6", "dt", "dd", "bloc
 LIXO = ["script", "style", "nav", "header", "footer", "noscript", "iframe", "svg"]
 
 
-def escolher(sopa: BeautifulSoup, seletores: str) -> Tag:
-    """Primeiro seletor da lista que existe na página, na ordem de preferência.
+def escolher(sopa: BeautifulSoup, seletores: str) -> list[Tag]:
+    """Conteúdo principal: o primeiro elemento, na ordem do documento, que casa
+    com algum dos seletores (o mais externo deles).
 
-    `select_one("a, b")` devolve o primeiro elemento na ordem do documento, que
-    costuma ser o <body>; aqui vale a ordem em que os seletores foram escritos.
+    As fontes foram calibradas com essa regra: quando a lista inclui `body`,
+    vale a página inteira (sem menu e rodapé, que já saíram como lixo).
     """
-    for seletor in seletores.split(","):
-        achado = sopa.select_one(seletor.strip())
-        if achado is not None:
-            return achado
-    return sopa.body or sopa
+    achado = sopa.select_one(seletores)
+    return [achado if achado is not None else (sopa.body or sopa)]
 EXT_DOC = re.compile(r"\.(pdf|docx?|odt|xlsx?|ods|zip)(?:$|[?#/])", re.I)
 
 
@@ -402,11 +400,12 @@ class AdaptadorGenerico(BaseAdapter):
                     novas = [urljoin(url, a["href"]).split("#")[0] for a in sopa.find_all("a", href=True) if rx.search(a["href"])]
                     fila.extend(dict.fromkeys(n for n in novas if n not in visitadas))
                     fila = fila[: cfg.max_listagens]
-                raiz = escolher(sopa, cfg.conteudo)
+                raizes = escolher(sopa, cfg.conteudo)
                 if cfg.item_seletor:
-                    trechos.extend(self._itens(raiz, url))
+                    for raiz in raizes:
+                        trechos.extend(self._itens(raiz, url))
                 else:
-                    trechos.extend(self._segmentar(achatar(raiz, url)))
+                    trechos.extend(self._segmentar([b for raiz in raizes for b in achatar(raiz, url)]))
                 if self.fixture:
                     break
         if not trechos:
@@ -455,7 +454,8 @@ class AdaptadorGenerico(BaseAdapter):
                     (h for _, h in bloco.links), None
                 )
                 inicio = (bloco.texto, href)
-            if inicio and not (rx_descartar and rx_descartar.search(inicio[0])):
+            # O descarte olha só o título (o bloco de abertura pode trazer o edital inteiro).
+            if inicio and not (rx_descartar and rx_descartar.search(limpar_titulo(inicio[0])[:160])):
                 if atual and atual.url == inicio[1] and inicio[1] and clean_text(atual.titulo) == clean_text(inicio[0]):
                     atual.blocos.append(bloco)
                     continue
@@ -579,8 +579,7 @@ class AdaptadorGenerico(BaseAdapter):
     def _texto_detalhe(self, url: str) -> tuple[str, list[tuple[str, str]]]:
         sopa = self._sopa(url)
         seletor = self.config.detalhe_conteudo or self.config.conteudo
-        raiz = escolher(sopa, seletor)
-        blocos = achatar(raiz, url)
+        blocos = [b for raiz in escolher(sopa, seletor) for b in achatar(raiz, url)]
         return " \n".join(b.texto for b in blocos), [link for b in blocos for link in b.links]
 
     def _texto_pdf(self, url: str) -> str:

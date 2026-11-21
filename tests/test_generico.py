@@ -71,6 +71,15 @@ class MotorTests(unittest.TestCase):
         self.assertEqual(2, len(itens[0]["documents"]))
         self.assertIn("startup", itens[0]["eligibility"]["organization_types"])
 
+    def test_descarte_olha_so_o_titulo(self):
+        # Regressão: o bloco de abertura da FAPERJ traz o edital inteiro, com
+        # "resultado final" lá no meio; a chamada não pode ser descartada por isso.
+        html = """<main><p>Edital X Nº 01/2026 – Programa A. Submissão até 30/11/2026.
+          Resultado final: 30/01/2027.</p><p>Edital X Nº 02/2026 – Programa B</p>
+          <p>Resultado final do Edital X Nº 03/2026</p></main>"""
+        itens = self._coletar(html, inicio_titulo=r"^(Edital X N|Resultado)", detalhe=False, ler_pdf=False)
+        self.assertEqual(["teste-1-2026", "teste-2-2026"], [i["id"] for i in itens])
+
     def test_cards_por_seletor(self):
         html = """<main><div class="card"><div><p>Inscrições: 28/11/2026 a 16/01/2027</p></div>
           <div><strong>Chamada Regional A</strong><p>Para empresas industriais.</p></div>
