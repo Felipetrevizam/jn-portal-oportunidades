@@ -105,7 +105,7 @@ def extrair_publicacao(texto: str) -> str | None:
 # ------------------------------------------------------------------ classificação
 
 NUMERO = re.compile(r"\bn(?:[º°o.]|ú?mero)?\s*\.?\s*0*(\d{1,4})\s*[/_-]\s*(20\d{2})\b", re.I)
-NUMERO_SOLTO = re.compile(r"\b(?:edital|chamada|chamamento|cp)\s+(?:p[úu]blica\s+)?0*(\d{1,4})\s*/\s*(20\d{2})\b", re.I)
+NUMERO_SOLTO = re.compile(r"\b(?:edital|chamada|chamamento|cp)\s+(?:p[úu]blica\s+)?0*(\d{1,4})\s*[/-]\s*(20\d{2})\b", re.I)
 
 
 def extrair_numero(texto: str) -> str | None:
@@ -156,7 +156,20 @@ def temas(texto: str) -> list[str]:
 # ------------------------------------------------------------------ HTML
 
 BLOCOS = {"p", "li", "tr", "h1", "h2", "h3", "h4", "h5", "h6", "dt", "dd", "blockquote", "figcaption"}
-LIXO = ["script", "style", "nav", "header", "footer", "form", "noscript", "iframe", "svg"]
+LIXO = ["script", "style", "nav", "header", "footer", "noscript", "iframe", "svg"]
+
+
+def escolher(sopa: BeautifulSoup, seletores: str) -> Tag:
+    """Primeiro seletor da lista que existe na página, na ordem de preferência.
+
+    `select_one("a, b")` devolve o primeiro elemento na ordem do documento, que
+    costuma ser o <body>; aqui vale a ordem em que os seletores foram escritos.
+    """
+    for seletor in seletores.split(","):
+        achado = sopa.select_one(seletor.strip())
+        if achado is not None:
+            return achado
+    return sopa.body or sopa
 EXT_DOC = re.compile(r"\.(pdf|docx?|odt|xlsx?|ods|zip)(?:$|[?#/])", re.I)
 
 
@@ -192,34 +205,38 @@ def achatar(raiz: Tag, base: str) -> list[Bloco]:
                     resultado.append((clean_text(a.get_text(" ", strip=True)), urljoin(base, href)))
         return resultado
 
-    def emitir(nos: list[Any], tag: str) -> None:
+    def emitir(nos: list[Any], tag: str, herdado: list[tuple[str, str]]) -> None:
         texto = clean_text(" ".join(
             (n.get_text(" ", strip=True) if isinstance(n, Tag) else str(n)) for n in nos
         ))
-        links = links_de(nos)
+        links = links_de(nos) + [(texto or t, h) for t, h in herdado]
         if texto or links:
             saida.append(Bloco(texto, links, tag))
 
     def tem_bloco(no: Tag) -> bool:
         return any(d.name in CONTENTORES for d in no.find_all(True))
 
-    def visitar(no: Tag) -> None:
+    def visitar(no: Tag, herdado: list[tuple[str, str]]) -> None:
         if not tem_bloco(no):
-            emitir([no], no.name)
+            emitir([no], no.name, herdado)
             return
+        # Card inteiro dentro de um link (<a><h5>Título</h5></a>): os blocos de
+        # dentro herdam o link, senão o título fica sem destino.
+        if no.name == "a" and no.get("href") and not no["href"].startswith(("mailto:", "javascript:", "#")):
+            herdado = herdado + [("", urljoin(base, no["href"]))]
         inline: list[Any] = []
         for filho in no.children:
             if isinstance(filho, Tag) and (filho.name in CONTENTORES or tem_bloco(filho)):
                 if inline:
-                    emitir(inline, "span")
+                    emitir(inline, "span", herdado)
                     inline = []
-                visitar(filho)
+                visitar(filho, herdado)
             else:
                 inline.append(filho)
         if inline:
-            emitir(inline, "span")
+            emitir(inline, "span", herdado)
 
-    visitar(raiz)
+    visitar(raiz, [])
     return saida
 
 
@@ -381,7 +398,7 @@ class AdaptadorGenerico(BaseAdapter):
                     novas = [urljoin(url, a["href"]).split("#")[0] for a in sopa.find_all("a", href=True) if rx.search(a["href"])]
                     fila.extend(dict.fromkeys(n for n in novas if n not in visitadas))
                     fila = fila[: cfg.max_listagens]
-                raiz = sopa.select_one(cfg.conteudo) or sopa.body or sopa
+                raiz = escolher(sopa, cfg.conteudo)
                 if cfg.item_seletor:
                     trechos.extend(self._itens(raiz, url))
                 else:
@@ -551,7 +568,7 @@ class AdaptadorGenerico(BaseAdapter):
     def _texto_detalhe(self, url: str) -> tuple[str, list[tuple[str, str]]]:
         sopa = self._sopa(url)
         seletor = self.config.detalhe_conteudo or self.config.conteudo
-        raiz = sopa.select_one(seletor) or sopa.body or sopa
+        raiz = escolher(sopa, seletor)
         blocos = achatar(raiz, url)
         return " \n".join(b.texto for b in blocos), [link for b in blocos for link in b.links]
 

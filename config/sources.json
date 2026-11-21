@@ -306,6 +306,195 @@
       "frequency": "daily",
       "url": "https://confap.org.br/pt/editais",
       "priority": "P2"
+    },
+    {
+      "id": "pncp-cpsi",
+      "name": "PNCP · Contratação de solução inovadora (CPSI) e encomenda tecnológica",
+      "type": "plataforma_federal",
+      "adapter": "pncp-cpsi",
+      "frequency": "daily",
+      "url": "https://pncp.gov.br/app/editais?q=%22solu%C3%A7%C3%A3o%20inovadora%22&status=recebendo_proposta",
+      "priority": "P1"
+    },
+    {
+      "id": "dou-chamadas",
+      "name": "Diário Oficial da União · Chamadas de pesquisa e inovação (seção 3)",
+      "type": "diario_oficial",
+      "adapter": "dou-chamadas",
+      "frequency": "daily",
+      "url": "https://www.in.gov.br/leiturajornal?secao=dou3",
+      "priority": "P1"
+    },
+    {
+      "id": "facepe",
+      "name": "FACEPE",
+      "type": "fundacao_estadual",
+      "adapter": "facepe",
+      "frequency": "daily",
+      "url": "https://www2.facepe.br/editais/todos/?c=aberto",
+      "priority": "P2"
+    },
+    {
+      "id": "fapern",
+      "name": "FAPERN",
+      "type": "fundacao_estadual",
+      "adapter": "fapern",
+      "frequency": "daily",
+      "url": "https://www.fapern.rn.gov.br/documentos/Editais/Editais%202026/",
+      "priority": "P2"
+    },
+    {
+      "id": "faperr",
+      "name": "FAPERR",
+      "type": "fundacao_estadual",
+      "adapter": "faperr",
+      "frequency": "daily",
+      "url": "https://faperr.rr.gov.br/",
+      "priority": "P2"
+    },
+    {
+      "id": "mdic",
+      "name": "MDIC · Editais de chamamento público",
+      "type": "ministerio_federal",
+      "adapter": "mdic",
+      "frequency": "daily",
+      "url": "https://www.gov.br/mdic/pt-br/acesso-a-informacao/participacao-social/editais-de-chamamento-publico",
+      "priority": "P2"
+    },
+    {
+      "id": "suframa",
+      "name": "Suframa · Editais",
+      "type": "autarquia_federal",
+      "adapter": "suframa",
+      "frequency": "daily",
+      "url": "https://www.gov.br/suframa/pt-br/acesso-a-informacao/legislacao/editais",
+      "priority": "P2"
+    },
+    {
+      "id": "aeb",
+      "name": "AEB · Chamamento público",
+      "type": "autarquia_federal",
+      "adapter": "aeb",
+      "frequency": "daily",
+      "url": "https://www.gov.br/aeb/pt-br/acesso-a-informacao/acordo-de-cooperacao/edital-de-chamamento-publico-1",
+      "priority": "P2"
+    },
+    {
+      "id": "fiocruz",
+      "name": "Fiocruz · Oportunidades",
+      "type": "ict_federal",
+      "adapter": "fiocruz",
+      "frequency": "daily",
+      "url": "https://fiocruz.br/oportunidades-0",
+      "priority": "P2"
+    },
+    {
+      "id": "rnp",
+      "name": "RNP · Chamadas públicas",
+      "type": "organizacao_social",
+      "adapter": "rnp",
+      "frequency": "daily",
+      "url": "https://www.rnp.br/chamadas/chamadas-publicas/",
+      "priority": "P2"
+    },
+    {
+      "id": "inovativa",
+      "name": "InovAtiva Brasil",
+      "type": "programa_federal",
+      "adapter": "inovativa",
+      "frequency": "daily",
+      "url": "https://inovativa.online/painel-de-oportunidades/",
+      "priority": "P2"
+    },
+    {
+      "id": "fundo-amazonia",
+      "name": "Fundo Amazônia · Chamadas públicas",
+      "type": "fundo_federal",
+      "adapter": "fundo-amazonia",
+      "frequency": "daily",
+      "url": "https://www.fundoamazonia.gov.br/pt/como-apresentar-projetos/chamadas-publicas/",
+      "priority": "P2"
+    },
+    {
+      "id": "fbb",
+      "name": "Fundação Banco do Brasil · Editais",
+      "type": "fundacao_privada",
+      "adapter": "fbb",
+      "frequency": "daily",
+      "url": "https://fbb.org.br/editais-de-projetos/editais-publicos/",
+      "priority": "P2"
+    },
+    {
+      "id": "petrobras-socioambiental",
+      "name": "Petrobras · Seleções públicas socioambientais",
+      "type": "estatal",
+      "adapter": "petrobras-socioambiental",
+      "frequency": "daily",
+      "url": "https://petrobras.com.br/sustentabilidade/selecoes-publicas",
+      "priority": "P2"
+    },
+    {
+      "id": "brde-fundo-verde",
+      "name": "BRDE · Fundo Verde",
+      "type": "banco_desenvolvimento",
+      "adapter": "brde-fundo-verde",
+      "frequency": "daily",
+      "url": "https://www.brde.com.br/fundo-verde/",
+      "priority": "P2"
+    },
+    {
+      "id": "serrapilheira",
+      "name": "Instituto Serrapilheira",
+      "type": "fundacao_privada",
+      "adapter": "serrapilheira",
+      "frequency": "daily",
+      "url": "https://serrapilheira.org/todas-as-chamadas/",
+      "priority": "P2"
+    },
+    {
+      "id": "funbio",
+      "name": "Funbio · Chamadas de projetos",
+      "type": "fundacao_privada",
+      "adapter": "funbio",
+      "frequency": "daily",
+      "url": "https://chamadas.funbio.org.br/",
+      "priority": "P2"
+    },
+    {
+      "id": "ics",
+      "name": "Instituto Clima e Sociedade · Editais",
+      "type": "fundacao_privada",
+      "adapter": "ics",
+      "frequency": "daily",
+      "url": "https://climaesociedade.org/editais/",
+      "priority": "P2"
+    },
+    {
+      "id": "fundo-casa",
+      "name": "Fundo Casa Socioambiental · Chamadas",
+      "type": "fundacao_privada",
+      "adapter": "fundo-casa",
+      "frequency": "daily",
+      "url": "https://casa.org.br/chamadas",
+      "priority": "P2"
+    },
+    {
+      "id": "itau-social",
+      "name": "Itaú Social · Editais",
+      "type": "fundacao_privada",
+      "adapter": "itau-social",
+      "frequency": "daily",
+      "url": "https://www.itausocial.org.br/editais/",
+      "priority": "P2"
+    },
+    {
+      "id": "open-startups",
+      "name": "100 Open Startups · Oportunidades",
+      "type": "agregador",
+      "adapter": "open-startups",
+      "frequency": "daily",
+      "url": "https://www.openstartups.net/oportunidades/startups/",
+      "priority": "P2"
     }
   ]
 }

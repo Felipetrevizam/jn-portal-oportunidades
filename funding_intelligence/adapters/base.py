@@ -53,7 +53,14 @@ class BaseAdapter(ABC):
         self, url: str, *, method: str = "GET", headers: dict[str, str] | None = None,
         data: bytes | None = None,
     ) -> bytes:
-        request_headers = {"User-Agent": USER_AGENT, **(headers or {})}
+        # Accept e Accept-Language são os cabeçalhos que qualquer cliente HTTP envia;
+        # sem eles, alguns firewalls (in.gov.br) recusam o pedido com 403.
+        request_headers = {
+            "User-Agent": USER_AGENT,
+            "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+            "Accept-Language": "pt-BR,pt;q=0.9",
+            **(headers or {}),
+        }
         for tentativa in range(len(ESPERAS_RETENTATIVA_S) + 1):
             request = urllib.request.Request(url, headers=request_headers, data=data, method=method)
             try:

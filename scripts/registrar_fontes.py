@@ -15,7 +15,11 @@ from funding_intelligence.adapters import ADAPTERS
 from funding_intelligence.adapters.fontes_genericas import FONTES
 
 RAIZ = Path(__file__).resolve().parents[1]
-TIPOS_MANUAIS = {"fapemig": ("fundacao_estadual", "P1")}
+TIPOS_MANUAIS = {
+    "fapemig": ("fundacao_estadual", "P1"),
+    "pncp-cpsi": ("plataforma_federal", "P1"),
+    "dou-chamadas": ("diario_oficial", "P1"),
+}
 
 configs = {c.id: c for c in FONTES}
 caminho = RAIZ / "config" / "sources.json"
