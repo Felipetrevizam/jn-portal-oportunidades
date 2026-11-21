@@ -16,7 +16,7 @@ from pypdf import PdfReader
 from funding_intelligence.models import utc_now
 
 
-USER_AGENT = "PONTE-Funding-Intelligence/2.0 (+https://github.com/diretoriajnconsulting-dotcom/jn-portal-oportunidades)"
+USER_AGENT = "Fomenta360-Coletor/1.0 (+https://github.com/Felipetrevizam/jn-portal-oportunidades)"
 
 
 class BaseAdapter(ABC):

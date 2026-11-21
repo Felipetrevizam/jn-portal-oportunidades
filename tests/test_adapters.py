@@ -1,6 +1,7 @@
 from datetime import date
 from pathlib import Path
 import unittest
+import unittest.mock
 
 from funding_intelligence.adapters.cnpq import CnpqAdapter
 from funding_intelligence.adapters.fapesq import FapesqAdapter
@@ -42,12 +43,36 @@ class AdapterTests(unittest.TestCase):
         self.assertEqual("2026-09-09", items[0]["dates"]["deadline"])
         self.assertEqual("Edital", items[0]["documents"][0]["title"])
 
-    def test_finep_discovers_public_frontend_client_without_committed_secret(self):
-        javascript = 'const aa="client-test",bb="credential-test",cc=async()=>{const dd=btoa(`${aa}:${bb}`)'
-        self.assertEqual(
-            ("client-test", "credential-test"),
-            FinepAdapter._extract_oauth_credentials(javascript),
-        )
+    def test_finep_lists_without_credentials(self):
+        adapter = FinepAdapter(today=date(2026, 8, 19))
+        calls = []
+
+        def fake_request(url, *, method="GET", headers=None, data=None):
+            calls.append((url, method, headers))
+            return b'{"items": [], "totalCount": 0}'
+
+        adapter.request_bytes = fake_request
+        with unittest.mock.patch.dict("os.environ", {"RADAR_FINEP_DOCUMENTOS": "0"}):
+            adapter.collect()
+        self.assertEqual(1, len(calls))
+        url, method, headers = calls[0]
+        self.assertEqual("GET", method)
+        self.assertIsNone(headers)
+        self.assertNotIn("oauth2", url)
+        self.assertIn("situacao%20eq%20%27aberta%27", url)
+
+    def test_finep_reads_pdf_documents_from_rendered_page(self):
+        base = "https://www.finep.gov.br/documents/20120/758476/"
+        docs = FinepAdapter.documents_from_anchors([
+            ["22/09/2026 Edital", base + "Edital+COOPERAMAIS_ICT.pdf/d73f2a2c?t=1"],
+            ["22/09/2026 Edital", base + "Edital+COOPERAMAIS_ICT.odt/2b7fb3b6?t=1"],
+            ["30/10/2026 FAQ", base + "faq_cooperamaisict.pdf/488702b6?t=2"],
+            ["30/10/2026 FAQ", base + "faq_cooperamaisict.pdf/488702b6?t=3"],
+            ["", "https://www.finep.gov.br/documents/d/guest/icone-link"],
+        ])
+        self.assertEqual(["Edital", "FAQ"], [d["title"] for d in docs])
+        self.assertEqual("2026-09-22", docs[0]["published"])
+        self.assertTrue(docs[0]["url"].startswith(base + "Edital"))
 
     def test_cnpq_extracts_number_and_submission_window(self):
         items = CnpqAdapter(fixture=str(FIXTURES / "cnpq.html"), today=date(2026, 8, 19)).collect()

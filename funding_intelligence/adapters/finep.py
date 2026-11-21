@@ -1,20 +1,36 @@
 from __future__ import annotations
 
-import base64
 import json
+import os
 import re
+import sys
+import time
 from typing import Any
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 
-from funding_intelligence.adapters.base import BaseAdapter
+from funding_intelligence.adapters.base import USER_AGENT, BaseAdapter
 from funding_intelligence.models import clean_text, opportunity, parse_br_date, slug
+
+
+# A API de objetos do Liferay responde sem login para listar e detalhar chamadas
+# (reconhecimento de 21/11/2026). Só a lista de documentos de cada chamada
+# (`/o/c/chamadapublicas/{id}/documentos`) exige token, e o token que o site usa
+# sai de uma credencial embutida no JavaScript público. Essa credencial foi
+# emitida para o site da Finep, não para este coletor, então não é usada aqui:
+# os documentos são lidos da página pública da chamada, renderizada num
+# navegador, como qualquer visitante a vê.
+PAUSA_PAGINA_S = 3.0
+DATA_ROTULO = re.compile(r"^\s*(\d{1,2}/\d{1,2}/\d{4})\s*")
 
 
 class FinepAdapter(BaseAdapter):
     id = "finep"
     name = "Finep"
     url = "https://www.finep.gov.br/oportunidades"
-    api_url = "https://www.finep.gov.br/o/c/chamadapublicas?sort=dataDePublicacao:desc"
+    api_url = (
+        "https://www.finep.gov.br/o/c/chamadapublicas"
+        "?sort=dataDePublicacao:desc&filter=situacao%20eq%20%27aberta%27"
+    )
     detail_url = "https://www.finep.gov.br/e/chamada-publica/222684/{id}"
 
     def collect(self) -> list[dict[str, Any]]:
@@ -22,54 +38,79 @@ class FinepAdapter(BaseAdapter):
             return self._collect_api()
         return self._collect_legacy_html()
 
-    def _token(self) -> str:
-        client, secret = self._oauth_credentials()
-        credentials = base64.b64encode(f"{client}:{secret}".encode()).decode()
-        payload = self.request_bytes(
-            "https://www.finep.gov.br/o/oauth2/token", method="POST",
-            headers={
-                "Authorization": f"Basic {credentials}",
-                "Content-Type": "application/x-www-form-urlencoded",
-            },
-            data=b"grant_type=client_credentials",
-        )
-        return json.loads(payload)["access_token"]
-
-    def _oauth_credentials(self) -> tuple[str, str]:
-        soup = self.soup(self.fetch_html(self.url))
-        script = next((tag.get("src") for tag in soup.select("script[src]")
-                       if "finep-busca-chamadas-publicas" in (tag.get("src") or "")), None)
-        if not script:
-            raise ValueError("Finep public search client script not found")
-        javascript = self.fetch_bytes(urljoin(self.url, script)).decode("utf-8", errors="replace")
-        return self._extract_oauth_credentials(javascript)
-
-    @staticmethod
-    def _extract_oauth_credentials(javascript: str) -> tuple[str, str]:
-        match = re.search(
-            r'const\s+\w+="([^"]+)",\w+="([^"]+)",\w+=async\(\)=>\{const\s+\w+=btoa',
-            javascript,
-        )
-        if not match:
-            raise ValueError("Finep public OAuth client configuration not found")
-        return match.group(1), match.group(2)
-
     def _collect_api(self) -> list[dict[str, Any]]:
-        token = self._token()
         items: list[dict[str, Any]] = []
         page = 1
         while True:
-            separator = "&" if "?" in self.api_url else "?"
-            payload = json.loads(self.request_bytes(
-                f"{self.api_url}{separator}page={page}&pageSize=250",
-                headers={"Authorization": f"Bearer {token}"},
-            ))
+            payload = json.loads(self.request_bytes(f"{self.api_url}&page={page}&pageSize=100"))
             batch = payload.get("items", [])
             items.extend(batch)
             if not batch or len(items) >= payload.get("totalCount", 0):
                 break
             page += 1
-        return self.parse_api_items(items)
+        found = self.parse_api_items(items)
+        if os.environ.get("RADAR_FINEP_DOCUMENTOS", "1") != "0":
+            self._attach_page_documents(found)
+        return found
+
+    def _attach_page_documents(self, found: list[dict[str, Any]]) -> None:
+        """Lê os links de /documents/ da página pública de cada chamada aberta.
+
+        Sem Playwright instalado, segue só com os links da descrição: a chamada
+        continua no catálogo, e a revisão humana anexa o edital que faltar.
+        """
+        try:
+            from playwright.sync_api import sync_playwright
+        except ImportError:
+            print("finep: Playwright ausente; documentos só da descrição", file=sys.stderr)
+            return
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch()
+            page = browser.new_page(user_agent=USER_AGENT)
+            for index, item in enumerate(found):
+                if index:
+                    time.sleep(PAUSA_PAGINA_S)
+                try:
+                    # O site fica carregando analytics sem parar, então `networkidle` nunca
+                    # chega: espera o primeiro link de arquivo da chamada aparecer.
+                    page.goto(item["source"]["url"], wait_until="domcontentloaded", timeout=60_000)
+                    page.wait_for_selector("a[href*='/documents/20']", timeout=30_000)
+                    anchors = page.eval_on_selector_all(
+                        "a[href*='/documents/']",
+                        "els => els.map(a => [(a.closest('tr, li, .row, div') || a).innerText || '', a.href])",
+                    )
+                except Exception as error:  # página fora do ar não derruba a fonte
+                    print(f"finep: documentos de {item['source']['url']} falharam: {error}", file=sys.stderr)
+                    continue
+                known = {doc["url"] for doc in item["documents"]}
+                item["documents"].extend(
+                    doc for doc in self.documents_from_anchors(anchors) if doc["url"] not in known
+                )
+            browser.close()
+
+    @staticmethod
+    def documents_from_anchors(anchors: list[list[str]]) -> list[dict[str, Any]]:
+        """Converte os links da página em documentos.
+
+        Cada arquivo aparece em PDF e em ODT; só o PDF entra. O rótulo da linha
+        traz a data e o tipo ("22/09/2026 Edital", "30/10/2026 FAQ").
+        """
+        documents: list[dict[str, Any]] = []
+        seen: set[str] = set()
+        for label, href in anchors:
+            path = urlsplit(href).path
+            if not re.search(r"\.pdf(?:/|$)", path, re.I) or path in seen:
+                continue
+            seen.add(path)
+            text = clean_text(label) or ""
+            date_match = DATA_ROTULO.match(text)
+            title = clean_text(text[date_match.end():] if date_match else text) or "Documento da chamada"
+            documents.append({
+                "title": title,
+                "url": href,
+                "published": parse_br_date(date_match.group(1)) if date_match else None,
+            })
+        return documents
 
     def parse_api_items(self, items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         found = []
