@@ -20,6 +20,7 @@ TIPOS_MANUAIS = {
     "pncp-cpsi": ("plataforma_federal", "P1"),
     "dou-chamadas": ("diario_oficial", "P1"),
     "eu-horizon": ("internacional", "P3"),
+    "querido-diario": ("diario_oficial", "P2"),
 }
 
 configs = {c.id: c for c in FONTES}

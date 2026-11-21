@@ -10,6 +10,7 @@ from .fontes_genericas import ADAPTADORES as GENERICOS
 from .pdil import PdilAdapter
 from .pncp_cpsi import PncpCpsiAdapter
 from .ppsus import PpsusAdapter
+from .querido_diario import QueridoDiarioAdapter
 from .transferegov import TransferegovAdapter
 from .transferegov_apis import EspeciaisAdapter, FundoAFundoAdapter, ParceriasAdapter
 
@@ -24,6 +25,7 @@ ADAPTERS = {
     "pncp-cpsi": PncpCpsiAdapter,
     "dou-chamadas": DouAdapter,
     "eu-horizon": EuHorizonAdapter,
+    "querido-diario": QueridoDiarioAdapter,
     "ppsus": PpsusAdapter,
     "transferegov": TransferegovAdapter,
     "transferegov-especiais": EspeciaisAdapter,

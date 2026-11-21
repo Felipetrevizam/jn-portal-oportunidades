@@ -46,3 +46,17 @@ class HorizonTests(unittest.TestCase):
         self.assertEqual(5, len(itens))
         self.assertTrue(all(i["external_id"].startswith("HORIZON") for i in itens))
         self.assertTrue(all("topic-details" in i["source"]["url"] for i in itens))
+
+
+class QueridoDiarioTests(unittest.TestCase):
+    def test_filtro_de_trechos(self):
+        from funding_intelligence.adapters.querido_diario import interessa
+        self.assertTrue(interessa("A Prefeitura torna pública a chamada pública para seleção de startups do programa de inovação"))
+        self.assertFalse(interessa("Aviso de chamada pública para aquisição de gêneros alimentícios da agricultura familiar"))
+        self.assertFalse(interessa("Edital de licitação. Pregão eletrônico. Inovação em serviços"))
+
+    def test_fixture_vira_pistas_com_link_do_diario(self):
+        from funding_intelligence.adapters.querido_diario import QueridoDiarioAdapter
+        itens = QueridoDiarioAdapter(fixture=str(FIXTURES / "querido_diario" / "busca.json"), today=date(2026, 11, 21)).collect()
+        self.assertTrue(all(i["source"]["url"].startswith("https://") for i in itens))
+        self.assertTrue(all(len(i["eligibility"]["geography"][0]) == 2 for i in itens))

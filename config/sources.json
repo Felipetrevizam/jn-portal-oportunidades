@@ -513,6 +513,15 @@
       "frequency": "daily",
       "url": "https://fapeap.portal.ap.gov.br/",
       "priority": "P2"
+    },
+    {
+      "id": "querido-diario",
+      "name": "Querido Diário · Diários oficiais municipais (inovação)",
+      "type": "diario_oficial",
+      "adapter": "querido-diario",
+      "frequency": "daily",
+      "url": "https://queridodiario.ok.org.br/",
+      "priority": "P2"
     }
   ]
 }
