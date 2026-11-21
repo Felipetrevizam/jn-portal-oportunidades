@@ -144,7 +144,8 @@ jobs:
     needs: [collect-transferegov, collect-official-sources]
     if: ${{ always() && needs.collect-transferegov.result == 'success' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # A conversão dos editais em Markdown (Docling, CPU) leva a maior parte.
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -170,6 +171,26 @@ jobs:
             --portfolios config/portfolios.json \
             --schema schema/funding-opportunity-2.2.schema.json \
             --output public/data/funding-opportunities-v2.json
+
+      # Edital em PDF -> Markdown. O PDF não é guardado: fica o Markdown, o link
+      # oficial e o hash do arquivo (scripts/editais_markdown.py).
+      - name: Cache dos modelos do Docling e do EasyOCR
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/docling
+            ~/.cache/huggingface
+            ~/.EasyOCR
+          key: modelos-docling-${{ hashFiles('requirements-editais.txt') }}
+
+      - name: Editais em Markdown
+        continue-on-error: true
+        run: |
+          pip install -r requirements-editais.txt
+          python scripts/editais_markdown.py \
+            --catalogo public/data/funding-opportunities-v2.json \
+            --saida public/data/editais \
+            --max 30
 
       - name: Resumo operacional
         run: |
