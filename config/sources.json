@@ -549,6 +549,15 @@
       "frequency": "daily",
       "url": "https://www.goiasfomento.com/linhas-de-credito/",
       "priority": "P2"
+    },
+    {
+      "id": "belmont-forum",
+      "name": "Belmont Forum · Open opportunities",
+      "type": "internacional",
+      "adapter": "belmont-forum",
+      "frequency": "daily",
+      "url": "https://belmontforum.org/open-opportunities/",
+      "priority": "P3"
     }
   ]
 }

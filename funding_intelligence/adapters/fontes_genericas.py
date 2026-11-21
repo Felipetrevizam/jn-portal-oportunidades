@@ -190,6 +190,11 @@ FONTES: list[Config] = [
     Config(id="secti-ma", nome="SECTI-MA · Editais", url=f"https://secti.ma.gov.br/programas-ou-campanhas/editais-{ANO}",
            financiador="SECTI-MA", tipo="secretaria_estadual", inicio_titulo=TITULO_EDITAL, ano_minimo=ANO - 1,
            geografia=("MA",)),
+    Config(id="belmont-forum", nome="Belmont Forum · Open opportunities", financiador="Belmont Forum",
+           tipo="internacional", prioridade="P3", url="https://belmontforum.org/open-opportunities/", modo="wp",
+           # Tipo de post próprio; o Brasil participa pela FAPESP e pelo CONFAP.
+           wp_endpoint="wp-json/wp/v2/open_opportunity", geografia=("INTERNACIONAL",),
+           proponentes=("ict", "universidade", "pesquisador")),
     # Agregador das FAPs (chamadas nacionais e internacionais conjuntas).
     Config(id="confap", nome="CONFAP", url="https://confap.org.br/pt/editais", financiador="CONFAP",
            tipo="agregador", inicio_link=r"/pt/editais/\d+/", lista_abertas=True, max_detalhes=20),

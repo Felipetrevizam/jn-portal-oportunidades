@@ -29,6 +29,10 @@ class PrazoTests(unittest.TestCase):
         texto = "Submissão 1ª etapa: até 10/12/2026. Submissão 2ª etapa: até 20/02/2027. Resultado: 30/04/2027"
         self.assertEqual("2027-02-20", extrair_prazo(texto))
 
+    def test_datas_em_ingles(self):
+        self.assertEqual("2027-01-15", extrair_prazo("Pre-proposal deadline: 15 January 2027"))
+        self.assertEqual("2027-03-02", extrair_prazo("Closing date: March 2, 2027 (17:00 CET)"))
+
     def test_numero_da_chamada(self):
         self.assertEqual("12-2026", extrair_numero("Edital FAPERJ Nº 12/2026 – Programa"))
         self.assertEqual("19-2026", extrair_numero("CHAMADA FAPEMIG nº 019/2026"))

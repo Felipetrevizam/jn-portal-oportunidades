@@ -47,13 +47,19 @@ MESES = {
 }
 DATA_NUM = r"\d{1,2}/\d{1,2}/\d{2,4}"
 DATA_EXT = r"\d{1,2}º?\s+de\s+(?:" + "|".join(MESES) + r")\s+de\s+\d{4}"
-DATA = rf"(?:{DATA_NUM}|{DATA_EXT})"
+MONTHS = {
+    "january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6, "july": 7,
+    "august": 8, "september": 9, "october": 10, "november": 11, "december": 12,
+}
+_MES_EN = "|".join(MONTHS)
+DATA_EN = rf"(?:\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{_MES_EN})\s+\d{{4}}|(?:{_MES_EN})\s+\d{{1,2}}(?:st|nd|rd|th)?,?\s+\d{{4}})"
+DATA = rf"(?:{DATA_NUM}|{DATA_EXT}|{DATA_EN})"
 # Palavras que anunciam o prazo de submissão. "Resultado", "divulgação" e
 # "vigência" ficam de fora de propósito: são datas depois do prazo.
 GATILHO = (
     r"(?:inscri[çc][õo]es|inscri[çc][ãa]o|submiss[ãa]o|submeter|prazo|envio\s+d[ae]s?\s+propostas?|"
     r"recebimento\s+d[ae]s?\s+propostas?|encerramento|data\s+limite|propostas?\s+(?:at[ée]|de)|"
-    r"deadline|candidaturas?)"
+    r"deadline|closing date|submission|applications? (?:due|close)|candidaturas?)"
 )
 INTERVALO = re.compile(rf"{GATILHO}[^\n]{{0,90}}?({DATA})\s*(?:a|at[ée]|-|–|e)\s*({DATA})", re.I)
 ATE = re.compile(rf"{GATILHO}[^\n]{{0,90}}?(?:at[ée]|limite|:)\s*(?:o\s+dia\s+)?({DATA})", re.I)
@@ -67,9 +73,16 @@ def para_iso(valor: str) -> str | None:
         dia, mes, ano = map(int, m.groups())
     else:
         m = re.match(r"(\d{1,2})\s+de\s+(\w+)\s+de\s+(\d{4})", texto.strip())
-        if not m or m.group(2) not in MESES:
+        en1 = re.match(r"(\d{1,2})(?:st|nd|rd|th)?\s+([a-z]+)\s+(\d{4})", texto.strip())
+        en2 = re.match(r"([a-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})", texto.strip())
+        if m and m.group(2) in MESES:
+            dia, mes, ano = int(m.group(1)), MESES[m.group(2)], int(m.group(3))
+        elif en1 and en1.group(2) in MONTHS:
+            dia, mes, ano = int(en1.group(1)), MONTHS[en1.group(2)], int(en1.group(3))
+        elif en2 and en2.group(1) in MONTHS:
+            dia, mes, ano = int(en2.group(2)), MONTHS[en2.group(1)], int(en2.group(3))
+        else:
             return None
-        dia, mes, ano = int(m.group(1)), MESES[m.group(2)], int(m.group(3))
     if ano < 100:
         ano += 2000
     try:
