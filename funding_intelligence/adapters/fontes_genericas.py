@@ -147,6 +147,22 @@ FONTES: list[Config] = [
     Config(id="open-startups", nome="100 Open Startups · Oportunidades", financiador="Empresas (inovação aberta)",
            tipo="agregador", url="https://www.openstartups.net/oportunidades/startups/", inicio_titulo=TITULO_EDITAL,
            inicio_link=r"openstartups\.net/.+", proponentes=("startup",), instrumento_padrao="outros", ano_minimo=ANO - 1),
+    Config(id="bnb-fundeci", nome="BNB · Fundeci (editais)", financiador="Banco do Nordeste · Fundeci",
+           tipo="banco_desenvolvimento", url="https://www.bnb.gov.br/fundeci/editais",
+           inicio_link=r"/fundeci/editais/-/asset_publisher/", ano_minimo=ANO - 1,
+           geografia=("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE", "MG", "ES")),
+    # Sebrae estadual com página própria de chamadas (os demais estados não
+    # publicam edital de fomento fora da transparência/licitações).
+    Config(id="sebrae-rs", nome="Sebrae RS · Chamadas públicas", financiador="Sebrae RS", tipo="sistema_s",
+           url="https://sebraers.com.br/editais-e-licitacoes-chamadas-publicas/", inicio_titulo=TITULO_EDITAL,
+           inicio_link=r"chamada-publica|chamada_publica", ano_minimo=ANO - 1, geografia=("RS",),
+           proponentes=("empresa",), instrumento_padrao="outros"),
+    # Secretarias estaduais de ciência, tecnologia e inovação.
+    Config(id="sct-ce", nome="SCT-CE · Editais", url="https://www.sct.ce.gov.br/editais/", financiador="Secitece-CE",
+           tipo="secretaria_estadual", inicio_titulo=TITULO_EDITAL, ano_minimo=ANO - 1, geografia=("CE",)),
+    Config(id="secti-ma", nome="SECTI-MA · Editais", url=f"https://secti.ma.gov.br/programas-ou-campanhas/editais-{ANO}",
+           financiador="SECTI-MA", tipo="secretaria_estadual", inicio_titulo=TITULO_EDITAL, ano_minimo=ANO - 1,
+           geografia=("MA",)),
     # Agregador das FAPs (chamadas nacionais e internacionais conjuntas).
     Config(id="confap", nome="CONFAP", url="https://confap.org.br/pt/editais", financiador="CONFAP",
            tipo="agregador", inicio_link=r"/pt/editais/\d+/", lista_abertas=True, max_detalhes=20),

@@ -459,6 +459,42 @@
       "frequency": "daily",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals",
       "priority": "P3"
+    },
+    {
+      "id": "bnb-fundeci",
+      "name": "BNB · Fundeci (editais)",
+      "type": "banco_desenvolvimento",
+      "adapter": "bnb-fundeci",
+      "frequency": "daily",
+      "url": "https://www.bnb.gov.br/fundeci/editais",
+      "priority": "P2"
+    },
+    {
+      "id": "sebrae-rs",
+      "name": "Sebrae RS · Chamadas públicas",
+      "type": "sistema_s",
+      "adapter": "sebrae-rs",
+      "frequency": "daily",
+      "url": "https://sebraers.com.br/editais-e-licitacoes-chamadas-publicas/",
+      "priority": "P2"
+    },
+    {
+      "id": "sct-ce",
+      "name": "SCT-CE · Editais",
+      "type": "secretaria_estadual",
+      "adapter": "sct-ce",
+      "frequency": "daily",
+      "url": "https://www.sct.ce.gov.br/editais/",
+      "priority": "P2"
+    },
+    {
+      "id": "secti-ma",
+      "name": "SECTI-MA · Editais",
+      "type": "secretaria_estadual",
+      "adapter": "secti-ma",
+      "frequency": "daily",
+      "url": "https://secti.ma.gov.br/programas-ou-campanhas/editais-2026",
+      "priority": "P2"
     }
   ]
 }

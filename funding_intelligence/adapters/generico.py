@@ -299,6 +299,8 @@ class Config:
     descartar: str | None = (
         r"^(resultados?|errata|retifica|veja|confira|clique|saiba|leia|acesse|portaria|resolu[çc][ãa]o|"
         r"homologa|convoca[çc][ãa]o|aviso de|extrato|ata\b|termo de|nota\b|lista de|rela[çc][ãa]o de)|resultado (final|preliminar|parcial)"
+        # Nome de arquivo, cabeçalho de tabela, botão.
+        r"|\.(jpe?g|png|gif|webp)\b|^(close|fechar|edital|editais|baixar|download)$|t[íi]tulo\s+arquivos"
         # Notícia institucional ("Fapepi acompanha...", "Fapespa divulga resultado...").
         r"|^\S+ (acompanha|participa|visita|realiza|recebe|divulga resultado|homenageia|promove)\b"
     )
