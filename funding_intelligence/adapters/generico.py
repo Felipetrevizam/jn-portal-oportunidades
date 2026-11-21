@@ -325,6 +325,8 @@ class Config:
     wp_categorias: tuple[str, ...] = ()
     wp_params: str = "per_page=25&_fields=id,link,title,date,content"
     filtro_titulo: str | None = None
+    # Elementos descartados antes de ler a página (menu e rodapé, por padrão).
+    lixo: tuple[str, ...] = tuple(LIXO)
     # Itens por seletor CSS (cards): cada elemento vira uma chamada.
     item_seletor: str | None = None
     titulo_seletor: str = "h1, h2, h3, h4, h5, .card-title, .titulo, strong, a"
@@ -369,7 +371,7 @@ class AdaptadorGenerico(BaseAdapter):
 
     def _sopa(self, url: str) -> BeautifulSoup:
         sopa = BeautifulSoup(self._baixar(url).decode("utf-8", errors="replace"), "html.parser")
-        for lixo in sopa(LIXO):
+        for lixo in sopa(list(self.config.lixo)):
             lixo.decompose()
         return sopa
 

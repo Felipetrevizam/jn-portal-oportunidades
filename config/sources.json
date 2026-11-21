@@ -353,57 +353,12 @@
       "priority": "P2"
     },
     {
-      "id": "mdic",
-      "name": "MDIC · Editais de chamamento público",
-      "type": "ministerio_federal",
-      "adapter": "mdic",
-      "frequency": "daily",
-      "url": "https://www.gov.br/mdic/pt-br/acesso-a-informacao/participacao-social/editais-de-chamamento-publico",
-      "priority": "P2"
-    },
-    {
-      "id": "suframa",
-      "name": "Suframa · Editais",
-      "type": "autarquia_federal",
-      "adapter": "suframa",
-      "frequency": "daily",
-      "url": "https://www.gov.br/suframa/pt-br/acesso-a-informacao/legislacao/editais",
-      "priority": "P2"
-    },
-    {
-      "id": "aeb",
-      "name": "AEB · Chamamento público",
-      "type": "autarquia_federal",
-      "adapter": "aeb",
-      "frequency": "daily",
-      "url": "https://www.gov.br/aeb/pt-br/acesso-a-informacao/acordo-de-cooperacao/edital-de-chamamento-publico-1",
-      "priority": "P2"
-    },
-    {
-      "id": "fiocruz",
-      "name": "Fiocruz · Oportunidades",
-      "type": "ict_federal",
-      "adapter": "fiocruz",
-      "frequency": "daily",
-      "url": "https://fiocruz.br/oportunidades-0",
-      "priority": "P2"
-    },
-    {
       "id": "rnp",
       "name": "RNP · Chamadas públicas",
       "type": "organizacao_social",
       "adapter": "rnp",
       "frequency": "daily",
       "url": "https://www.rnp.br/chamadas/chamadas-publicas/",
-      "priority": "P2"
-    },
-    {
-      "id": "inovativa",
-      "name": "InovAtiva Brasil",
-      "type": "programa_federal",
-      "adapter": "inovativa",
-      "frequency": "daily",
-      "url": "https://inovativa.online/painel-de-oportunidades/",
       "priority": "P2"
     },
     {
@@ -495,6 +450,15 @@
       "frequency": "daily",
       "url": "https://www.openstartups.net/oportunidades/startups/",
       "priority": "P2"
+    },
+    {
+      "id": "eu-horizon",
+      "name": "Horizon Europe · Funding & Tenders (UE)",
+      "type": "internacional",
+      "adapter": "eu-horizon",
+      "frequency": "daily",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals",
+      "priority": "P3"
     }
   ]
 }

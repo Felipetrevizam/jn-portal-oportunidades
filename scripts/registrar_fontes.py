@@ -19,6 +19,7 @@ TIPOS_MANUAIS = {
     "fapemig": ("fundacao_estadual", "P1"),
     "pncp-cpsi": ("plataforma_federal", "P1"),
     "dou-chamadas": ("diario_oficial", "P1"),
+    "eu-horizon": ("internacional", "P3"),
 }
 
 configs = {c.id: c for c in FONTES}
@@ -33,6 +34,12 @@ for chave, classe in ADAPTERS.items():
     fonte = {"id": chave, "name": classe.name, "type": tipo, "adapter": chave, "frequency": "daily", "url": classe.url, "priority": prioridade}
     dados["sources"].append(fonte)
     por_id[chave] = fonte
+# Fonte que saiu de ADAPTERS sai também da configuração (senão o agregador a
+# daria como "snapshot ausente" todo dia).
+removidas = [s["id"] for s in dados["sources"] if s["adapter"] not in ADAPTERS]
+dados["sources"] = [s for s in dados["sources"] if s["adapter"] in ADAPTERS]
+if removidas:
+    print("removidas:", ", ".join(removidas))
 caminho.write_text(json.dumps(dados, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 workflow = RAIZ / ".github" / "workflows" / "radar.yml"

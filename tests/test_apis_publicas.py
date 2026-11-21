@@ -37,3 +37,12 @@ class DouTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class HorizonTests(unittest.TestCase):
+    def test_topicos_do_portal(self):
+        from funding_intelligence.adapters.eu_horizon import EuHorizonAdapter
+        itens = EuHorizonAdapter(fixture=str(FIXTURES / "eu" / "horizon.json"), today=date(2026, 11, 21)).collect()
+        self.assertEqual(5, len(itens))
+        self.assertTrue(all(i["external_id"].startswith("HORIZON") for i in itens))
+        self.assertTrue(all("topic-details" in i["source"]["url"] for i in itens))

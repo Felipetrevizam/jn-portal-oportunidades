@@ -2,6 +2,7 @@ from .bndes import BndesAdapter
 from .cnpq import CnpqAdapter
 from .dou import DouAdapter
 from .embrapii import EmbrapiiAdapter
+from .eu_horizon import EuHorizonAdapter
 from .fapemig import FapemigAdapter
 from .fapesq import FapesqAdapter
 from .finep import FinepAdapter
@@ -22,6 +23,7 @@ ADAPTERS = {
     "pdil": PdilAdapter,
     "pncp-cpsi": PncpCpsiAdapter,
     "dou-chamadas": DouAdapter,
+    "eu-horizon": EuHorizonAdapter,
     "ppsus": PpsusAdapter,
     "transferegov": TransferegovAdapter,
     "transferegov-especiais": EspeciaisAdapter,
