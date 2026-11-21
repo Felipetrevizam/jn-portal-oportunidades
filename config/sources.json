@@ -99,6 +99,51 @@
       "frequency": "daily",
       "url": "https://sisct.saude.gov.br/sisct/",
       "priority": "P1"
+    },
+    {
+      "id": "fapemig",
+      "name": "FAPEMIG",
+      "type": "fundacao_estadual",
+      "adapter": "fapemig",
+      "frequency": "daily",
+      "url": "https://fapemig.br/oportunidades/chamadas-e-editais",
+      "priority": "P1"
+    },
+    {
+      "id": "capes",
+      "name": "CAPES",
+      "type": "agencia_federal",
+      "adapter": "capes",
+      "frequency": "daily",
+      "url": "https://www.gov.br/capes/pt-br/assuntos/editais-e-resultados-capes",
+      "priority": "P1"
+    },
+    {
+      "id": "senai-inovacao",
+      "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+      "type": "sistema_industria",
+      "adapter": "senai-inovacao",
+      "frequency": "daily",
+      "url": "https://www.portaldaindustria.com.br/canais/plataforma-inovacao-para-industria/",
+      "priority": "P1"
+    },
+    {
+      "id": "fapesp",
+      "name": "FAPESP",
+      "type": "fundacao_estadual",
+      "adapter": "fapesp",
+      "frequency": "daily",
+      "url": "https://fapesp.br/chamadas/",
+      "priority": "P1"
+    },
+    {
+      "id": "faperj",
+      "name": "FAPERJ",
+      "type": "fundacao_estadual",
+      "adapter": "faperj",
+      "frequency": "daily",
+      "url": "https://www.faperj.br/?id=28.5.7",
+      "priority": "P1"
     }
   ]
 }

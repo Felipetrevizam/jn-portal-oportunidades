@@ -112,7 +112,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        source: [finep, cnpq, fapesq, ppsus, bndes, embrapii, pdil, transferegov-especiais, transferegov-fundoafundo, transferegov-parcerias]
+        source: [bndes, cnpq, embrapii, fapemig, fapesq, finep, pdil, ppsus, transferegov-especiais, transferegov-fundoafundo, transferegov-parcerias, capes, senai-inovacao, fapesp, faperj]
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
