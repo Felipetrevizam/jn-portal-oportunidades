@@ -129,6 +129,12 @@ FONTES: list[Config] = [
            # Tipo de post próprio do WordPress (o painel é montado em JavaScript).
            wp_endpoint="wp-json/wp/v2/oportunidades", ano_minimo=ANO - 1, proponentes=("startup",),
            instrumento_padrao="outros"),
+    Config(id="anp-premio", nome="ANP · Prêmio de Inovação Tecnológica", financiador="ANP", tipo="agencia_reguladora",
+           url="https://www.gov.br/anp/pt-br/assuntos/tecnologia-meio-ambiente/premio-anp-inovacao-tecnologica",
+           # A ANP não publica chamadas de P&D (quem executa é a petroleira); o
+           # prêmio anual é a oportunidade pública do programa.
+           inicio_link=r"/premio-anp-inovacao-tecnologica/premio-anp-de-inovacao-tecnologica-20\d\d", ano_minimo=ANO - 1,
+           instrumento_padrao="premio", proponentes=("empresa", "ict", "pesquisador")),
     # Bancos, estatais e fundações.
     Config(id="fbb", nome="Fundação Banco do Brasil · Editais", financiador="Fundação Banco do Brasil", tipo="fundacao_privada",
            url="https://fbb.org.br/editais-de-projetos/editais-publicos/", inicio_link=r"fbb\.org\.br/edital-publico/.",
@@ -160,6 +166,18 @@ FONTES: list[Config] = [
            tipo="banco_desenvolvimento", url="https://www.bnb.gov.br/fundeci/editais",
            inicio_link=r"/fundeci/editais/-/asset_publisher/", ano_minimo=ANO - 1,
            geografia=("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE", "MG", "ES")),
+    # Bancos e agências de fomento: linhas de crédito permanentes (fluxo
+    # contínuo, sem prazo). Entram no catálogo como mecanismos.
+    Config(id="basa-fno", nome="Banco da Amazônia · Linhas FNO", financiador="Banco da Amazônia · FNO",
+           tipo="banco_desenvolvimento", url="https://www.bancoamazonia.com.br/linhas-de-fomento/fno",
+           inicio_link=r"/linhas-de-fomento/fno/[a-z0-9-]+$", canal="fluxo_continuo", lista_abertas=True,
+           instrumento_padrao="credito", detalhe=False, ler_pdf=False, proponentes=("empresa", "cooperativa"),
+           geografia=("AC", "AM", "AP", "PA", "RO", "RR", "TO"), descartar=r"^conhe[çc]a"),
+    Config(id="goias-fomento", nome="Goiás Fomento · Linhas de crédito", financiador="Goiás Fomento",
+           tipo="agencia_fomento", url="https://www.goiasfomento.com/linhas-de-credito/",
+           inicio_link=r"goiasfomento\.com/(linhas-de-credito/[a-z0-9-]+/|linha-[a-z0-9-]+/)$", canal="fluxo_continuo",
+           lista_abertas=True, instrumento_padrao="credito", detalhe=False, ler_pdf=False,
+           proponentes=("empresa",), geografia=("GO",), descartar=r"oferece cr[ée]dito"),
     # Sebrae estadual com página própria de chamadas (os demais estados não
     # publicam edital de fomento fora da transparência/licitações).
     Config(id="sebrae-rs", nome="Sebrae RS · Chamadas públicas", financiador="Sebrae RS", tipo="sistema_s",

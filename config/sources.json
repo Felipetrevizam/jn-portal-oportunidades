@@ -522,6 +522,33 @@
       "frequency": "daily",
       "url": "https://queridodiario.ok.org.br/",
       "priority": "P2"
+    },
+    {
+      "id": "anp-premio",
+      "name": "ANP · Prêmio de Inovação Tecnológica",
+      "type": "agencia_reguladora",
+      "adapter": "anp-premio",
+      "frequency": "daily",
+      "url": "https://www.gov.br/anp/pt-br/assuntos/tecnologia-meio-ambiente/premio-anp-inovacao-tecnologica",
+      "priority": "P2"
+    },
+    {
+      "id": "basa-fno",
+      "name": "Banco da Amazônia · Linhas FNO",
+      "type": "banco_desenvolvimento",
+      "adapter": "basa-fno",
+      "frequency": "daily",
+      "url": "https://www.bancoamazonia.com.br/linhas-de-fomento/fno",
+      "priority": "P2"
+    },
+    {
+      "id": "goias-fomento",
+      "name": "Goiás Fomento · Linhas de crédito",
+      "type": "agencia_fomento",
+      "adapter": "goias-fomento",
+      "frequency": "daily",
+      "url": "https://www.goiasfomento.com/linhas-de-credito/",
+      "priority": "P2"
     }
   ]
 }
