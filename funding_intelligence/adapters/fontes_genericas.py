@@ -120,6 +120,11 @@ FONTES: list[Config] = [
            inicio_link=r"/chamadas-publicas/[a-z0-9-]+/?$", lixo=("script", "style", "noscript", "iframe", "svg"),
            conteudo="body", geografia=("AC", "AM", "AP", "MA", "MT", "PA", "RO", "RR", "TO"),
            instrumento_padrao="termo_fomento"),
+    Config(id="inovativa", nome="InovAtiva · Painel de oportunidades", financiador="InovAtiva (MDIC / Sebrae)",
+           tipo="programa_federal", url="https://inovativa.online/painel-de-oportunidades/", modo="wp",
+           # Tipo de post próprio do WordPress (o painel é montado em JavaScript).
+           wp_endpoint="wp-json/wp/v2/oportunidades", ano_minimo=ANO - 1, proponentes=("startup",),
+           instrumento_padrao="outros"),
     # Bancos, estatais e fundações.
     Config(id="fbb", nome="Fundação Banco do Brasil · Editais", financiador="Fundação Banco do Brasil", tipo="fundacao_privada",
            url="https://fbb.org.br/editais-de-projetos/editais-publicos/", inicio_link=r"fbb\.org\.br/edital-publico/.",

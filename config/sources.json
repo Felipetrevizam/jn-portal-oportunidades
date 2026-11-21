@@ -495,6 +495,15 @@
       "frequency": "daily",
       "url": "https://secti.ma.gov.br/programas-ou-campanhas/editais-2026",
       "priority": "P2"
+    },
+    {
+      "id": "inovativa",
+      "name": "InovAtiva · Painel de oportunidades",
+      "type": "programa_federal",
+      "adapter": "inovativa",
+      "frequency": "daily",
+      "url": "https://inovativa.online/painel-de-oportunidades/",
+      "priority": "P2"
     }
   ]
 }
