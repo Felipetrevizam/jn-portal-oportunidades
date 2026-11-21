@@ -144,6 +144,168 @@
       "frequency": "daily",
       "url": "https://www.faperj.br/?id=28.5.7",
       "priority": "P1"
+    },
+    {
+      "id": "fapeal",
+      "name": "FAPEAL",
+      "type": "fundacao_estadual",
+      "adapter": "fapeal",
+      "frequency": "daily",
+      "url": "https://www.fapeal.br/pesquisador/editais/",
+      "priority": "P2"
+    },
+    {
+      "id": "fapesb",
+      "name": "FAPESB",
+      "type": "fundacao_estadual",
+      "adapter": "fapesb",
+      "frequency": "daily",
+      "url": "https://www.fapesb.ba.gov.br/category/edital/",
+      "priority": "P2"
+    },
+    {
+      "id": "fapema",
+      "name": "FAPEMA",
+      "type": "fundacao_estadual",
+      "adapter": "fapema",
+      "frequency": "daily",
+      "url": "https://www.fapema.br/category/editais/editais-em-aberto/",
+      "priority": "P2"
+    },
+    {
+      "id": "fapespa",
+      "name": "FAPESPA",
+      "type": "fundacao_estadual",
+      "adapter": "fapespa",
+      "frequency": "daily",
+      "url": "https://www.fapespa.pa.gov.br/category/chamadas/",
+      "priority": "P2"
+    },
+    {
+      "id": "fapepi",
+      "name": "FAPEPI",
+      "type": "fundacao_estadual",
+      "adapter": "fapepi",
+      "frequency": "daily",
+      "url": "https://www.fapepi.pi.gov.br/editais-fapepi/",
+      "priority": "P2"
+    },
+    {
+      "id": "fapesc",
+      "name": "FAPESC",
+      "type": "fundacao_estadual",
+      "adapter": "fapesc",
+      "frequency": "daily",
+      "url": "https://fapesc.sc.gov.br/chamadas-abertas/",
+      "priority": "P2"
+    },
+    {
+      "id": "fapeg",
+      "name": "FAPEG",
+      "type": "fundacao_estadual",
+      "adapter": "fapeg",
+      "frequency": "daily",
+      "url": "https://goias.gov.br/fapeg/editais/inscricoes-abertas/",
+      "priority": "P2"
+    },
+    {
+      "id": "fapitec",
+      "name": "FAPITEC/SE",
+      "type": "fundacao_estadual",
+      "adapter": "fapitec",
+      "frequency": "daily",
+      "url": "https://fapitec.se.gov.br/editais-abertos/",
+      "priority": "P2"
+    },
+    {
+      "id": "fapes",
+      "name": "FAPES",
+      "type": "fundacao_estadual",
+      "adapter": "fapes",
+      "frequency": "daily",
+      "url": "https://fapes.es.gov.br/editais-abertos-pesquisa-4",
+      "priority": "P2"
+    },
+    {
+      "id": "fapt",
+      "name": "FAPT/TO",
+      "type": "fundacao_estadual",
+      "adapter": "fapt",
+      "frequency": "daily",
+      "url": "http://www.to.gov.br/fapt/01-editais-abertos/5sy36y0lf49g",
+      "priority": "P2"
+    },
+    {
+      "id": "fapergs",
+      "name": "FAPERGS",
+      "type": "fundacao_estadual",
+      "adapter": "fapergs",
+      "frequency": "daily",
+      "url": "https://fapergs.rs.gov.br/chamadas-e-editais",
+      "priority": "P2"
+    },
+    {
+      "id": "fapac",
+      "name": "FAPAC",
+      "type": "fundacao_estadual",
+      "adapter": "fapac",
+      "frequency": "daily",
+      "url": "https://fapac.ac.gov.br/98-2/",
+      "priority": "P2"
+    },
+    {
+      "id": "fundect",
+      "name": "FUNDECT",
+      "type": "fundacao_estadual",
+      "adapter": "fundect",
+      "frequency": "daily",
+      "url": "https://www.fundect.ms.gov.br/informativos/consultas/",
+      "priority": "P2"
+    },
+    {
+      "id": "fapdf",
+      "name": "FAPDF",
+      "type": "fundacao_estadual",
+      "adapter": "fapdf",
+      "frequency": "daily",
+      "url": "https://www.fap.df.gov.br/editais-fapdf-20261",
+      "priority": "P2"
+    },
+    {
+      "id": "fapeam",
+      "name": "FAPEAM",
+      "type": "fundacao_estadual",
+      "adapter": "fapeam",
+      "frequency": "daily",
+      "url": "https://www.fapeam.am.gov.br/wp-admin/admin-ajax.php?action=get-editais&aba=vigentes",
+      "priority": "P2"
+    },
+    {
+      "id": "fapemat",
+      "name": "FAPEMAT",
+      "type": "fundacao_estadual",
+      "adapter": "fapemat",
+      "frequency": "daily",
+      "url": "https://www.fapemat.mt.gov.br/pt/editais_1?categoryId=73983336",
+      "priority": "P2"
+    },
+    {
+      "id": "araucaria",
+      "name": "Fundação Araucária",
+      "type": "fundacao_estadual",
+      "adapter": "araucaria",
+      "frequency": "daily",
+      "url": "https://www.fappr.pr.gov.br/Programas-Abertos",
+      "priority": "P1"
+    },
+    {
+      "id": "confap",
+      "name": "CONFAP",
+      "type": "agregador",
+      "adapter": "confap",
+      "frequency": "daily",
+      "url": "https://confap.org.br/pt/editais",
+      "priority": "P2"
     }
   ]
 }

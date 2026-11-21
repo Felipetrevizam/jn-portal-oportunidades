@@ -31,7 +31,7 @@ import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 from datetime import date
 from typing import Any, Callable
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import quote, urljoin, urlsplit
 
 from bs4 import BeautifulSoup, Tag
 from pypdf import PdfReader
@@ -105,10 +105,11 @@ def extrair_publicacao(texto: str) -> str | None:
 # ------------------------------------------------------------------ classificação
 
 NUMERO = re.compile(r"\bn(?:[º°o.]|ú?mero)?\s*\.?\s*0*(\d{1,4})\s*[/_-]\s*(20\d{2})\b", re.I)
+NUMERO_SOLTO = re.compile(r"\b(?:edital|chamada|chamamento|cp)\s+(?:p[úu]blica\s+)?0*(\d{1,4})\s*/\s*(20\d{2})\b", re.I)
 
 
 def extrair_numero(texto: str) -> str | None:
-    m = NUMERO.search(texto)
+    m = NUMERO.search(texto) or NUMERO_SOLTO.search(texto)
     return f"{int(m.group(1))}-{m.group(2)}" if m else None
 
 
@@ -237,6 +238,8 @@ class Trecho:
         return [link for b in self.blocos for link in b.links]
 
 
+# Texto de botão, que não serve de título ("Ver detalhes", "Saiba mais").
+CTA = re.compile(r"^\W*(ver detalhes|saiba mais|leia mais|acesse( aqui)?|clique aqui|mais informa[çc][õo]es|veja mais|confira)\W*$", re.I)
 RABO_TITULO = re.compile(
     r"\s+(?:publica[çc][ãa]o|publicad[oa]|lan[çc]amento|data-?limite|inscri[çc][õo]es|submiss[ãa]o|"
     r"prazo|[áa]rea:|resultado|leia mais|saiba mais)\b.*$",
@@ -245,7 +248,9 @@ RABO_TITULO = re.compile(
 
 
 def limpar_titulo(texto: str) -> str:
-    titulo = RABO_TITULO.sub("", clean_text(texto)) or clean_text(texto)
+    texto = re.sub(r"^(link|download|baixar|pdf)\s+", "", clean_text(texto), flags=re.I)
+    texto = re.sub(r"^(ver detalhes|saiba mais|leia mais|acesse)\s+", "", texto, flags=re.I)
+    titulo = RABO_TITULO.sub("", texto) or texto
     if len(titulo) > 220:
         titulo = titulo[:220].rsplit(" ", 1)[0] + "…"
     return titulo
@@ -274,7 +279,12 @@ class Config:
     # ...ou quando um LINK do bloco casa com isto (o texto do link vira o título).
     inicio_link: str | None = None
     # Título que casa com isto é descartado (resultado, errata solta, menu).
-    descartar: str | None = r"^(resultados?|errata|retifica|veja|confira|clique|saiba|leia|acesse)\b"
+    descartar: str | None = (
+        r"^(resultados?|errata|retifica|veja|confira|clique|saiba|leia|acesse|portaria|resolu[çc][ãa]o|"
+        r"homologa|convoca[çc][ãa]o|aviso de|extrato|ata\b|termo de|nota\b|lista de|rela[çc][ãa]o de)|resultado (final|preliminar|parcial)"
+        # Notícia institucional ("Fapepi acompanha...", "Fapespa divulga resultado...").
+        r"|^\S+ (acompanha|participa|visita|realiza|recebe|divulga resultado|homenageia|promove)\b"
+    )
     # Ano mínimo no título/texto; trechos de anos anteriores são ignorados.
     ano_minimo: int | None = None
     # Página lista só chamadas abertas? Então sem prazo vira "open".
@@ -283,8 +293,8 @@ class Config:
     detalhe: bool = True
     detalhe_conteudo: str | None = None
     ler_pdf: bool = True
-    max_detalhes: int = 25
-    max_pdfs: int = 8
+    max_detalhes: int = 12
+    max_pdfs: int = 4
     # Metadados padrão da fonte.
     geografia: tuple[str, ...] = ("BR",)
     proponentes: tuple[str, ...] = ()
@@ -294,7 +304,9 @@ class Config:
     pausa_s: float = 1.0
     # Para modo "wp": endpoint e filtro de título.
     wp_endpoint: str = "wp-json/wp/v2/posts"
-    wp_params: str = "per_page=50&_fields=id,link,title,date,content"
+    # Slug(s) de categoria do WordPress; o id é resolvido na hora.
+    wp_categorias: tuple[str, ...] = ()
+    wp_params: str = "per_page=25&_fields=id,link,title,date,content"
     filtro_titulo: str | None = None
     # Itens por seletor CSS (cards): cada elemento vira uma chamada.
     item_seletor: str | None = None
@@ -302,6 +314,11 @@ class Config:
     # Links da página principal que levam a outras páginas de listagem.
     seguir_listagens: str | None = None
     max_listagens: int = 30
+    # Modo "json": caminho da lista (chaves separadas por ponto) e campos.
+    json_lista: str = ""
+    json_titulo: str = "title"
+    json_link: str = "link"
+    json_texto: tuple[str, ...] = ()
     # Hook para casos especiais sem criar outro adaptador.
     ajustar: Callable[["Trecho"], "Trecho | None"] | None = None
 
@@ -329,7 +346,7 @@ class AdaptadorGenerico(BaseAdapter):
         if espera > 0:
             time.sleep(espera)
         try:
-            return self.fetch_bytes(url)
+            return self.fetch_bytes(quote(url, safe=":/?&=%#+,;@~!$'()*[]"))
         finally:
             self._ultimo_pedido[host] = time.monotonic()
 
@@ -347,6 +364,8 @@ class AdaptadorGenerico(BaseAdapter):
             trechos = self._trechos_wp()
         elif cfg.modo == "rss":
             trechos = self._trechos_rss()
+        elif cfg.modo == "json":
+            trechos = self._trechos_json()
         else:
             trechos = []
             fila = [cfg.url, *cfg.urls_extras]
@@ -391,12 +410,16 @@ class AdaptadorGenerico(BaseAdapter):
         rx_descartar = re.compile(cfg.descartar, re.I) if cfg.descartar else None
         trechos: list[Trecho] = []
         atual: Trecho | None = None
+        anterior = ""
         for bloco in blocos:
             inicio: tuple[str, str | None] | None = None
             if rx_link:
                 for texto_link, href in bloco.links:
                     if rx_link.search(href) or rx_link.search(texto_link):
-                        titulo = texto_link if len(texto_link) > 8 else bloco.texto
+                        titulo = bloco.texto if len(texto_link) <= 8 or CTA.match(texto_link) else texto_link
+                        if CTA.match(titulo) or len(titulo) <= 8:
+                            # Botão sozinho no bloco: o título é o que vem logo antes.
+                            titulo = anterior or titulo
                         inicio = (titulo, href)
                         break
             if inicio is None and rx_titulo and rx_titulo.search(bloco.texto):
@@ -412,6 +435,8 @@ class AdaptadorGenerico(BaseAdapter):
                 trechos.append(atual)
             if atual:
                 atual.blocos.append(bloco)
+            if bloco.texto and not CTA.match(bloco.texto):
+                anterior = bloco.texto
         if cfg.ano_minimo:
             trechos = [t for t in trechos if self._ano_ok(t)]
         return trechos
@@ -441,8 +466,17 @@ class AdaptadorGenerico(BaseAdapter):
 
     def _trechos_wp(self) -> list[Trecho]:
         cfg = self.config
-        base = cfg.url.rstrip("/") + "/"
+        partes = urlsplit(cfg.url)
+        base = f"{partes.scheme}://{partes.netloc}/"
         url = urljoin(base, cfg.wp_endpoint) + ("&" if "?" in cfg.wp_endpoint else "?") + cfg.wp_params
+        if cfg.wp_categorias and not self.fixture:
+            ids = []
+            for categoria in cfg.wp_categorias:
+                achadas = json.loads(self._baixar(urljoin(base, f"wp-json/wp/v2/categories?slug={categoria}&_fields=id")))
+                ids.extend(str(c["id"]) for c in achadas)
+            if not ids:
+                raise ValueError(f"{cfg.nome}: categoria {cfg.wp_categorias} não existe no WordPress")
+            url += "&categories=" + ",".join(ids)
         posts = json.loads(self._baixar(url))
         rx = re.compile(cfg.filtro_titulo, re.I) if cfg.filtro_titulo else None
         trechos = []
@@ -457,6 +491,30 @@ class AdaptadorGenerico(BaseAdapter):
             if data:
                 trecho.blocos.insert(0, Bloco(f"Publicado em {data[8:10]}/{data[5:7]}/{data[:4]}", [], "p"))
             trechos.append(trecho)
+        if cfg.ano_minimo:
+            trechos = [t for t in trechos if self._ano_ok(t)]
+        return trechos
+
+    def _trechos_json(self) -> list[Trecho]:
+        cfg = self.config
+        dados: Any = json.loads(self._baixar(cfg.url))
+        for chave in filter(None, cfg.json_lista.split(".")):
+            dados = dados[chave]
+        rx = re.compile(cfg.filtro_titulo, re.I) if cfg.filtro_titulo else None
+        trechos = []
+        for item in dados:
+            titulo = clean_text(BeautifulSoup(str(item.get(cfg.json_titulo) or ""), "html.parser").get_text(" "))
+            if not titulo or (rx and not rx.search(titulo)):
+                continue
+            blocos = []
+            for campo in cfg.json_texto:
+                valor = item.get(campo)
+                if valor:
+                    rotulo = "Inscrições" if campo in ("vigencia", "prazo", "periodo") else campo
+                    sopa = BeautifulSoup(str(valor), "html.parser")
+                    blocos.append(Bloco(f"{rotulo}: {clean_text(sopa.get_text(' '))}", [], "p"))
+            link = item.get(cfg.json_link)
+            trechos.append(Trecho(titulo=limpar_titulo(titulo), url=str(link) if link else None, blocos=blocos))
         if cfg.ano_minimo:
             trechos = [t for t in trechos if self._ano_ok(t)]
         return trechos
