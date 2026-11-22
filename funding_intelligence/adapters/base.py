@@ -3,6 +3,9 @@ from __future__ import annotations
 import io
 import json
 import os
+import socket
+import time
+import urllib.error
 import urllib.request
 from abc import ABC, abstractmethod
 from datetime import date
@@ -16,7 +19,20 @@ from pypdf import PdfReader
 from funding_intelligence.models import utc_now
 
 
-USER_AGENT = "PONTE-Funding-Intelligence/2.0 (+https://github.com/diretoriajnconsulting-dotcom/jn-portal-oportunidades)"
+USER_AGENT = "Fomenta360-Coletor/1.0 (+https://github.com/Felipetrevizam/jn-portal-oportunidades)"
+
+
+# Os portais do governo derrubam conexões vindas dos runners do GitHub de vez em
+# quando (reset, recusa, timeout): em novembro de 2026, CNPq e BNDES falharam
+# assim em dias isolados e funcionaram no dia seguinte. Erro passageiro ganha
+# mais duas chances; 4xx não, porque 404 é resposta, não falha de rede.
+ESPERAS_RETENTATIVA_S: tuple[float, ...] = (5.0, 20.0)
+
+
+def erro_passageiro(erro: BaseException) -> bool:
+    if isinstance(erro, urllib.error.HTTPError):
+        return erro.code == 429 or erro.code >= 500
+    return isinstance(erro, (urllib.error.URLError, ConnectionError, TimeoutError, socket.timeout))
 
 
 class BaseAdapter(ABC):
@@ -37,10 +53,24 @@ class BaseAdapter(ABC):
         self, url: str, *, method: str = "GET", headers: dict[str, str] | None = None,
         data: bytes | None = None,
     ) -> bytes:
-        request_headers = {"User-Agent": USER_AGENT, **(headers or {})}
-        request = urllib.request.Request(url, headers=request_headers, data=data, method=method)
-        with urllib.request.urlopen(request, timeout=45) as response:
-            return response.read()
+        # Accept e Accept-Language são os cabeçalhos que qualquer cliente HTTP envia;
+        # sem eles, alguns firewalls (in.gov.br) recusam o pedido com 403.
+        request_headers = {
+            "User-Agent": USER_AGENT,
+            "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+            "Accept-Language": "pt-BR,pt;q=0.9",
+            **(headers or {}),
+        }
+        for tentativa in range(len(ESPERAS_RETENTATIVA_S) + 1):
+            request = urllib.request.Request(url, headers=request_headers, data=data, method=method)
+            try:
+                with urllib.request.urlopen(request, timeout=45) as response:
+                    return response.read()
+            except Exception as erro:
+                if tentativa == len(ESPERAS_RETENTATIVA_S) or not erro_passageiro(erro):
+                    raise
+                time.sleep(ESPERAS_RETENTATIVA_S[tentativa])
+        raise AssertionError("inalcançável")
 
     def fetch_bytes(self, url: str) -> bytes:
         return self.request_bytes(url)
