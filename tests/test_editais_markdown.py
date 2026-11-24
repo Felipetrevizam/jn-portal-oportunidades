@@ -87,3 +87,23 @@ class OrcamentoDeTempoTests(unittest.TestCase):
         orcamento = em.Orcamento(minutos=40, relogio=lambda: next(relogio))
         self.assertFalse(orcamento.esgotado())  # 10 min
         self.assertTrue(orcamento.esgotado())   # 41 min
+
+
+class TetoPorEditalTests(unittest.TestCase):
+    def test_reserva_tira_o_teto_de_um_edital_do_orcamento(self):
+        relogio = iter([0.0, 26 * 60, 28 * 60])
+        orcamento = em.Orcamento(minutos=35, relogio=lambda: next(relogio), reserva_minutos=8)
+        self.assertFalse(orcamento.esgotado())  # 26 min: ainda cabe um edital de 8
+        self.assertTrue(orcamento.esgotado())   # 28 min: não cabe mais
+
+    @unittest.skipUnless(hasattr(em.signal, "SIGALRM"), "precisa de SIGALRM")
+    def test_conversao_lenta_e_interrompida(self):
+        import time as _t
+        with self.assertRaises(em.TempoDoEditalEsgotado):
+            with em.tempo_maximo(1):
+                _t.sleep(3)
+
+    def test_conversao_rapida_passa(self):
+        with em.tempo_maximo(5):
+            valor = 1 + 1
+        self.assertEqual(2, valor)
