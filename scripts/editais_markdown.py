@@ -20,9 +20,11 @@ próxima.
 from __future__ import annotations
 
 import argparse
+import contextlib
 import hashlib
 import json
 import re
+import signal
 import sys
 import time
 import urllib.parse
@@ -84,15 +86,42 @@ class HostsFora:
 
 
 class Orcamento:
-    """Tempo para começar conversões novas; o que passar disso fica para amanhã."""
+    """Tempo para começar conversões novas; o que passar disso fica para amanhã.
 
-    def __init__(self, minutos: float, relogio: Callable[[], float] = time.monotonic) -> None:
+    `reserva_minutos` é o teto de um edital: só começa um se ele couber inteiro
+    no que sobra. Sem isso, um PDF pesado começado aos 34 min estourava o passo.
+    """
+
+    def __init__(self, minutos: float, relogio: Callable[[], float] = time.monotonic, reserva_minutos: float = 0) -> None:
         self._relogio = relogio
-        self._limite = minutos * 60
+        self._limite = (minutos - reserva_minutos) * 60
         self._inicio = relogio()
 
     def esgotado(self) -> bool:
         return self._relogio() - self._inicio >= self._limite
+
+
+class TempoDoEditalEsgotado(TimeoutError):
+    pass
+
+
+@contextlib.contextmanager
+def tempo_maximo(segundos: int):
+    """Interrompe a conversão de um edital que passa do teto (SIGALRM, só no Linux/macOS)."""
+    if segundos <= 0 or not hasattr(signal, "SIGALRM"):
+        yield
+        return
+
+    def estourou(_sinal, _quadro):
+        raise TempoDoEditalEsgotado(f"conversão passou de {segundos // 60} min")
+
+    anterior = signal.signal(signal.SIGALRM, estourou)
+    signal.alarm(segundos)
+    try:
+        yield
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, anterior)
 
 
 def pdf_do_edital(op: dict) -> dict | None:
@@ -142,8 +171,10 @@ def main() -> int:
     ap.add_argument("--max", type=int, default=30)
     ap.add_argument("--limite-minutos", type=float, default=35,
                     help="para de começar conversões depois disso, para sobrar tempo de publicar")
+    ap.add_argument("--max-minutos-por-edital", type=float, default=8,
+                    help="teto de um edital; o que passar é interrompido e fica para a próxima execução")
     args = ap.parse_args()
-    orcamento = Orcamento(args.limite_minutos)
+    orcamento = Orcamento(args.limite_minutos, reserva_minutos=args.max_minutos_por_edital)
     hosts_fora = HostsFora()
 
     from funding_intelligence.markdown_editais import converter_pdf  # Docling só aqui
@@ -188,7 +219,8 @@ def main() -> int:
                 mantidos += 1
                 continue
             inicio = time.monotonic()
-            conv = converter_pdf(pdf, nome=doc["url"].rsplit("/", 1)[-1][:80] or "edital.pdf")
+            with tempo_maximo(int(args.max_minutos_por_edital * 60)):
+                conv = converter_pdf(pdf, nome=doc["url"].rsplit("/", 1)[-1][:80] or "edital.pdf")
             del pdf  # o PDF não sai da memória
             agora = datetime.now(timezone.utc).isoformat(timespec="seconds")
             arquivo = nome_arquivo(op["id"])

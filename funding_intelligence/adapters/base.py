@@ -6,6 +6,7 @@ import os
 import socket
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from abc import ABC, abstractmethod
 from datetime import date
@@ -35,6 +36,34 @@ def erro_passageiro(erro: BaseException) -> bool:
     return isinstance(erro, (urllib.error.URLError, ConnectionError, TimeoutError, socket.timeout))
 
 
+# Retransmissor do Fomenta360 (/api/coleta/relay): vários portais de governo
+# recusam conexões vindas dos servidores do GitHub e respondem à Vercel (teste de
+# 24/11/2026: CNPq, CAPES, ANP, FAPEG, FAPEPI, FAPERN, FAPITEC, PDIL e outros).
+# Com FOMENTA360_RELAY_URL e FOMENTA360_CRON_SECRET no ambiente, um GET que leva
+# reset, timeout, 5xx ou 403 é refeito pelo retransmissor, e o site passa a ir
+# direto por ele até o fim da execução.
+HOSTS_VIA_RELAY: set[str] = set()
+
+
+def _relay() -> tuple[str, str] | None:
+    url, segredo = os.environ.get("FOMENTA360_RELAY_URL", ""), os.environ.get("FOMENTA360_CRON_SECRET", "")
+    return (url, segredo) if url and segredo else None
+
+
+def _bloqueado(erro: BaseException) -> bool:
+    return erro_passageiro(erro) or (isinstance(erro, urllib.error.HTTPError) and erro.code == 403)
+
+
+def _pelo_relay(url: str, headers: dict[str, str], relay: tuple[str, str]) -> bytes:
+    endereco, segredo = relay
+    pedido = urllib.request.Request(
+        f"{endereco}?url={urllib.parse.quote(url, safe='')}",
+        headers={"Authorization": f"Bearer {segredo}", "x-relay-accept": headers.get("Accept", "*/*"), "User-Agent": USER_AGENT},
+    )
+    with urllib.request.urlopen(pedido, timeout=60) as resposta:
+        return resposta.read()
+
+
 class BaseAdapter(ABC):
     id: str
     name: str
@@ -61,12 +90,19 @@ class BaseAdapter(ABC):
             "Accept-Language": "pt-BR,pt;q=0.9",
             **(headers or {}),
         }
+        relay = _relay() if method == "GET" and data is None else None
+        host = urllib.parse.urlsplit(url).netloc.lower()
+        if relay and host in HOSTS_VIA_RELAY:
+            return _pelo_relay(url, request_headers, relay)
         for tentativa in range(len(ESPERAS_RETENTATIVA_S) + 1):
             request = urllib.request.Request(url, headers=request_headers, data=data, method=method)
             try:
                 with urllib.request.urlopen(request, timeout=45) as response:
                     return response.read()
             except Exception as erro:
+                if relay and _bloqueado(erro):
+                    HOSTS_VIA_RELAY.add(host)
+                    return _pelo_relay(url, request_headers, relay)
                 if tentativa == len(ESPERAS_RETENTATIVA_S) or not erro_passageiro(erro):
                     raise
                 time.sleep(ESPERAS_RETENTATIVA_S[tentativa])

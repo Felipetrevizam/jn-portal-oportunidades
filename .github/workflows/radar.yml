@@ -7,8 +7,13 @@
 name: PONTE Funding Intelligence — Radar Multifuente
 
 on:
+  # O GitHub atrasa ou pula horários agendados (não rodou de 21 a 23/11/2026).
+  # Três horários de reserva; o job `decidir` cancela os que chegam depois de
+  # um catálogo publicado há menos de 10 h, então o dia tem uma coleta só.
   schedule:
     - cron: "30 12 * * *" # 12:30 UTC = 09:30 João Pessoa
+    - cron: "17 16 * * *" # reserva
+    - cron: "43 19 * * *" # reserva
   workflow_dispatch:
     inputs:
       carga_historica:
@@ -33,7 +38,37 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  decidir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      rodar: ${{ steps.idade.outputs.rodar }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: public/data/funding-opportunities-v2.json
+          sparse-checkout-cone-mode: false
+      - name: Catálogo de hoje já publicado?
+        id: idade
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "rodar=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, datetime as dt
+          try:
+              gerado = json.load(open("public/data/funding-opportunities-v2.json"))["generated_at"]
+              idade = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(gerado)
+              recente = idade < dt.timedelta(hours=10)
+          except Exception:
+              recente = False
+          print(f"rodar={'false' if recente else 'true'}")
+          PY
+          cat "$GITHUB_OUTPUT"
+
   test:
+    needs: decidir
+    if: ${{ needs.decidir.outputs.rodar == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -107,6 +142,10 @@ jobs:
   collect-official-sources:
     if: ${{ github.event_name != 'pull_request' }}
     needs: test
+    env:
+      # Sites que recusam o GitHub são buscados pelo retransmissor do Fomenta360.
+      FOMENTA360_RELAY_URL: https://fomenta360.vercel.app/api/coleta/relay
+      FOMENTA360_CRON_SECRET: ${{ secrets.FOMENTA360_CRON_SECRET }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     strategy:
@@ -143,9 +182,13 @@ jobs:
   aggregate-and-publish:
     needs: [collect-transferegov, collect-official-sources]
     if: ${{ always() && needs.collect-transferegov.result == 'success' }}
+    env:
+      # Sites que recusam o GitHub são buscados pelo retransmissor do Fomenta360.
+      FOMENTA360_RELAY_URL: https://fomenta360.vercel.app/api/coleta/relay
+      FOMENTA360_CRON_SECRET: ${{ secrets.FOMENTA360_CRON_SECRET }}
     runs-on: ubuntu-latest
     # A conversão dos editais em Markdown (Docling, CPU) leva a maior parte.
-    timeout-minutes: 60
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -183,23 +226,31 @@ jobs:
             ~/.EasyOCR
           key: modelos-docling-${{ hashFiles('requirements-editais.txt') }}
 
+      # Instalação fora do passo de conversão: o teto de 45 min abaixo é só para
+      # converter (a instalação do Docling e do torch leva alguns minutos).
+      - name: Instalar o conversor de editais
+        id: instalar_editais
+        continue-on-error: true
+        run: pip install -r requirements-editais.txt
+
       - name: Editais em Markdown
         id: editais
+        if: ${{ steps.instalar_editais.outcome == 'success' }}
         continue-on-error: true
-        # O job tem 60 min. O script para de começar conversões aos 35 min e
-        # este teto garante que sobre tempo para o commit, mesmo com Docling lento.
+        # O script só começa um edital se ele couber inteiro nos 40 min (cada um
+        # tem teto de 8 min); este limite é a segurança final, com sobra para o commit.
         timeout-minutes: 45
         # O script fica em scripts/ e importa o pacote da raiz: sem isto o
         # Python não acha funding_intelligence (falhava em toda execução).
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: |
-          pip install -r requirements-editais.txt
           python scripts/editais_markdown.py \
             --catalogo public/data/funding-opportunities-v2.json \
             --saida public/data/editais \
             --max 30 \
-            --limite-minutos 35
+            --limite-minutos 40 \
+            --max-minutos-por-edital 8
 
       # continue-on-error não pode esconder a falha: avisa no resumo da execução.
       - name: Conferir o índice dos editais
