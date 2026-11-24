@@ -184,13 +184,30 @@ jobs:
           key: modelos-docling-${{ hashFiles('requirements-editais.txt') }}
 
       - name: Editais em Markdown
+        id: editais
         continue-on-error: true
+        # O script fica em scripts/ e importa o pacote da raiz: sem isto o
+        # Python não acha funding_intelligence (falhava em toda execução).
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           pip install -r requirements-editais.txt
           python scripts/editais_markdown.py \
             --catalogo public/data/funding-opportunities-v2.json \
             --saida public/data/editais \
             --max 30
+
+      # continue-on-error não pode esconder a falha: avisa no resumo da execução.
+      - name: Conferir o índice dos editais
+        run: |
+          if [ "${{ steps.editais.outcome }}" != "success" ]; then
+            echo "::warning::Conversão dos editais em Markdown falhou (${{ steps.editais.outcome }}). O catálogo segue publicado sem os textos."
+          fi
+          if [ ! -f public/data/editais/indice.json ]; then
+            echo "::warning::public/data/editais/indice.json não foi gerado."
+          else
+            python -c "import json; print('Editais no índice:', len(json.load(open('public/data/editais/indice.json'))))"
+          fi
 
       - name: Resumo operacional
         run: |
