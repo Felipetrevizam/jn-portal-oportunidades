@@ -52,3 +52,38 @@ class ConversaoTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DownloadTests(unittest.TestCase):
+    def test_url_com_acento_e_ordinal_vira_ascii(self):
+        url = em.url_segura("https://www.faperj.br/downloads/editais/Edital_Nº_25_2026 Pós.pdf?x=ç")
+        url.encode("ascii")  # não pode levantar UnicodeEncodeError
+        self.assertEqual(
+            "https://www.faperj.br/downloads/editais/Edital_N%C2%BA_25_2026%20P%C3%B3s.pdf?x=%C3%A7", url
+        )
+
+    def test_url_ja_codificada_nao_e_codificada_de_novo(self):
+        url = "https://x.gov.br/a%20b/Edital%20N%C2%BA%201.pdf?id=1&v=2"
+        self.assertEqual(url, em.url_segura(url))
+
+    def test_host_que_derrubou_a_conexao_e_pulado(self):
+        import urllib.error
+
+        hosts = em.HostsFora()
+        self.assertFalse(hosts.fora("https://cnpq.br/a.pdf"))
+        hosts.registrar("https://cnpq.br/a.pdf", urllib.error.URLError(ConnectionResetError(104, "reset")))
+        self.assertTrue(hosts.fora("https://cnpq.br/b.pdf"))
+        self.assertFalse(hosts.fora("https://finep.gov.br/c.pdf"))
+
+    def test_erro_que_nao_e_de_rede_nao_tira_o_host(self):
+        hosts = em.HostsFora()
+        hosts.registrar("https://finep.gov.br/a.pdf", ValueError("não é PDF"))
+        self.assertFalse(hosts.fora("https://finep.gov.br/b.pdf"))
+
+
+class OrcamentoDeTempoTests(unittest.TestCase):
+    def test_para_de_comecar_conversao_depois_do_limite(self):
+        relogio = iter([0.0, 10 * 60, 41 * 60])
+        orcamento = em.Orcamento(minutos=40, relogio=lambda: next(relogio))
+        self.assertFalse(orcamento.esgotado())  # 10 min
+        self.assertTrue(orcamento.esgotado())   # 41 min

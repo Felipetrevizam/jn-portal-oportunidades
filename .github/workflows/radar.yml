@@ -186,6 +186,9 @@ jobs:
       - name: Editais em Markdown
         id: editais
         continue-on-error: true
+        # O job tem 60 min. O script para de começar conversões aos 35 min e
+        # este teto garante que sobre tempo para o commit, mesmo com Docling lento.
+        timeout-minutes: 45
         # O script fica em scripts/ e importa o pacote da raiz: sem isto o
         # Python não acha funding_intelligence (falhava em toda execução).
         env:
@@ -195,7 +198,8 @@ jobs:
           python scripts/editais_markdown.py \
             --catalogo public/data/funding-opportunities-v2.json \
             --saida public/data/editais \
-            --max 30
+            --max 30 \
+            --limite-minutos 35
 
       # continue-on-error não pode esconder a falha: avisa no resumo da execução.
       - name: Conferir o índice dos editais

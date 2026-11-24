@@ -25,10 +25,12 @@ import json
 import re
 import sys
 import time
+import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Callable
 
-from funding_intelligence.adapters.base import BaseAdapter
+from funding_intelligence.adapters.base import BaseAdapter, erro_passageiro
 from funding_intelligence.adapters.generico import extrair_prazo
 
 EDITAL = re.compile(r"\b(edital|chamada|regulamento|carta[\s-]convite)\b", re.I)
@@ -44,6 +46,53 @@ class Baixador(BaseAdapter):
 
     def collect(self):  # pragma: no cover - não é uma fonte
         return []
+
+
+def url_segura(url: str) -> str:
+    """Endereço só em ASCII: "Edital_Nº_25.pdf" vira "Edital_N%C2%BA_25.pdf".
+
+    O urllib não codifica sozinho e levantava UnicodeEncodeError (editais da
+    FAPERJ). O que já vem codificado (%20) fica como está.
+    """
+    partes = urllib.parse.urlsplit(url)
+    caminho = urllib.parse.quote(partes.path, safe="/%:@!$&'()*+,;=-._~")
+    consulta = urllib.parse.quote(partes.query, safe="=&%/:+,;-._~")
+    return urllib.parse.urlunsplit((partes.scheme, partes.netloc.encode("idna").decode("ascii"), caminho, consulta, partes.fragment))
+
+
+class HostsFora:
+    """Site que derrubou a conexão nesta execução não é tentado de novo.
+
+    Cada tentativa num site fora do ar custa minutos (timeout de 45 s mais as
+    retentativas do cliente); com cinco editais do CNPq, a etapa estourava o
+    tempo do job antes de publicar.
+    """
+
+    def __init__(self) -> None:
+        self._fora: set[str] = set()
+
+    @staticmethod
+    def _host(url: str) -> str:
+        return urllib.parse.urlsplit(url).netloc.lower()
+
+    def fora(self, url: str) -> bool:
+        return self._host(url) in self._fora
+
+    def registrar(self, url: str, erro: BaseException) -> None:
+        if erro_passageiro(erro):
+            self._fora.add(self._host(url))
+
+
+class Orcamento:
+    """Tempo para começar conversões novas; o que passar disso fica para amanhã."""
+
+    def __init__(self, minutos: float, relogio: Callable[[], float] = time.monotonic) -> None:
+        self._relogio = relogio
+        self._limite = minutos * 60
+        self._inicio = relogio()
+
+    def esgotado(self) -> bool:
+        return self._relogio() - self._inicio >= self._limite
 
 
 def pdf_do_edital(op: dict) -> dict | None:
@@ -91,7 +140,11 @@ def main() -> int:
     ap.add_argument("--catalogo", default="public/data/funding-opportunities-v2.json")
     ap.add_argument("--saida", default="public/data/editais")
     ap.add_argument("--max", type=int, default=30)
+    ap.add_argument("--limite-minutos", type=float, default=35,
+                    help="para de começar conversões depois disso, para sobrar tempo de publicar")
     args = ap.parse_args()
+    orcamento = Orcamento(args.limite_minutos)
+    hosts_fora = HostsFora()
 
     from funding_intelligence.markdown_editais import converter_pdf  # Docling só aqui
 
@@ -118,8 +171,15 @@ def main() -> int:
             continue  # mesmo link já convertido; o hash é conferido quando o link muda
         if convertidos >= args.max:
             continue
+        if orcamento.esgotado():
+            print(f"tempo de conversão esgotado ({args.limite_minutos:g} min): o restante fica para a próxima execução")
+            break
+        if hosts_fora.fora(doc["url"]):
+            falhas += 1
+            print(f"::warning::edital de {op['id']} pulado: o site caiu antes nesta execução", file=sys.stderr)
+            continue
         try:
-            pdf = baixador.request_bytes(doc["url"])
+            pdf = baixador.request_bytes(url_segura(doc["url"]))
             if len(pdf) > LIMITE_BYTES or not pdf.startswith(b"%PDF"):
                 raise ValueError(f"não é PDF ou passa de 40 MB ({len(pdf)} bytes)")
             sha = hashlib.sha256(pdf).hexdigest()
@@ -151,6 +211,7 @@ def main() -> int:
             print(f"convertido {op['id']}: {conv.paginas} pág ({conv.paginas_imagem} com OCR), prazo={prazo}")
         except Exception as erro:
             falhas += 1
+            hosts_fora.registrar(doc["url"], erro)
             print(f"::warning::edital de {op['id']} não convertido: {type(erro).__name__}: {erro}", file=sys.stderr)
 
     # Chamada que saiu do catálogo leva junto o seu Markdown.
