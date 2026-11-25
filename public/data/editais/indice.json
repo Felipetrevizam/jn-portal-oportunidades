@@ -39,6 +39,16 @@
   "prazo_no_edital": null,
   "segundos": 53.0
  },
+ "brde-fundo-verde-c8e85eaf92ed": {
+  "arquivo": "brde-fundo-verde-c8e85eaf92ed.md",
+  "convertido_em": "2026-11-25T22:28:42+00:00",
+  "paginas": 34,
+  "paginas_com_ocr": 34,
+  "pdf_oficial": "https://www.brde.com.br/wp-content/uploads/2025/09/Edital-retificado.pdf",
+  "pdf_sha256": "c2505542850126885afc8883d5a659fc245b644dccf068cf54820ec53e5cd322",
+  "prazo_no_edital": "2025-10-01",
+  "segundos": 479.3
+ },
  "capes-0fd7e2e100c7": {
   "arquivo": "capes-0fd7e2e100c7.md",
   "convertido_em": "2026-11-24T22:34:14+00:00",
@@ -339,6 +349,116 @@
   "prazo_no_edital": "2025-08-29",
   "segundos": 247.2
  },
+ "fapeal-3-2025": {
+  "arquivo": "fapeal-3-2025.md",
+  "convertido_em": "2026-11-25T22:28:48+00:00",
+  "paginas": 3,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2025/04/SEI_31888711_Edital_03.pdf",
+  "pdf_sha256": "784d62db392513fbf2e98dd9e592813bb5f9d821e6d3c75581119daa0477a1b2",
+  "prazo_no_edital": "2025-05-01",
+  "segundos": 4.2
+ },
+ "fapeal-3-2026": {
+  "arquivo": "fapeal-3-2026.md",
+  "convertido_em": "2026-11-25T22:29:07+00:00",
+  "paginas": 11,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2026/04/SEI_38695526_Edital_03.pdf",
+  "pdf_sha256": "2cfaa89531a83e450c371e800d1a048f13901462779e602f4454eb23ca2f35c2",
+  "prazo_no_edital": "2026-04-04",
+  "segundos": 18.0
+ },
+ "fapeal-4-2025": {
+  "arquivo": "fapeal-4-2025.md",
+  "convertido_em": "2026-11-25T22:29:21+00:00",
+  "paginas": 6,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2025/04/SEI_31890556_Edital_04.pdf",
+  "pdf_sha256": "805d55e82ade7f0e4a84fc1752cc06c1c039b044a43da3feacf4ca8c6d072e37",
+  "prazo_no_edital": "2025-05-01",
+  "segundos": 13.3
+ },
+ "fapeal-4d16836b8687": {
+  "arquivo": "fapeal-4d16836b8687.md",
+  "convertido_em": "2026-11-25T22:29:24+00:00",
+  "paginas": 2,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2026/06/Diretrizes-Fapeal.pdf",
+  "pdf_sha256": "cb2f2d7d39f09adcaa3ba9ff968e8911432d40c73fdea93066a26d0d4f0c34fc",
+  "prazo_no_edital": null,
+  "segundos": 1.9
+ },
+ "fapeal-5-2025": {
+  "arquivo": "fapeal-5-2025.md",
+  "convertido_em": "2026-11-25T22:29:36+00:00",
+  "paginas": 4,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2025/04/SEI_31889961_Edital_05.pdf",
+  "pdf_sha256": "871ae155f2d8a6ef30b534c7f478ce5e2de2e950018e3c50b94f94aca6a01b66",
+  "prazo_no_edital": "2025-05-01",
+  "segundos": 11.2
+ },
+ "fapeal-548bf43a0be8": {
+  "arquivo": "fapeal-548bf43a0be8.md",
+  "convertido_em": "2026-11-25T22:29:57+00:00",
+  "paginas": 15,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2025/10/SEI_35121493_Edital_07.pdf",
+  "pdf_sha256": "c3d05726942a242544930ed6b3da0809926109063818effcb11cde78f9c4bedc",
+  "prazo_no_edital": "2025-11-17",
+  "segundos": 19.5
+ },
+ "fapeal-6-2026": {
+  "arquivo": "fapeal-6-2026.md",
+  "convertido_em": "2026-11-25T22:30:37+00:00",
+  "paginas": 24,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2026/10/V.03.-Edital-FAPEAL-no-06.2026-Centelha-3-AL-2a-Retificacao_resulatdo-Fase-1-em-13.11.2026.pdf",
+  "pdf_sha256": "3c96d7982a135d80e4b65acd902f325cd0d34bba7b076b5848e85971940db54f",
+  "prazo_no_edital": "2027-03-26",
+  "segundos": 38.8
+ },
+ "fapeal-6e968159a583": {
+  "arquivo": "fapeal-6e968159a583.md",
+  "convertido_em": "2026-11-25T22:30:48+00:00",
+  "paginas": 8,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2025/04/Edital-no-E003-2025-SEDUC_-DOEAL-21_03_2025.pdf",
+  "pdf_sha256": "e0c7c76b043991ba40e182ea5330b12c2989287e9a7b4410dba89873f4033999",
+  "prazo_no_edital": null,
+  "segundos": 8.9
+ },
+ "fapeal-9b8fac4bdef6": {
+  "arquivo": "fapeal-9b8fac4bdef6.md",
+  "convertido_em": "2026-11-25T22:32:56+00:00",
+  "paginas": 11,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2026/10/27.04.26-LISTA-DE-CONSULTORES-AD-HOC-CREDENCIADOS.pdf",
+  "pdf_sha256": "2391614053723a567bd712e203dec004e8f0aa8aecfd19b7b7c80845ed455c68",
+  "prazo_no_edital": null,
+  "segundos": 127.1
+ },
+ "fapeal-9e955ec22219": {
+  "arquivo": "fapeal-9e955ec22219.md",
+  "convertido_em": "2026-11-25T22:32:59+00:00",
+  "paginas": 2,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2026/06/SEI_40043425_Regulamento_de_Edital.pdf",
+  "pdf_sha256": "77e6ef96cdad64480a105aaa7b8fd3a63ee6283b683fc6d6e854c09506a81bd9",
+  "prazo_no_edital": null,
+  "segundos": 1.7
+ },
+ "fapeal-e60f4ed59c94": {
+  "arquivo": "fapeal-e60f4ed59c94.md",
+  "convertido_em": "2026-11-25T22:33:04+00:00",
+  "paginas": 4,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2025/08/PORTARIA_FAPEAL_N_97_2025___PACQUALI.pdf",
+  "pdf_sha256": "8ad402b7a2e78e8b93ed1060a5f895608841c31691dfda7d29202ab575530db7",
+  "prazo_no_edital": "2025-09-12",
+  "segundos": 3.4
+ },
  "fapeg-19-2026": {
   "arquivo": "fapeg-19-2026.md",
   "convertido_em": "2026-11-24T20:58:20+00:00",
@@ -368,6 +488,56 @@
   "pdf_sha256": "d11fd5af47d980cea89ce6950c82816b1a4a69bb04f8bb330dc18f9907e964c3",
   "prazo_no_edital": "2027-02-12",
   "segundos": 125.8
+ },
+ "fapemig-20-2024": {
+  "arquivo": "fapemig-20-2024.md",
+  "convertido_em": "2026-11-25T22:33:16+00:00",
+  "paginas": 6,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://api.site.fapemig.br/wp-content/uploads/2025/07/752_Portaria_FAPEMIG_n._20-2024.pdf",
+  "pdf_sha256": "e81f458ddba8cb68dfd9e9048f0e46d4f81e1d10854903ebaed446156420e111",
+  "prazo_no_edital": "2018-11-28",
+  "segundos": 6.8
+ },
+ "fapemig-21-2024": {
+  "arquivo": "fapemig-21-2024.md",
+  "convertido_em": "2026-11-25T22:33:24+00:00",
+  "paginas": 7,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://api.site.fapemig.br/wp-content/uploads/2025/07/755_Portaria_FAPEMIG_n._21-2024.pdf",
+  "pdf_sha256": "de3adda635f8683c72ea36f53949f160901de25c342d55f2001bc4d46d897769",
+  "prazo_no_edital": null,
+  "segundos": 7.5
+ },
+ "fapemig-225-2026": {
+  "arquivo": "fapemig-225-2026.md",
+  "convertido_em": "2026-11-25T22:33:50+00:00",
+  "paginas": 8,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://api.site.fapemig.br/wp-content/uploads/10671_PORTARIA-PRE-N°-0102023.pdf",
+  "pdf_sha256": "8990295f0d67be0a4c18e4146bb0c6efeb699f87d417b979d2400c2ea19b883a",
+  "prazo_no_edital": null,
+  "segundos": 23.6
+ },
+ "fapemig-46-2023": {
+  "arquivo": "fapemig-46-2023.md",
+  "convertido_em": "2026-11-25T22:33:56+00:00",
+  "paginas": 6,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://api.site.fapemig.br/wp-content/uploads/2025/07/746_PORTARIA_PRE_N_046-2023_-_CREDENCIAMENTO_AO_PIBIC.pdf",
+  "pdf_sha256": "04d80551548ac01da72e21cdae9ad1c495c57c0def3fe0bb12c1226b693342b5",
+  "prazo_no_edital": null,
+  "segundos": 6.3
+ },
+ "fapemig-51-2023": {
+  "arquivo": "fapemig-51-2023.md",
+  "convertido_em": "2026-11-25T22:34:03+00:00",
+  "paginas": 5,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://api.site.fapemig.br/wp-content/uploads/2025/07/750_PORTARIA_PRE_N_051-2023_-_CREDENCIAMENTO_AO_BICJR.pdf",
+  "pdf_sha256": "98bb537aea09ddca2a8b8349c5b36cc6e9ad7fa1cf8ec0dfe122763d65bc14ff",
+  "prazo_no_edital": null,
+  "segundos": 5.7
  },
  "faperj-12-2026": {
   "arquivo": "faperj-12-2026.md",
@@ -468,6 +638,16 @@
   "pdf_sha256": "a9f5b6240027029bfef795da71c099262a632dd7bd6ddc6891d2249645f81c16",
   "prazo_no_edital": "2027-04-30",
   "segundos": 34.6
+ },
+ "finep-1171625": {
+  "arquivo": "finep-1171625.md",
+  "convertido_em": "2026-11-25T22:12:32+00:00",
+  "paginas": 21,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.finep.gov.br/documents/20120/758476/Edital+Pesquisa+N%C3%A3o+Cl%C3%ADnica+e+Cl%C3%ADnica.pdf/94c93811-11cf-b2ed-65ef-c4f71313ec93?version=1.0&t=1795634434944&download=true&objectDefinitionExternalReferenceCode=5c06f88d-cc8a-003f-94e4-d9ed8cb642f3&objectEntryExternalReferenceCode=752aee88-f86a-30e0-a2e7-5bab6e26ea7c",
+  "pdf_sha256": "53b94b240212b24ecb14de37d9f56e06a92baae52a0c7db46f90acbf37f3b515",
+  "prazo_no_edital": "2027-03-04",
+  "segundos": 74.4
  },
  "finep-754473": {
   "arquivo": "finep-754473.md",
