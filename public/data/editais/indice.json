@@ -1,4 +1,24 @@
 {
+ "araucaria-10-2022": {
+  "arquivo": "araucaria-10-2022.md",
+  "convertido_em": "2026-11-25T01:11:30+00:00",
+  "paginas": 27,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fappr.pr.gov.br/sites/fundacao-araucaria/files/documento/2022-04/cp_10-2022_-_extensao_ucranianos.pdf",
+  "pdf_sha256": "b2e0e52752ec35d1b048f7906a047d181eb5e889e4b50090057660cf6f09e0c7",
+  "prazo_no_edital": null,
+  "segundos": 134.3
+ },
+ "araucaria-15-2024": {
+  "arquivo": "araucaria-15-2024.md",
+  "convertido_em": "2026-11-25T01:11:43+00:00",
+  "paginas": 5,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fappr.pr.gov.br/sites/fundacao-araucaria/files/documento/2024-06/cp_15-2024_permanencia_pesq_ucranianos.pdf",
+  "pdf_sha256": "d2ca8f01c2b88e1d6e454fb2c3e491bf001e0c4e51f1b4e1e4e4a7104e27bd35",
+  "prazo_no_edital": null,
+  "segundos": 11.3
+ },
  "araucaria-20-2026": {
   "arquivo": "araucaria-20-2026.md",
   "convertido_em": "2026-11-24T20:43:54+00:00",
@@ -39,6 +59,16 @@
   "prazo_no_edital": null,
   "segundos": 19.1
  },
+ "capes-16-2026": {
+  "arquivo": "capes-16-2026.md",
+  "convertido_em": "2026-11-25T01:20:59+00:00",
+  "paginas": 3,
+  "paginas_com_ocr": 3,
+  "pdf_oficial": "https://www.gov.br/capes/pt-br/centrais-de-conteudo/editais/edital_2853575_edital.pdf/@@display-file/file",
+  "pdf_sha256": "3d7836de77c87a06c6f0ec998db5fc46b45c0a746509828727dec7d3edb74302",
+  "prazo_no_edital": "2026-05-19",
+  "segundos": 58.6
+ },
  "capes-23-2026": {
   "arquivo": "capes-23-2026.md",
   "convertido_em": "2026-11-24T22:32:56+00:00",
@@ -58,6 +88,16 @@
   "pdf_sha256": "ae4105f2fb1e209cf300fa3a7ba61d74eecfd57d04fddca28d872d4d508af6c3",
   "prazo_no_edital": "2027-08-16",
   "segundos": 31.2
+ },
+ "capes-3582e5c0cd02": {
+  "arquivo": "capes-3582e5c0cd02.md",
+  "convertido_em": "2026-11-25T01:21:09+00:00",
+  "paginas": 7,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.gov.br/capes/pt-br/centrais-de-conteudo/editais/edital_2878169_edital_24_2026___pci.pdf/@@display-file/file",
+  "pdf_sha256": "2eb79b9c8959296e0293255286a55561f515297fb320b166b1a8ba92f916c002",
+  "prazo_no_edital": null,
+  "segundos": 7.9
  },
  "capes-561fb277d818": {
   "arquivo": "capes-561fb277d818.md",
@@ -198,6 +238,36 @@
   "pdf_sha256": "78ceaa410333bfdf11206df83ffa97df5c58b608ca30fc7837baceab00f964ef",
   "prazo_no_edital": "2027-03-12",
   "segundos": 9.7
+ },
+ "embrapii-29541": {
+  "arquivo": "embrapii-29541.md",
+  "convertido_em": "2026-11-25T01:23:08+00:00",
+  "paginas": 24,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://storage.googleapis.com/uploads-site-embrapii/2026/11/192c4cba-chamada-projetos-de-alto-impacto-em-economia-circular.pdf",
+  "pdf_sha256": "313601674d0af9a5f4b07419adf26f547182029f4f148a106b4fb3c6f3917d7c",
+  "prazo_no_edital": null,
+  "segundos": 118.1
+ },
+ "fapac-1-2026": {
+  "arquivo": "fapac-1-2026.md",
+  "convertido_em": "2026-11-25T01:24:44+00:00",
+  "paginas": 27,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://fapac.ac.gov.br/wp-content/uploads/2026/03/EDITAL-CENTELHA-3-ACRE-Ultima-versao-25-FEV-2.pdf",
+  "pdf_sha256": "13eeb71868e03a3ad92616a7b3a6180469e75da840a49764f8b00a7d73bcc00b",
+  "prazo_no_edital": "2026-07-31",
+  "segundos": 93.1
+ },
+ "fapac-2-2025": {
+  "arquivo": "fapac-2-2025.md",
+  "convertido_em": "2026-11-25T01:26:25+00:00",
+  "paginas": 20,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://fapac.ac.gov.br/wp-content/uploads/2025/03/MINUTA-EDITAL-CHAMAMENTO-PUBLICO-PPSUS-FINAL-1.pdf",
+  "pdf_sha256": "af6910a30cc737b5c7da0493a1917fde839bdea87400a86e6abffc9d3a81ee23",
+  "prazo_no_edital": "2025-05-16",
+  "segundos": 99.4
  },
  "fapeg-19-2026": {
   "arquivo": "fapeg-19-2026.md",
