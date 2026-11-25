@@ -206,6 +206,25 @@ jobs:
           name: transferegov-public
           path: public/data
 
+      # Fontes que só respondem a IP brasileiro vêm do workflow radar-brasil.yml
+      # (executor no Brasil). Resultado saudável com menos de 36 h substitui a
+      # tentativa feita daqui, que o site recusa.
+      - name: Usar fontes coletadas no Brasil
+        run: |
+          python - <<'PY'
+          import json, glob, shutil, datetime as dt
+          agora = dt.datetime.now(dt.timezone.utc)
+          for f in sorted(glob.glob("public/data/fontes-brasil/*.json")):
+              d = json.load(open(f))
+              fonte = d["source"]["id"]
+              idade = agora - dt.datetime.fromisoformat(d["checked_at"])
+              if d.get("status") == "healthy" and idade < dt.timedelta(hours=36):
+                  shutil.copy(f, f"build/sources/{fonte}.json")
+                  print(f"{fonte}: resultado do Brasil ({len(d.get('opportunities', []))} oportunidades, {idade.total_seconds() / 3600:.0f} h)")
+              else:
+                  print(f"::warning::{fonte}: resultado do Brasil não usado ({d.get('status')}, {idade.total_seconds() / 3600:.0f} h)")
+          PY
+
       - name: Agregar, deduplicar, comparar, fazer matching e validar v2
         run: |
           python -m funding_intelligence.cli aggregate \
@@ -283,7 +302,11 @@ jobs:
             echo "Nenhuma alteração nos dados hoje."
           else
             git commit -m "chore(radar): atualiza catálogo multifuente [skip ci]"
-            git push
+            # O workflow das fontes do Brasil também grava na main.
+            for tentativa in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              sleep $((tentativa * 10))
+            done
           fi
 
       # Avisa o Fomenta360 que o catálogo mudou. A rota de importação lê o

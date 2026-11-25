@@ -1,0 +1,71 @@
+# Fontes que só respondem a IP brasileiro (teste de 24/11/2026: recusam os
+# servidores do GitHub e a Vercel, respondem de uma conexão no Brasil).
+#
+# Roda num executor próprio com o rótulo `brasil` (um Mac do responsável) e
+# grava o resultado em public/data/fontes-brasil/. A coleta principal
+# (radar.yml) usa esse resultado quando ele tem menos de 36 h. Mac desligado:
+# o job fica na fila e a coleta principal segue sem ele.
+#
+# Segurança: o repositório é público. Este workflow NUNCA roda em pull request
+# (o código executado é sempre o da main), e o repositório exige aprovação para
+# qualquer PR de colaborador externo.
+
+name: Radar · fontes só do Brasil
+
+on:
+  schedule:
+    - cron: "10 11 * * *" # antes da coleta principal das 12:30 UTC
+    - cron: "5 18 * * *"  # reserva, se o Mac estava desligado de manhã
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar-brasil
+  cancel-in-progress: true
+
+jobs:
+  coletar:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: [self-hosted, brasil]
+    timeout-minutes: 30
+    env:
+      FONTES: fapdf fapeam fapeap fapesq fapt fbb
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Ambiente Python isolado
+        run: |
+          python3 -m venv .venv
+          .venv/bin/pip install -q -r requirements.txt
+
+      - name: Coletar
+        run: |
+          mkdir -p public/data/fontes-brasil
+          for fonte in $FONTES; do
+            .venv/bin/python -m funding_intelligence.cli collect \
+              --source "$fonte" \
+              --output "public/data/fontes-brasil/$fonte.json" || echo "::warning::$fonte falhou"
+          done
+          .venv/bin/python - <<'PY'
+          import json, glob
+          for f in sorted(glob.glob("public/data/fontes-brasil/*.json")):
+              d = json.load(open(f))
+              print(f"{d['source']['id']:8} {d['status']:8} {len(d.get('opportunities', [])):4} {d.get('error') or ''}")
+          PY
+
+      - name: Publicar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/fontes-brasil/
+          if git diff --staged --quiet; then echo "Nada novo."; exit 0; fi
+          git commit -m "chore(radar): fontes só do Brasil [skip ci]"
+          for tentativa in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((tentativa * 10))
+          done
+          exit 1
