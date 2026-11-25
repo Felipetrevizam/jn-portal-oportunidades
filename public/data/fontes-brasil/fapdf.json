@@ -1,0 +1,430 @@
+{
+  "source": {
+    "id": "fapdf",
+    "name": "FAPDF",
+    "url": "https://www.fap.df.gov.br/editais-fapdf-20261"
+  },
+  "checked_at": "2026-11-25T00:39:52+00:00",
+  "status": "healthy",
+  "error": null,
+  "opportunities": [
+    {
+      "id": "fapdf-1-2026",
+      "source": {
+        "id": "fapdf",
+        "name": "FAPDF",
+        "official": true,
+        "url": "https://www.fap.df.gov.br/editais-fapdf-20261",
+        "checked_at": "2026-11-25T00:39:52+00:00",
+        "stale": false
+      },
+      "external_id": "1-2026",
+      "title": "EDITAL 01/2026 – FAPDF PUBLICA",
+      "description": "EDITAL 01/2026 – FAPDF PUBLICA",
+      "funder": "FAPDF",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "DF"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapdf-2-2026",
+      "source": {
+        "id": "fapdf",
+        "name": "FAPDF",
+        "official": true,
+        "url": "https://www.fap.df.gov.br/editais-fapdf-20261",
+        "checked_at": "2026-11-25T00:39:52+00:00",
+        "stale": false
+      },
+      "external_id": "2-2026",
+      "title": "EDITAL 02/2026 – FAPDF PARTICIPA",
+      "description": "EDITAL 02/2026 – FAPDF PARTICIPA",
+      "funder": "FAPDF",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "DF"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapdf-3-2026",
+      "source": {
+        "id": "fapdf",
+        "name": "FAPDF",
+        "official": true,
+        "url": "https://www.fap.df.gov.br/editais-fapdf-20261",
+        "checked_at": "2026-11-25T00:39:52+00:00",
+        "stale": false
+      },
+      "external_id": "3-2026",
+      "title": "EDITAL 03/2026 – FAPDF MOVIMENTA",
+      "description": "EDITAL 03/2026 – FAPDF MOVIMENTA",
+      "funder": "FAPDF",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "DF"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapdf-4-2026",
+      "source": {
+        "id": "fapdf",
+        "name": "FAPDF",
+        "official": true,
+        "url": "https://www.fap.df.gov.br/editais-fapdf-20261",
+        "checked_at": "2026-11-25T00:39:52+00:00",
+        "stale": false
+      },
+      "external_id": "4-2026",
+      "title": "EDITAL 04/2026 - PRÊMIO FAPDF DE CIÊNCIA, TECNOLOGIA E INOVAÇÃO 5ª EDIÇÃO",
+      "description": "EDITAL 04/2026 - PRÊMIO FAPDF DE CIÊNCIA, TECNOLOGIA E INOVAÇÃO 5ª EDIÇÃO",
+      "funder": "FAPDF",
+      "instrument": {
+        "type": "premio",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "DF"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapdf-6-2026",
+      "source": {
+        "id": "fapdf",
+        "name": "FAPDF",
+        "official": true,
+        "url": "https://www.fap.df.gov.br/editais-fapdf-20261",
+        "checked_at": "2026-11-25T00:39:52+00:00",
+        "stale": false
+      },
+      "external_id": "6-2026",
+      "title": "EDITAL 06/2026 - FAPDF DEMANDA ESPONTÂNEA",
+      "description": "EDITAL 06/2026 - FAPDF DEMANDA ESPONTÂNEA",
+      "funder": "FAPDF",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "DF"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapdf-7-2026",
+      "source": {
+        "id": "fapdf",
+        "name": "FAPDF",
+        "official": true,
+        "url": "https://www.fap.df.gov.br/editais-fapdf-20261",
+        "checked_at": "2026-11-25T00:39:52+00:00",
+        "stale": false
+      },
+      "external_id": "7-2026",
+      "title": "EDITAL 07/2026 - PROGRAMA FAPDF LEARNING",
+      "description": "EDITAL 07/2026 - PROGRAMA FAPDF LEARNING",
+      "funder": "FAPDF",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "DF"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapdf-8-2026",
+      "source": {
+        "id": "fapdf",
+        "name": "FAPDF",
+        "official": true,
+        "url": "https://www.fap.df.gov.br/editais-fapdf-20261",
+        "checked_at": "2026-11-25T00:39:52+00:00",
+        "stale": false
+      },
+      "external_id": "8-2026",
+      "title": "EDITAL 08/2026 - PDPG - Programa de Desenvolvimento da Pós-Graduação",
+      "description": "EDITAL 08/2026 - PDPG - Programa de Desenvolvimento da Pós-Graduação",
+      "funder": "FAPDF",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "pesquisador"
+        ],
+        "geography": [
+          "DF"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapdf-9-2026",
+      "source": {
+        "id": "fapdf",
+        "name": "FAPDF",
+        "official": true,
+        "url": "https://www.fap.df.gov.br/editais-fapdf-20261",
+        "checked_at": "2026-11-25T00:39:52+00:00",
+        "stale": false
+      },
+      "external_id": "9-2026",
+      "title": "EDITAL 09/2026 - SELEÇÃO PÚBLICA DE PROJETOS DE EXTENSÃO",
+      "description": "EDITAL 09/2026 - SELEÇÃO PÚBLICA DE PROJETOS DE EXTENSÃO",
+      "funder": "FAPDF",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "DF"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapdf-11-2026",
+      "source": {
+        "id": "fapdf",
+        "name": "FAPDF",
+        "official": true,
+        "url": "https://www.fap.df.gov.br/editais-fapdf-20261",
+        "checked_at": "2026-11-25T00:39:52+00:00",
+        "stale": false
+      },
+      "external_id": "11-2026",
+      "title": "EDITAL Nº 11/2026 - PROGRAMA FAPDF START BSB - 3º CICLO SELEÇÃO PÚBLICA DE PROPOSTAS PARA APOIO FINANCEIRO NA MODALIDADE SUBVENÇÃO ECONÔMICA ÀS STARTUPS",
+      "description": "EDITAL Nº 11/2026 - PROGRAMA FAPDF START BSB - 3º CICLO SELEÇÃO PÚBLICA DE PROPOSTAS PARA APOIO FINANCEIRO NA MODALIDADE SUBVENÇÃO ECONÔMICA ÀS STARTUPS",
+      "funder": "FAPDF",
+      "instrument": {
+        "type": "subvencao_economica",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "startup"
+        ],
+        "geography": [
+          "DF"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    }
+  ],
+  "requests": {
+    "detalhes": 0,
+    "pdfs": 1
+  }
+}

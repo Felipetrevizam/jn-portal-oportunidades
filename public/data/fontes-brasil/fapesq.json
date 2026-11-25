@@ -1,0 +1,265 @@
+{
+  "source": {
+    "id": "fapesq",
+    "name": "FAPESQ-PB",
+    "url": "https://fapesq.rpp.br/"
+  },
+  "checked_at": "2026-11-25T00:42:09+00:00",
+  "status": "healthy",
+  "error": null,
+  "opportunities": [
+    {
+      "id": "fapesq-2-2025",
+      "source": {
+        "id": "fapesq",
+        "name": "FAPESQ-PB",
+        "official": true,
+        "url": "https://fapesq.rpp.br/editais/editais-2025/27-06-25-resultado-parcial-apos-recursos-edital-02_2025-ppsus-programa-pesquisa-para-o-sus_-gestao-compartilhada-em-saude-docx.pdf",
+        "checked_at": "2026-11-25T00:42:09+00:00",
+        "stale": false
+      },
+      "external_id": "2-2025",
+      "title": "Edital Nº 02/2025 - CHAMADA PPSUS - PROGRAMA PESQUISA PARA O SUS: gestão compartilhada em saúde",
+      "description": null,
+      "funder": "FAPESQ-PB",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-02-24",
+        "deadline": "2025-04-10"
+      },
+      "eligibility": {
+        "organization_types": [
+          "pesquisador",
+          "universidade",
+          "ict",
+          "ict_privada",
+          "outros"
+        ],
+        "geography": [
+          "PB",
+          "BR"
+        ],
+        "partner_types": [
+          "empresa"
+        ]
+      },
+      "themes": [
+        "saude",
+        "pesquisa_sus"
+      ],
+      "funding": {
+        "program_budget": 3000000.0
+      },
+      "documents": [
+        {
+          "title": "Edital 02/2025 - CHAMADA PPSUS - PROGRAMA PESQUISA PARA O SUS: gestão compartilhada em saúde (Resultado parcial - fase de enquadramento, AD HOC e comissão de especialistas - após recurso, em 27/06/25)",
+          "url": "https://fapesq.rpp.br/editais/editais-2025/27-06-25-resultado-parcial-apos-recursos-edital-02_2025-ppsus-programa-pesquisa-para-o-sus_-gestao-compartilhada-em-saude-docx.pdf",
+          "published": "2025-06-27"
+        },
+        {
+          "title": "Edital 02/2025 - CHAMADA PPSUS - PROGRAMA PESQUISA PARA O SUS: gestão compartilhada em saúde (Convocatória em 27/06/25)",
+          "url": "https://fapesq.rpp.br/editais/editais-2025/27-06-25-convocatoria-ppsus-fase-iv_-cap-docx-1.pdf",
+          "published": "2025-06-27"
+        },
+        {
+          "title": "Nº 02/2025 - CHAMADA PPSUS - PROGRAMA PESQUISA PARA O SUS: gestão compartilhada em saúde (Retificado em 08/07/25, Item 4 - Cronograma)",
+          "url": "https://fapesq.rpp.br/editais/editais-2025/08-07-25-edital-n0-02_2025-chamada-ppsus-programa-pesquisa-para-o-sus_-gestao-compartilhada-em-saude-retificado-em-10-06-2025-item-4-docx-2.pdf",
+          "published": "2025-07-08"
+        },
+        {
+          "title": "Edital 02/2025 - PROGRAMA PESQUISA PARA O SUS: gestão compartilhada em saúde (Resultado preliminar – comissão de avaliação presencial e comitê gestor em 11/07/25)",
+          "url": "https://fapesq.rpp.br/editais/editais-2025/11-07-25-resultado-preliminar-chamada-ppsus-programa-pesquisa-para-o-sus_-gestao-compartilhada-em-saude.pdf",
+          "published": "2025-07-11"
+        },
+        {
+          "title": "Edital 02/2025 - CHAMADA PPSUS - PROGRAMA PESQUISA PARA O SUS: gestão compartilhada em saúde (Resultado final em 22/07/25)",
+          "url": "https://fapesq.rpp.br/editais/editais-2025/22-07-25-resultado-final-chamada-ppsus-programa-pesquisa-para-o-sus_-gestao-compartilhada-em-saude.pdf",
+          "published": "2025-07-22"
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      },
+      "partners": [
+        "Decit/MS",
+        "CNPq",
+        "SES-PB"
+      ]
+    },
+    {
+      "id": "fapesq-72-2026",
+      "source": {
+        "id": "fapesq",
+        "name": "FAPESQ-PB",
+        "official": true,
+        "url": "https://fapesq.rpp.br/editais/2026/edital-no-72-2026-selecao-de-equipes-para-o-circuito-game-dev-quest-3deg-edicao-desenvolvimento-de-jogos-digitais",
+        "checked_at": "2026-11-25T00:42:09+00:00",
+        "stale": false
+      },
+      "external_id": "72-2026",
+      "title": "EDITAL Nº 72/2026 - SELEÇÃO DE EQUIPES PARA O CIRCUITO GAME DEV QUEST 3° EDIÇÃO - DESENVOLVIMENTO DE JOGOS DIGITAIS",
+      "description": null,
+      "funder": "FAPESQ-PB",
+      "instrument": {
+        "type": "bolsa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "open",
+      "dates": {
+        "published": null,
+        "deadline": "2026-12-18"
+      },
+      "eligibility": {
+        "organization_types": [
+          "pessoa_fisica"
+        ],
+        "geography": [
+          "PB",
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Página do edital",
+          "url": "https://fapesq.rpp.br/editais/2026/edital-no-72-2026-selecao-de-equipes-para-o-circuito-game-dev-quest-3deg-edicao-desenvolvimento-de-jogos-digitais",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapesq-71-2026",
+      "source": {
+        "id": "fapesq",
+        "name": "FAPESQ-PB",
+        "official": true,
+        "url": "https://fapesq.rpp.br/editais/2026/edital-no-71-2026-apoio-a-organizacao-e-realizacao-de-eventos-cientificos-tecnologicos-e-de-inovacao",
+        "checked_at": "2026-11-25T00:42:09+00:00",
+        "stale": false
+      },
+      "external_id": "71-2026",
+      "title": "EDITAL Nº 71/2026 - APOIO À ORGANIZAÇÃO E REALIZAÇÃO DE EVENTOS CIENTÍFICOS, TECNOLÓGICOS E DE INOVAÇÃO",
+      "description": null,
+      "funder": "FAPESQ-PB",
+      "instrument": {
+        "type": "outros",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "open",
+      "dates": {
+        "published": null,
+        "deadline": "2026-11-26"
+      },
+      "eligibility": {
+        "organization_types": [
+          "pesquisador"
+        ],
+        "geography": [
+          "PB",
+          "BR"
+        ]
+      },
+      "themes": [
+        "inovacao",
+        "tecnologia"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Página do edital",
+          "url": "https://fapesq.rpp.br/editais/2026/edital-no-71-2026-apoio-a-organizacao-e-realizacao-de-eventos-cientificos-tecnologicos-e-de-inovacao",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapesq-33-2026",
+      "source": {
+        "id": "fapesq",
+        "name": "FAPESQ-PB",
+        "official": true,
+        "url": "https://fapesq.rpp.br/editais/2026/edital-no-33-2026-selecao-de-equipes-para-o-programa-celso-furtado-de-inovacao-educacional-e-desenvolvimento-regional-no-sistema-prisional",
+        "checked_at": "2026-11-25T00:42:09+00:00",
+        "stale": false
+      },
+      "external_id": "33-2026",
+      "title": "EDITAL Nº 33/2026 - SELEÇÃO DE EQUIPES PARA O PROGRAMA CELSO FURTADO DE INOVAÇÃO EDUCACIONAL E DESENVOLVIMENTO REGIONAL NO SISTEMA PRISIONAL",
+      "description": null,
+      "funder": "FAPESQ-PB",
+      "instrument": {
+        "type": "bolsa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "open",
+      "dates": {
+        "published": null,
+        "deadline": "2027-01-11"
+      },
+      "eligibility": {
+        "organization_types": [
+          "pessoa_fisica"
+        ],
+        "geography": [
+          "PB",
+          "BR"
+        ]
+      },
+      "themes": [
+        "desenvolvimento_regional",
+        "inovacao"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Página do edital",
+          "url": "https://fapesq.rpp.br/editais/2026/edital-no-33-2026-selecao-de-equipes-para-o-programa-celso-furtado-de-inovacao-educacional-e-desenvolvimento-regional-no-sistema-prisional",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    }
+  ]
+}

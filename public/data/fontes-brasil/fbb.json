@@ -1,0 +1,1894 @@
+{
+  "source": {
+    "id": "fbb",
+    "name": "Fundação Banco do Brasil · Editais",
+    "url": "https://fbb.org.br/editais-de-projetos/editais-publicos/"
+  },
+  "checked_at": "2026-11-25T00:42:26+00:00",
+  "status": "healthy",
+  "error": null,
+  "opportunities": [
+    {
+      "id": "fbb-81c966d304de",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-selecao-publica-no-2026-006-reflorestar/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Reflorestar",
+      "description": "Acessar component • Inscrições encerradas Edital Rio Doce Participativo e Comunitário – Chamada Pública nº 2026/011 Edital Rio Doce Participativo e Comunitário",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "credenciamento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2026-06-22",
+        "deadline": "2026-08-21",
+        "closed": "2026-08-21"
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Dúvidas Frequentes",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/06/FAQ_Reflorestar_2026.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar o edital completo",
+          "url": "https://fbb.org.br/wp-content/uploads/2026/07/Edital_reflorestar_2026_-_V.FINAL-NOVA-DATA-22-06_.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "https://fbb.org.br/wp-content/uploads/2026/10/Edital_2026_006_-_Resultado_Parcial.pdf",
+          "published": null
+        },
+        {
+          "title": "Edital de Seleção Pública n°2026/006",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/Edital_reflorestar_2026_-_V.FINAL-NOVA-DATA-22-06_.pdf",
+          "published": null
+        },
+        {
+          "title": "ANEXO I – Descrição do Objeto",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/06/ANEXO_I.pdf",
+          "published": null
+        },
+        {
+          "title": "ANEXO II – Modelo de Proposta de Projeto",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/06/ANEXO_II.pdf",
+          "published": null
+        },
+        {
+          "title": "ANEXO III – Critérios de Pontuação",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/06/ANEXO_III.pdf",
+          "published": null
+        },
+        {
+          "title": "ANEXO IV – Declaração para Habilitação",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/06/ANEXO_IV.pdf",
+          "published": null
+        },
+        {
+          "title": "ANEXO V – Minuta do Instrumento de Parceria",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/06/ANEXO_V.pdf",
+          "published": null
+        },
+        {
+          "title": "ANEXO VI – Declaração de Composição da Equipe Técnica",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/06/ANEXO_VI.pdf",
+          "published": null
+        },
+        {
+          "title": "ANEXO VII – Roteiro para Utilização do SGP",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/06/ANEXO_VII.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-c0483304117d",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/editalriodoce/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Edital Rio Doce Participativo e Comunitário",
+      "description": "Acessar pagination Editais públicos concluídos 24 Editais Ordenar por Mais recentes Mais antigos • Edital público concluído Edital de Concurso de Projetos nº 2014/016 Edital de Concurso de Projetos nº 2014/016",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2026-05-22",
+        "deadline": "2026-09-25",
+        "closed": "2026-09-25"
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "clima"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Dúvidas Frequentes",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/05/PERGUNTAS_E_RESPOSTAS_v1.6_29.07.2026.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar o edital completo",
+          "url": "https://fbb.org.br/wp-content/uploads/2026/07/EDITAL-RIO-DOCE-PARTICIPATIVO-E-COMUNITARIO_2a-RETIFICACAO.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "https://fbb.org.br/wp-content/uploads/2026/10/Resultado_dos_Recursos.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "https://fbb.org.br/wp-content/uploads/2026/10/Resultado_Final_%E2%80%94_Edital_0011_2026.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "https://fbb.org.br/wp-content/uploads/2026/09/Resultado_Parcial_Retificado.pdf",
+          "published": null
+        },
+        {
+          "title": "Errata Edital Rio Doce Participativo e Comunitário – 2ª Errata",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ERRATA-EDITAL-RIO-DOCE-2a-Errata.pdf",
+          "published": null
+        },
+        {
+          "title": "Edital Rio Doce Participativo e Comunitário – Chamada Pública nº 2026 011 – 2ª Retificação",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/EDITAL-RIO-DOCE-PARTICIPATIVO-E-COMUNITARIO_2a-RETIFICACAO.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 1 – Relação de Municípios Atingidos e Territórios Priorizados – Retificação",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-1-–-RELACAO-DE-MUNICIPIOS-ATINGIDOS-E-TERRITORIOS-PRIORIZADOS.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 2 – Declaração – Ata de Anuência das Comunidades Atingidas",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-2-DECLARACAO-ATA-DE-ANUENCIA-DAS-COMUNIDADES-ATINGIDAS.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 3 – Modelo de Proposta de Projeto",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-3-MODELO-DE-PROPOSTA-DE-PROJETO-EDITAL-RIO-DOCE.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 4 – Anexo 03 do Acordo Rio Doce",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-4-ANEXO-03-DO-ACORDO-RIO-DOCE.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 5 – Roteiro para Utilização do Sistema",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-5-ROTEIRO-PARA-UTILIZACAO-DO-SISTEMA.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 6 – Fluxo do Processo – Fases – Retificação",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-6-FLUXO-DO-PROCESSO-FASES.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 7 – Critério Técnicos de Pontuação – Retificado",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-7-CRITERIOS-TECNICOS-DE-PONTUACAO-RETIFICADO.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 8 – Critérios de Priorização de Pontuação – 2ª Retificação",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-8-CRITERIOS-DE-PRIORIZACAO-DE-PONTUACAO.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 9 – Declaração de Participação em Coordenação de Projeto",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-9-DECLARACAO-DE-PARTICIPACAO-EM-COORDENACAO-DE-PROJETO.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 10 – Minuta de Convênio",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-10-MINUTA-DE-CONVENIO.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 11 – Roteiro para Conferência",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-11-ROTEIRO-PARA-CONFERENCIA.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 12 – Declaração de Compromissos Institucionais",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-12-DECLARACAO-DE-COMPROMISSOS-INSTITUCIONAIS.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 2 – Declaração – Ata de Anuência das Comunidades Atingidas",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-2-DECLARACAO-ATA-DE-ANUENCIA-DAS-COMUNIDADES-ATINGIDAS.docx",
+          "published": null
+        },
+        {
+          "title": "Anexo 3 – Documento 1 – Modelo de Proposta de Projeto",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-3-Documento-1-MODELO-DE-PROPOSTA-DE-PROJETO.docx",
+          "published": null
+        },
+        {
+          "title": "Anexo 3 – Documento 2 – Declaração de Inserção Territorial",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-3-Documento-2-DECLARACAO-DE-INSERCAO-TERRITORIAL.docx",
+          "published": null
+        },
+        {
+          "title": "Anexo 9 – Declaração de Participação em Coordenação de Projeto",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/07/ANEXO-9-DECLARACAO-DE-PARTICIPACAO-EM-COORDENACAO-DE-PROJETO.docx",
+          "published": null
+        },
+        {
+          "title": "Memória de Cálculo – Previsão de Custos Orçamentários",
+          "url": "http://fbb.org.br/wp-content/uploads/2026/06/MEMORIA_DE_CALCULO_-_PREVISAO_DE_CUSTOS_ORCAMENTARIOS.xlsx",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-fdb9dab29cb3",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-concurso-de-projetos-no-2014-016/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Edital de Concurso de Projetos nº 2014/016",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública nº 2021/006 – Conserva Cerrado Conserva Cerrado",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Dúvidas Frequentes",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Perguntas_frequentes_-_documento_atualizado_em_17092014.pdf",
+          "published": null
+        },
+        {
+          "title": "Prazo prorrogado para Chamada pública 2014-016 – veja aqui os novos prazos",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Prorroga__o_de_prazo_-_Chamada_p_blica_2014016.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado final – 2014-016",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Resultado_final_concurso_de_projetos_2014-016_-_Cataforte_III.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-3b99e83fc311",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-selecao-publica-no-2021-006-conserva-cerrado/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Conserva Cerrado",
+      "description": "Acessar • Edital público concluído Edital 2014/023 – CATAFORTE III – Negócios Sustentáveis em Redes Solidárias CATAFORTE III – Negócios Sustentáveis em Redes Solidárias",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": null,
+        "deadline": "2021-06-18",
+        "closed": "2021-06-18"
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Baixar o edital completo",
+          "url": "https://fbb.org.br/wp-content/uploads/2025/03/Edital_2021.006_-_Conserva_Cerrado.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo I – Lista das Unidades de Conservação Distritais",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/ANEXO_I_-_Lista_das_Unidades_de_Conservacao_Distritais.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo II – Modelo de Proposta",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/ANEXO_II_-_Modelo_de_Proposta.docx",
+          "published": null
+        },
+        {
+          "title": "Anexo III – Diretrizes",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/ANEXO_III_-_Diretrizes.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo IV – Declaração de Composição da Equipe Técnica",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/ANEXO_IV_-_Declaracao_Composicao_Equipe_Tecnica.docx",
+          "published": null
+        },
+        {
+          "title": "Anexo V – Declaração de Regularidade",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/ANEXO_V_-_Declaracao_de_Regularidade.docx",
+          "published": null
+        },
+        {
+          "title": "Anexo VI – Critérios de Seleção",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/ANEXO_VI_-_Criterios_de_Selecao.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo VII – Minuta Convênio com Adiantamento",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/ANEXO_VII_-_Minuta_Convenio_com_adiantamento.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado Preliminar – Etapa I",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Resultado_preliminar_Etapa_I_02-07.pdf",
+          "published": null
+        },
+        {
+          "title": "Formulário de Interposição de Recurso",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Formulario_Recursos_Edital_Conserva_Cerrado.doc",
+          "published": null
+        },
+        {
+          "title": "Resultado Final – Etapa I",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Resultado_Final_Etapa_I.pdf",
+          "published": null
+        },
+        {
+          "title": "Prorrogação de prazo Etapa II – Elaboração e registro da proposta no SGP",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Prorrogacao-de-prazo-Etapa-II.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado Preliminar da Etapa II",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Resultado_preliminar_Etapa_II-1.pdf",
+          "published": null
+        },
+        {
+          "title": "Parecer Técnico nº 372021 – IBRAM – Etapa II",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Parecer_Tecnico_n.o_372021_-_IBRAM_-_Etapa_II.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado Final – Etapa II",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Resultado_final_Etapa_II.pdf",
+          "published": null
+        },
+        {
+          "title": "Ata da Comissão de Seleção – Prorrogação de Prazo",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/ATA_REUNIAO_DA_COMISSAO-_Edital_2021-006_prorrogacao_de_prazo.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-a08a09ca18c1",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital2014023-cataforte-iii-negocios-sustentaveis-em-redes-solidarias/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CATAFORTE III – Negócios Sustentáveis em Redes Solidárias",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública nº 2024/008 – Novo CATAFORTE Novo CATAFORTE",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Dúvidas Frequentes",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Perguntas_Frequentes_-_CATAFORTE_III_atualiza__o_20141110.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar o edital completo",
+          "url": "https://fbb.org.br/wp-content/uploads/2025/03/EDITAL-DE-SELEC╟O-PΘBLICA-2014023.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo I – Termos de Referência",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/Anexo-I-Termo-de-Referencia-EDITAL-2014023.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo II – Relação dos Empreendimentos por Rede de Cooperação",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/Anexo-II-Relac╞o-dos-Empreendimentos-por-Rede-de-Cooperac╞o-EDITAL-2014023.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo III – Detalhamento dos Custos por Rede de Cooperação",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/Anexo-III-Detalhamento-dos-Custos-por-Rede-de-Cooperac╞o-EDITAL-2014023.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo IV – Formulário para Apresentação de Proposta",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/Anexo-IV-Formulario-para-Apresentac╞o-de-Proposta-EDITAL-2014023.docx",
+          "published": null
+        },
+        {
+          "title": "Anexo V – Critérios de Seleção",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/Anexo-V-Criterios-de-Selec╞o-EDITAL-2014023.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo VI – Minuta de Contrato",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/Anexo-VI-Minuta-de-Contrato-EDITAL-2014023.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo VII – Declaração de Habilitação",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/Anexo-VII-Declarac╞o-de-Habilitac╞o-EDITAL-2014023.docx",
+          "published": null
+        },
+        {
+          "title": "Anexo VIII – Declaração de Anuência da Rede",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/Anexo-VIII-Declarac╞o-de-Anuencia-da-Rede-EDITAL-2014023.docx",
+          "published": null
+        },
+        {
+          "title": "Anexo IX – Mapa de Critérios",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/Anexo-IX-Mapa-de-Criterios-EDITAL-2014023-1.docx",
+          "published": null
+        },
+        {
+          "title": "Outros",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/Edital-e-anexos-1.zip",
+          "published": null
+        },
+        {
+          "title": "Errata",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Errata_-_Catadorte_III.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado Final – Cataforte III – 2014/023",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Resultado_Final_Edital_2014_023_-_Cataforte_III_-_PUBLICA__O.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-7e64db4b500e",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-selecao-publica-novo-cataforte/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Novo CATAFORTE",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública nº 2014/005 – Redes ECOFORTE Redes ECOFORTE",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2024-07-10",
+        "deadline": "2024-10-16",
+        "closed": "2024-10-16"
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Dúvidas Frequentes",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Perguntas_e_Respostas_-_Arquivo-1.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar o edital completo",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/Errata_e_Edital_Retificado_26.08.2024-2.pdf",
+          "published": null
+        },
+        {
+          "title": "Edital de Seleção Pública – N. 2024/008 – Retificado",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Errata_e_Edital_Retificado_26.08.2024-2.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo I – Informações Gerais – Retificado",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/ANEXO_I__INFORMACOES_GERAIS_-_Retificado.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo IV – Roteiro para Utilização do SGP – Retificado",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/ANEXO_IV_-_ROTEIRO-PARA-UTILIZACAO-DO-SGP_-_Retificado.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo V – Declaração para Participação do Edital – Retificado",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/ANEXO_V_DECLARACAO_PARA_PARTICIPACAO_DO_EDITAL_-_Retificado.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo VII – Critérios de Eliminação e Pontuação – Retificado",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/ANEXO_VII_CRITERIOS_DE_ELIMINACAO_E_PONTUACAO_-_Retificado.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo II – Relação de Organizações Participantes da Rede",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/ANEXO_II_RELACAO_DE_ORGANIZACOES_PARTICIPANTES_DA_REDE.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo III – Declaração de Adesão à Rede",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/ANEXO_III_DECLARACAO_DE_ADESAO_A_REDE.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo VI – Proposta de Projeto",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/ANEXO_VI_PROPOSTA_DE_PROJETO.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 1 – Memória de Cálculo",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Anexo_1_-_MEMORIA_DE_CALCULO_-_Cataforte.xlsx",
+          "published": null
+        },
+        {
+          "title": "Anexo VIII – Elaboração do Plano de Trabalho",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/ANEXO_VIII__ELABORACAO_DO_PLANO_DE_TRABALHO.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo IX – Declaração de Cumprimento de Obrigações",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/ANEXO_IX_DECLARACAO_DE_CUMPRIMENTO_DE_OBRIGACOES.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo X – Minuta do Instrumento de Parceria",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/ANEXO_X_MINUTA_DO_INSTRUMENTO_DE_PARCERIA.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/propostas-habilitadas.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/propostas-eliminadas.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Recursos.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/CATAFOTE_INTERPOSIA_A_O-DE-RECURSO_01-1-2.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Contrarrazoes.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Inabilitacao.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/CATAFORTE_FINAL.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/CATAFORTE__RESULTADO_FINAL_-_RETIFICACAO.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-d622f82a3843",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-selecao-publica-no-2014-005-redes-ecoforte/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Redes ECOFORTE",
+      "description": "Acessar • Edital público concluído Edital de Chamada Pública nº 2023/00132 – Água para Produção Água para Produção",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "seguranca_hidrica",
+        "agroindustria"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Dúvidas Frequentes",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Edital_Ecoforte_-_Perguntas_e_Respostas_-_v._13062014.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar o edital completo",
+          "url": "https://fbb.org.br/wp-content/uploads/2025/03/EDITAL-REDES-ECOFORTE-Alterac╞o.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo I – Edital Redes Ecoforte",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-I-EDITAL-REDES-ECOFORTE.doc",
+          "published": null
+        },
+        {
+          "title": "Anexo II – Edital Redes Ecoforte",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-II-EDITAL-REDES-ECOFORTE.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo III – Edital Redes Ecoforte",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-III-EDITAL-REDES-ECOFORTE.doc",
+          "published": null
+        },
+        {
+          "title": "Anexo IV – Edital Redes Ecoforte",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-IV-EDITAL-REDES-ECOFORTE.doc",
+          "published": null
+        },
+        {
+          "title": "Anexo V – Edital Redes Ecoforte",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-V-EDITAL-REDES-ECOFORTE.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo VI – Edital Ecoforte",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-VI-EDITAL-ECOFORTE.doc",
+          "published": null
+        },
+        {
+          "title": "Anexo VII – Edital Redes Ecoforte",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-VII-EDITAL-REDES-ECOFORTE.doc",
+          "published": null
+        },
+        {
+          "title": "Apresentação feita na Oficina Edital Redes ECOFORTE",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Apresenta__o_Oficina_Edital_Redes_ECOFORTE__1_.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado Final Edital Redes Ecoforte – 2014/005",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Resultado_Final_-_Edital_Redes_Ecoforte_2014-005.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-024218695c8f",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-selecao-interna-agua-para-producao/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Água para Produção",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública nº 2023/012 – Empoderamento Socioeconômico das Mulheres Negras Empoderamento Socioeconômico das Mulheres Negras",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": null,
+        "deadline": "2023-11-08",
+        "closed": "2023-11-08"
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "seguranca_hidrica"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Dúvidas Frequentes",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/12/EDITAL_2023_132_DUVIDAS_FREQUENTES_28_09.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar o edital completo",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/RETIFICACAO-2-Edital-2023.00132-1.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 1 – Instrução Normativa SESAN/MDS Nº 12, de 14.04.2023 – Modelo da Tecnologia Social de Acesso água nº 21: Cisterna Calçadão de 52 mil litros com serviço de acompanhamento familiar",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Anexo-1-–-Instrucao-Normativa-SESAN.MDS-N.-12.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo 3 – Ofício de formalização de interesse",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Anexo-3-–-Oficio-de-formalizacao-de-interesse-1.docx",
+          "published": null
+        },
+        {
+          "title": "RETIFICAÇÃO 1: Anexo 2 – Distribuição das cisternas por município",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Anexo-2-Edital-2023.00132-Retificado.pdf",
+          "published": null
+        },
+        {
+          "title": "RETIFICAÇÃO 1: Anexo 6 – Minuta do Contrato",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Anexo-6-Edital-2023.00132-Retificado.pdf",
+          "published": null
+        },
+        {
+          "title": "Pedido Impugnação",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Pedido-Impugnacao-Edital-2023.00132.pdf",
+          "published": null
+        },
+        {
+          "title": "Resposta Pedido de Impugnação",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Resposta-Pedido-de-Impugnacao.pdf",
+          "published": null
+        },
+        {
+          "title": "RETIFICAÇÃO 2: Edital de Chamada Pública n 2023.00132",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/RETIFICACAO-2-Edital-2023.00132-1.pdf",
+          "published": null
+        },
+        {
+          "title": "RETIFICAÇÃO 2: Anexo 4 – Formulário de informações do proponente",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/4-RETIFICACAO-2-Anexo-4-Edital-2023.00132.docx",
+          "published": null
+        },
+        {
+          "title": "Referência das Retificações aprovadas",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Referencia-das-Retificacoes-aprovadas.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado Provisório – Publicado em 26.10.2023",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Edital-2023_00132-Resultado-Provisorio-26_10_2023.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado Provisório Retificado – 01.11.2023",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Resultado_Provisorio_Retificado_-_01_11.pdf",
+          "published": null
+        },
+        {
+          "title": "Recurso I",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Recurso-I.pdf",
+          "published": null
+        },
+        {
+          "title": "Recurso II",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Recurso-II.pdf",
+          "published": null
+        },
+        {
+          "title": "Recurso III",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Recurso-III.pdf",
+          "published": null
+        },
+        {
+          "title": "Recurso IV",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Recurso-IV.zip",
+          "published": null
+        },
+        {
+          "title": "Contrarrazão ao Recurso II",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Contrarrazao-ao-Recurso-II.pdf",
+          "published": null
+        },
+        {
+          "title": "Contrarrazão ao Recurso III",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Contrarrazao-ao-Recurso-III.pdf",
+          "published": null
+        },
+        {
+          "title": "Contrarrazão ao Recurso IV",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Contrarrazao-ao-Recurso-IV.pdf",
+          "published": null
+        },
+        {
+          "title": "Ata de Julgamento de Recursos",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Ata_Julgamento_Recursos.pdf",
+          "published": null
+        },
+        {
+          "title": "Confira",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/11/Edital_2023_00132_Resultado_Final.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-107e9ebfe83d",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-publico-empoderamento-socioeconomico-das-mulheres-negras/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Empoderamento Socioeconômico das Mulheres Negras",
+      "description": "Acessar • Edital público concluído Edital de Credenciamento nº 2019/033 – Tecnologias Sociais em Minas Gerais Tecnologias Sociais em Minas Gerais",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "credenciamento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": null,
+        "deadline": "2024-05-02",
+        "closed": "2024-05-02"
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "cultura"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Dúvidas Frequentes",
+          "url": "http://fbb.org.br/wp-content/uploads/2024/12/DUVIDAS_FREQUENTES-1.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar o edital completo",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/2a-RETIFICACAO-Edital-de-Selecao-Publica-n-2023.012-1.pdf",
+          "published": null
+        },
+        {
+          "title": "RETIFICAÇÃO 2: Edital de Seleção Pública nº 2023/012",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/2a-RETIFICACAO-Edital-de-Selecao-Publica-n-2023.012.pdf",
+          "published": null
+        },
+        {
+          "title": "ANEXO I – Modelo de autodeclaração dirigente",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/ANEXO-I-AUTODECLARACAO-RACIAL-DIRIGENTES.docx",
+          "published": null
+        },
+        {
+          "title": "ANEXO II – Modelo de Proposta",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/ANEXO-II-MODELO-PROPOSTA.docx",
+          "published": null
+        },
+        {
+          "title": "RETIFICAÇÃO: ANEXO III – Critérios de eliminação e pontuação dos projetos",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/ANEXO_III_CRITERIOS_-_RETIFICACAO.pdf",
+          "published": null
+        },
+        {
+          "title": "ANEXO IV – Memória de cálculo",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/ANEXO-IV-MEMORIA-DE-CALCULO.xlsx",
+          "published": null
+        },
+        {
+          "title": "RETIFICAÇÃO 2: ANEXO V – Cronograma e prazos do edital",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/2a-RETIFICACAO-ANEXO-V-CRONOGRAMA.pdf",
+          "published": null
+        },
+        {
+          "title": "ANEXO VI – Formulário para interposição de recurso",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/ANEXO-VI-FORMULARIO-RECURSOS.docx",
+          "published": null
+        },
+        {
+          "title": "ANEXO VII – Minuta de Convênio de Cooperação Financeira",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/ANEXO-VII-MINUTA-DE-CONVENIO.pdf",
+          "published": null
+        },
+        {
+          "title": "RETIFICAÇÃO: ANEXO VIII – Modelo de autodeclaração participante",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/RETIFICACAO-ANEXO-VIII-AUTODECLARACAO-RACIAL-PARTICIPANTES.docx",
+          "published": null
+        },
+        {
+          "title": "Perguntas e Respostas",
+          "url": "https://fbb.org.br/wp-content/uploads/2024/11/Perguntas_e_Respostas_-_Edital_de_Selecao_2023-012_-_02.05.2024.pdf",
+          "published": null
+        },
+        {
+          "title": "Propostas habilitadas",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Edital_Mulheres_negras_2024_-_Resultado_Parcial_-_Propostas_Habilitadas.pdf",
+          "published": null
+        },
+        {
+          "title": "Propostas não habilitadas",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Edital_mulheres_negras_2024_-_Resultado_Parcial_-_Propostas_Nao_Habilitadas.pdf",
+          "published": null
+        },
+        {
+          "title": "recursos",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/RECURSOS-1.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Edital_Mulheres_negras_2024_Resultado_Final_Propostas_Habilitadas.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Edital_mulheres_negras_2024_Resultado_Final_Propostas_Nao_Habilitadas.pdf",
+          "published": null
+        },
+        {
+          "title": "aqui",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Lista_de_Recursos.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-3c27f686a29b",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-credenciamento-no-2019-033-tecnologias-sociais-em-minas-gerais/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Tecnologias Sociais em Minas Gerais",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública nº 2018/010 – Recupera Cerrado Recupera Cerrado",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "credenciamento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "agroindustria"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Dúvidas Frequentes",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Perguntas_e_Respostas_30_09_2019.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar o edital completo",
+          "url": "https://fbb.org.br/wp-content/uploads/2025/03/Edital_Copasa.pdf",
+          "published": null
+        },
+        {
+          "title": "Cartilha Biodigestor Sertanejo",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Biodigestor-Sertanejo.pdf",
+          "published": null
+        },
+        {
+          "title": "Cartilha Fossa Séptica TEVAP",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Fossa-Septica-TEVAP.pdf",
+          "published": null
+        },
+        {
+          "title": "Cartilha Cisterna Ferrocimento",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Cisterna-Ferrocimento.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado Preliminar",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/COPASA_2019_033_-_Publicacao_Resultado_Preliminar.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado e Aviso de Sorteio Público – 26/11/2019",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Edital_COPASA_2019_033_-_RESULTADO_E_AVISO_DE_SORTEIO_PUBLICO.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado do Sorteio Público – 29/11/2019",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Resultado-Sorteio-1.pdf",
+          "published": null
+        },
+        {
+          "title": "Priorizações",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/EDITAL-2019_033-PRIORIZACOES-2019-2020.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-faff8599f019",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-selecao-publica-no-2018-010-recupera-cerrado/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Recupera Cerrado",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública n°2014/020 – ECOFORTE – Extrativismo ECOFORTE – Extrativismo",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Dúvidas Frequentes",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Recupera-Cerrado_Duvidas-10.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar o edital completo",
+          "url": "https://fbb.org.br/wp-content/uploads/2025/03/Edital-de-Selecao-Publica-2018-010_Recupera_Cerrado.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo I Apresentação da Documentação",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Anexo-I_Apresentacao-da-documentacao.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo II Modelo de Proposta e Apêndices",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Anexo-II_Modelo-de-Proposta-e-Apendices.doc",
+          "published": null
+        },
+        {
+          "title": "Anexo III Critérios de Seleção",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Anexo-III_Criterios-de-Selecao.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo IV Minuta Padrão COM Adiantamento",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Anexo-IV_Minuta-Padrao-COM-Adiantamento.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo IV Minuta Padrão SEM Adiantamento",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Anexo-IV_Minuta-Padrao-SEM-Adiantamento.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo V Modelo de Relatório Parcial de Execução",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/AnexoV_ed-Modelo-de-Relatorio-Parcial-de-Execucao.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado Preliminar",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Recupera_Cerrado_2018-010_-_Resultado_Preliminar.pdf",
+          "published": null
+        },
+        {
+          "title": "Formulário para Recursos",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Formulario_Recursos_Edital_Recupera_Cerrado.doc",
+          "published": null
+        },
+        {
+          "title": "Relatório de Julgamento de Recursos",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Recupera_Cerrado_2018-010_-_Relatorio_de_julgamento_dos_recursos.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado Final",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/Recupera_Cerrado_2018-010_-_Resultado_Final.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-458a05731639",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-selecao-publica-n2014-020-ecoforte-extrativismo/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "ECOFORTE – Extrativismo",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública nº 2014/013 – CATAFORTE III CATAFORTE III",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Dúvidas Frequentes",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/perguntas_frequentes_-_extrativismo_-_23-12.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar o edital completo",
+          "url": "https://fbb.org.br/wp-content/uploads/2025/03/Edital-Ecoforte-2014-020.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo I – Relação de Unidades de Conservação Federais",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-I-RELAC╟O-DE-UNIDADES-DE-CONSERVAC╟O-FEDERAIS.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo II – Plano de Trabalho alterado",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-II-PLANO-DE-TRABALHO-alterado.docx",
+          "published": null
+        },
+        {
+          "title": "Anexo III – Informações sobre Itens Passíveis de Apoio",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-III-INFORMACσES-SOBRE-ITENS-PASS╓VEIS-DE-APOIO.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo IV – Critérios do Edital",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-IV-CRITERIOS-DO-EDITAL.pdf",
+          "published": null
+        },
+        {
+          "title": "Anexo V – Minuta de Convênio",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/05/ANEXO-V-MINUTA-DE-CONV╥NIO.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado preliminar",
+          "url": "https://fbb.org.br/images/Documentos/RESULTADO_PRELIMINAR_-_2014-020_-_PUBLICA__O.pdf",
+          "published": null
+        },
+        {
+          "title": "– atualizado em 24/03/2015",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/RESULTADO_PRELIMINAR_-_2014-020_-_PUBLICA__O.pdf",
+          "published": null
+        },
+        {
+          "title": "Resultado final – atualizado em 29/04/2015",
+          "url": "http://fbb.org.br/wp-content/uploads/2025/03/ata_de_julgamento_dos_recursos_e_resultado_final_ecoforte_extrativismo__1_.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-6d2ba0fba08e",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-selecao-publica-no-2014-013-cataforte-iii/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CATAFORTE III",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública n°2016/007 – ECOFORTE – Extrativismo ECOFORTE – Extrativismo",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-0ecbf6103691",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-selecao-publica-no-2018-009-de-projetos-para-reaplicacao-de-tecnologias-sociais/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Reaplicação de Tecnologias Sociais",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública nº 2015/008 – Juventude Rural Juventude Rural",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-5fc97e5089cb",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-selecao-publica-no-2015-008-juventude-rural/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Juventude Rural",
+      "description": "Acessar • Edital público concluído Credenciamento 2012/002 Credenciamento 2012/002",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "credenciamento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-f07b10a26f3b",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/credenciamento-2012-002/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Credenciamento 2012/002",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública nº 2017/030 ECOFORTE – Redes Edital ECOFORTE Redes",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "credenciamento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-94e690d5c7d1",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-selecao-publican2017030-ecoforte-redes/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Edital ECOFORTE Redes",
+      "description": "Acessar • Edital público concluído Credenciamento 2013/029 – Edital Água para Produção Água para Produção",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "credenciamento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "seguranca_hidrica"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-72869cdd3374",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-credenciamento-no-2018-003-muts-moradia-urbana-com-tecnologia-social/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "MUTS – Moradia Urbana com Tecnologia Social",
+      "description": "Acessar • Edital público concluído Edital de Credenciamento nº 2019/020 – Tecnologias Sociais em Minas Gerais Tecnologias Sociais em Minas Gerais",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "credenciamento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-ecc4c04c3f92",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-credenciamento-no-2014-017-pnhu/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "PNHU",
+      "description": "Acessar • Edital público concluído Edital de Credenciamento nº 2015/022 – PNHU – Moradia Urbana com Tecnologia Social PNHU – Moradia Urbana com Tecnologia Social",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "credenciamento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-13ed55698c5a",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-de-credenciamento-no-2015-022-pnhu-moradia-urbana-com-tecnologia-social/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "PNHU – Moradia Urbana com Tecnologia Social",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública nº 2024/007 – ECOFORTE Redes 2024 ECOFORTE Redes 2024",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fbb-90dcfa0b0dec",
+      "source": {
+        "id": "fbb",
+        "name": "Fundação Banco do Brasil · Editais",
+        "official": true,
+        "url": "https://fbb.org.br/edital-publico/edital-selecao-publica-ecoforte/",
+        "checked_at": "2026-11-25T00:42:26+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "ECOFORTE Redes 2024",
+      "description": "Acessar • Edital público concluído Edital de Seleção Pública nº 2024/010 – Reflorestar Reflorestar",
+      "funder": "Fundação Banco do Brasil",
+      "instrument": {
+        "type": "termo_fomento",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "osc",
+          "cooperativa"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    }
+  ],
+  "requests": {
+    "detalhes": 12,
+    "pdfs": 4
+  }
+}

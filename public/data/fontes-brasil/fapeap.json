@@ -1,0 +1,697 @@
+{
+  "source": {
+    "id": "fapeap",
+    "name": "FAPEAP",
+    "url": "https://fapeap.portal.ap.gov.br/"
+  },
+  "checked_at": "2026-11-25T00:40:08+00:00",
+  "status": "healthy",
+  "error": null,
+  "opportunities": [
+    {
+      "id": "fapeap-98e16ca2ec43",
+      "source": {
+        "id": "fapeap",
+        "name": "FAPEAP",
+        "official": true,
+        "url": "https://fapeap.portal.ap.gov.br/pagina/programas/centelha-3",
+        "checked_at": "2026-11-25T00:40:08+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Centelha 3",
+      "description": "Centelha 3",
+      "funder": "FAPEAP",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "open",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "AP"
+        ]
+      },
+      "themes": [
+        "sustentabilidade",
+        "agroindustria",
+        "saude",
+        "cultura",
+        "educacao"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/055733-Portaria 024_2026_Resultado_Lista_Final_Fase 2 - Centelha amapa.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/024519-Assinatura 4ª Retificacao centelha 3.docx (1).pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/043850-045 Resultado_Hab-Inab_contratacao - Centelha amapa (1).pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/043801-Convcaçao_suplentes_ centelha amapa (1).docx.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/050348-PORTARIA_063_2026_CENTELHA_3_SUPLENTES_E_CONVOCACAO_54.docx (1).pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/114430-Portaria 079 CONVOCACAO ASSINATURA TERMO DE OURTOGA - Centelha amapa (1).pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapeap-672607d375c4",
+      "source": {
+        "id": "fapeap",
+        "name": "FAPEAP",
+        "official": true,
+        "url": "https://fapeap.portal.ap.gov.br/pagina/programas/rede-ciencias",
+        "checked_at": "2026-11-25T00:40:08+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Rede Ciências",
+      "description": "Rede Ciências",
+      "funder": "FAPEAP",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "open",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "AP"
+        ]
+      },
+      "themes": [
+        "sustentabilidade",
+        "agroindustria",
+        "saude",
+        "cultura",
+        "educacao"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/120431-024051-CHAMADA N° 001_2026 - PROGRAMA REDE CIÊNCIAS .docx (1)-1-12 (1) (1).pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/120023-1ª Retificação - Rede Ciências.docx.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/030141-Portaria de enquadramento Rede Ciências.docx.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/122659-PORTARIA N 022 2ª Retificac_a_o - Rede Cie_ncias.docx.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/124117-Portaria Nº 31_2026  resultado parcial - Rede Ciências 2026..pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/110959-_Portaria Nº 36_2026  Resultado Final- Rede Ciencias 2026.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/044411-Portaria 042.2026 - Termos de outorga Rede Ciências.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapeap-bd2ebb417fbd",
+      "source": {
+        "id": "fapeap",
+        "name": "FAPEAP",
+        "official": true,
+        "url": "https://fapeap.portal.ap.gov.br/pagina/programas/nexbio-amazonia",
+        "checked_at": "2026-11-25T00:40:08+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "NexBio Amazônia",
+      "description": "NexBio Amazônia",
+      "funder": "FAPEAP",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": null,
+        "deadline": "2026-05-18",
+        "closed": "2026-05-18"
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "AP"
+        ]
+      },
+      "themes": [
+        "sustentabilidade",
+        "agroindustria",
+        "saude",
+        "cultura",
+        "educacao"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/123442-Chamada nexBio Amazônia (2026) (1).pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/123554-Retificação nº 1 - Chamada nexBio Amazônia 2026.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapeap-6d28c3d39875",
+      "source": {
+        "id": "fapeap",
+        "name": "FAPEAP",
+        "official": true,
+        "url": "https://fapeap.portal.ap.gov.br/pagina/programas/tecnova-iii",
+        "checked_at": "2026-11-25T00:40:08+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Tecnova III",
+      "description": "Tecnova III",
+      "funder": "FAPEAP",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "open",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "AP"
+        ]
+      },
+      "themes": [
+        "sustentabilidade",
+        "agroindustria",
+        "saude",
+        "cultura",
+        "educacao"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/015253-Edital tecnova 3.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/015349-aceleradoras tecnova 3.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/015430-internacionalização tecnova 3.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapeap-c888b176d719",
+      "source": {
+        "id": "fapeap",
+        "name": "FAPEAP",
+        "official": true,
+        "url": "https://fapeap.portal.ap.gov.br/pagina/programas/rede-de-pesquisa-e-desenvolvimento-da-amazonia-legal",
+        "checked_at": "2026-11-25T00:40:08+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Rede de Pesquisa e Desenvolvimento da Amazonia Legal",
+      "description": "Rede de Pesquisa e Desenvolvimento da Amazonia Legal",
+      "funder": "FAPEAP",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "open",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "AP"
+        ]
+      },
+      "themes": [
+        "sustentabilidade",
+        "agroindustria",
+        "saude",
+        "cultura",
+        "educacao"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/033302-Edital Rede de Pesquisa (1).pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/072150-ANEXO I - CARTA DE ANUÊNCIA.docx",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/072227-ANEXO I - CARTA DE ANUÊNCIA.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/072344-_ANEXO II -  FORMULÁRIO DE INSCRIÇÃO.docx",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/072419-_ANEXO II -  FORMULÁRIO DE INSCRIÇÃO.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/072859-ANEXO III-  PROJETO DE FORMAÇÃO DE RECURSOS HUMANOS E PESQUISA.docx",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/072928-ANEXO III-  PROJETO DE FORMAÇÃO DE RECURSOS HUMANOS E PESQUISA.docx.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/073118-Anexo IV - Orçamento Detalhado e Justificado - RECURSOS CAPES.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/073231-Anexo IV - Orçamento Detalhado e Justificado - RECURSOS CAPES.xlsx",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/073455-Anexo V - Orçamento Detalhado e Justificado - CONTRAPARTIDA FAPEAP - Google Planilhas.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/073722-ANEXO VI - DECLARAÇÃO DE ADIMPLÊNCIA COM A FAPEAP.docx",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/073740-ANEXO VI - DECLARAÇÃO DE ADIMPLÊNCIA COM A FAPEAP (1).pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/034948-1ª retificação PDPG.docx (1).pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/071342-Portaria_0061_2026_FAPEAP_2_Retificacao_PDPG V.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/024529-_Portaria Nº62- Resultado da Análise Técnica (PDPG 2026) ASS.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/092342-Portaria_20N_C2_BA_20069_20-_20Resultado_20Preliminar_20da_20Ana_CC_81lise_20de_20Me_CC_81rito_20-_20(PDPG_202026).docx.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/095718-Portaria Nº 071 - Resultado Final da Análise de Mérito - (PDPG 2026).docx (1).pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapeap-d1d19de831c4",
+      "source": {
+        "id": "fapeap",
+        "name": "FAPEAP",
+        "official": true,
+        "url": "https://fapeap.portal.ap.gov.br/pagina/programas/bolsa-produtividade",
+        "checked_at": "2026-11-25T00:40:08+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Bolsa Produtividade",
+      "description": "Bolsa Produtividade",
+      "funder": "FAPEAP",
+      "instrument": {
+        "type": "bolsa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "open",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "AP"
+        ]
+      },
+      "themes": [
+        "sustentabilidade",
+        "agroindustria",
+        "saude",
+        "cultura",
+        "educacao"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/112557-DECLARAÇÃO DE RESPONSABILIDADE FINANCEIRA (2).pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/021558-FAPEAP Declaração de Adimplência Bolsa Produtividade.docx",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/022510-112557-DECLARAÇÃO DE RESPONSABILIDADE FINANCEIRA (2).docx",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/020912-055705-Bolsa Produtividade 2026_Resultado preliminar FAPEAPCNPq.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/015129-Resultado Final Bolsa Produtividade 2026_ASS.PDF",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/015850-Portaria_Termos_Outorga_Bolsa_Produtividade_2026.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapeap-954c89d05202",
+      "source": {
+        "id": "fapeap",
+        "name": "FAPEAP",
+        "official": true,
+        "url": "https://fapeap.portal.ap.gov.br/pagina/programas/desafio-startup-amapa-2026",
+        "checked_at": "2026-11-25T00:40:08+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Desafio Startup Amapá 2026",
+      "description": "Desafio Startup Amapá 2026",
+      "funder": "FAPEAP",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "open",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "startup"
+        ],
+        "geography": [
+          "AP"
+        ]
+      },
+      "themes": [
+        "sustentabilidade",
+        "agroindustria",
+        "saude",
+        "cultura",
+        "educacao"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/100207-MINUTA FINAL - PROGRAMA PREMIO DESAFIO STARTUP AMAPA 2026.docx (1).pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/040358-Portaria Enquadramento preliminar Desafio Startup 2026.PDF",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/044808-_Portaria  de retificação Desafio Startup 2026.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/044923-Portaria Enquadramento final Desafio Startup 2026.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/095418-_Portaria 059 de resultado final Desafio Startup 2026. ASS.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapeap-a1838dd228a6",
+      "source": {
+        "id": "fapeap",
+        "name": "FAPEAP",
+        "official": true,
+        "url": "https://fapeap.portal.ap.gov.br/pagina/programas/premio-roberio-nobre",
+        "checked_at": "2026-11-25T00:40:08+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Prêmio Robério Nobre",
+      "description": "Prêmio Robério Nobre Contatos FAPEAP Fundação de Amparo à Pesquisa do Amapá Início Institucional Objetivo Normas Missão História Estrutura Funcional Conselho Superior Programas",
+      "funder": "FAPEAP",
+      "instrument": {
+        "type": "premio",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": null,
+        "deadline": "2026-10-22",
+        "closed": "2026-10-22"
+      },
+      "eligibility": {
+        "organization_types": [
+          "outros"
+        ],
+        "geography": [
+          "AP"
+        ]
+      },
+      "themes": [
+        "agroindustria",
+        "saude",
+        "cultura",
+        "educacao"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/032636-CHAMADA PÚBLICA N° 005 2026 - Prêmio Roberio Nobre 2026 - Atual.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/060845-Enquadramento_Roberio_Nobre_2026_pdf.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/062158-PORTARIA Nº 077_2026 - FAPEAP - Enquadramento Final_Robério_Nobre_2026_pdf_ASS.pdf",
+          "published": null
+        },
+        {
+          "title": "Baixar",
+          "url": "https://matrix.amapa.gov.br//storage/submenus/66/files/102017-Portaria_078_Resultado_Final_Roberio_Nobre_2026.docx_assinado.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    }
+  ],
+  "requests": {
+    "detalhes": 8,
+    "pdfs": 4
+  },
+  "warnings": [
+    "pdf https://matrix.amapa.gov.br//storage/submenus/66/files/055733-Portaria 024_2026_Resultado_Lista_Final_Fase 2 - Centelha amapa.pdf: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>",
+    "pdf https://matrix.amapa.gov.br//storage/submenus/66/files/120431-024051-CHAMADA N° 001_2026 - PROGRAMA REDE CIÊNCIAS .docx (1)-1-12 (1) (1).pdf: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>",
+    "pdf https://matrix.amapa.gov.br//storage/submenus/66/files/015253-Edital tecnova 3.pdf: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>",
+    "pdf https://matrix.amapa.gov.br//storage/submenus/66/files/033302-Edital Rede de Pesquisa (1).pdf: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>"
+  ]
+}

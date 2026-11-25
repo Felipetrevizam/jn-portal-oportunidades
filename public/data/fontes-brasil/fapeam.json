@@ -1,0 +1,146 @@
+{
+  "source": {
+    "id": "fapeam",
+    "name": "FAPEAM",
+    "url": "https://www.fapeam.am.gov.br/wp-admin/admin-ajax.php?action=get-editais&aba=vigentes"
+  },
+  "checked_at": "2026-11-25T00:40:00+00:00",
+  "status": "healthy",
+  "error": null,
+  "opportunities": [
+    {
+      "id": "fapeam-987a7a93ce4c",
+      "source": {
+        "id": "fapeam",
+        "name": "FAPEAM",
+        "official": true,
+        "url": "https://www.fapeam.am.gov.br/editais/diretrizes-especificas-da-fapeam-6/",
+        "checked_at": "2026-11-25T00:40:00+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "DIRETRIZES ESPECÍFICAS DA FAPEAM - CHAMADA CONFAP PARA APOIO COMPLEMENTAR ÀS REDES DOUTORAIS MARIE SKŁODOWSKA-CURIE 2026(MSCA DOCTORAL NETWORKS 2026) – MSCA DN 2026",
+      "description": "Inscrições: 18/11/2026 até 30/07/2027",
+      "funder": "FAPEAM",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "open",
+      "dates": {
+        "published": null,
+        "deadline": "2027-07-30"
+      },
+      "eligibility": {
+        "organization_types": [
+          "pesquisador"
+        ],
+        "geography": [
+          "AM"
+        ]
+      },
+      "themes": [
+        "mobilidade"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Baixar Arquivo do Edital",
+          "url": "https://www.fapeam.am.gov.br/wp-content/uploads/2026/11/Diretrizes-Especificas-da-FAPEAM-Chamada-MSCA-DN-2026-Resolucao-CD-040-2026.pdf",
+          "published": null
+        },
+        {
+          "title": "https://www.fapeam.am.gov.br/wp-content/uploads/2023/09/Diretrizes-Especificas-Horizon-Europe-2021-20272.pdf",
+          "url": "https://www.fapeam.am.gov.br/wp-content/uploads/2023/09/Diretrizes-Especificas-Horizon-Europe-2021-20272.pdf",
+          "published": null
+        },
+        {
+          "title": "PoS-GRADUAcaO-2025-FINAL-07.08.pdf",
+          "url": "https://www.fapeam.am.gov.br/wp-content/uploads/2025/08/PoS-GRADUAcaO-2025-FINAL-07.08.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "fapeam-3d2a29cabf2a",
+      "source": {
+        "id": "fapeam",
+        "name": "FAPEAM",
+        "official": true,
+        "url": "https://www.fapeam.am.gov.br/editais/diretrizes-especificas-da-fapeam-chamada-transnacional-conjunta-trajetorias-para-as-florestas-construindo-conhecimento-e-solucoes-para-florestas-resilientes-e-um-futuro-sustentavel-de-base-floresta/",
+        "checked_at": "2026-11-25T00:40:00+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "DIRETRIZES ESPECÍFICAS DA FAPEAM - CHAMADA TRANSNACIONAL CONJUNTA TRAJETÓRIAS PARA AS FLORESTAS: CONSTRUINDO CONHECIMENTO E SOLUÇÕES PARA FLORESTAS RESILIENTES E UM FUTURO SUSTENTÁVEL DE BASE FLORESTAL - “CHAMADA FOREST…",
+      "description": "Inscrições: 16/10/2026 até 02/06/2027",
+      "funder": "FAPEAM",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "open",
+      "dates": {
+        "published": null,
+        "deadline": "2027-06-02"
+      },
+      "eligibility": {
+        "organization_types": [
+          "pesquisador"
+        ],
+        "geography": [
+          "AM"
+        ]
+      },
+      "themes": [
+        "economia_circular",
+        "clima",
+        "bioeconomia"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Baixar Arquivo do Edital",
+          "url": "https://www.fapeam.am.gov.br/wp-content/uploads/2026/10/Chamada-FOREST-2026-Resolucao-CD-038-2026-Proc.-2780-2026-03-1.pdf",
+          "published": null
+        },
+        {
+          "title": "https://www.fapeam.am.gov.br/wp-content/uploads/2025/02/Resolucao-CD-001-2025-CS-Sistematizacao-das-Modalidades-Niveis-e-Valores-de-Bolsa.pdf",
+          "url": "https://www.fapeam.am.gov.br/wp-content/uploads/2025/02/Resolucao-CD-001-2025-CS-Sistematizacao-das-Modalidades-Niveis-e-Valores-de-Bolsa.pdf",
+          "published": null
+        },
+        {
+          "title": "PoS-GRADUAcaO-2025-FINAL-07.08.pdf",
+          "url": "https://www.fapeam.am.gov.br/wp-content/uploads/2025/08/PoS-GRADUAcaO-2025-FINAL-07.08.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    }
+  ],
+  "requests": {
+    "detalhes": 2,
+    "pdfs": 0
+  }
+}
