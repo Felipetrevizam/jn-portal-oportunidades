@@ -31,7 +31,9 @@ jobs:
     runs-on: [self-hosted, brasil]
     timeout-minutes: 30
     env:
-      FONTES: fapdf fapeam fapeap fapesq fapt fbb
+      # As 6 primeiras só respondem a IP brasileiro; as 4 últimas falham do GitHub
+      # e às vezes pelo retransmissor (25/11/2026), e respondem daqui.
+      FONTES: fapdf fapeam fapeap fapesq fapt fbb pncp-cpsi pdil querido-diario senai-inovacao
     steps:
       - uses: actions/checkout@v7
         with:
