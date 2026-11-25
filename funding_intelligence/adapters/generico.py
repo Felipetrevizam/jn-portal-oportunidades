@@ -342,6 +342,9 @@ class Config:
     lixo: tuple[str, ...] = tuple(LIXO)
     # Itens por seletor CSS (cards): cada elemento vira uma chamada.
     item_seletor: str | None = None
+    # A área de `conteudo` é a lista de abertos: vazia quer dizer "nenhum edital
+    # aberto hoje", não erro. Se a área sumir da página, aí sim é erro.
+    vazio_valido: bool = False
     titulo_seletor: str = "h1, h2, h3, h4, h5, .card-title, .titulo, strong, a"
     # Links da página principal que levam a outras páginas de listagem.
     seguir_listagens: str | None = None
@@ -413,6 +416,8 @@ class AdaptadorGenerico(BaseAdapter):
                     novas = [urljoin(url, a["href"]).split("#")[0] for a in sopa.find_all("a", href=True) if rx.search(a["href"])]
                     fila.extend(dict.fromkeys(n for n in novas if n not in visitadas))
                     fila = fila[: cfg.max_listagens]
+                if cfg.vazio_valido and sopa.select_one(cfg.conteudo) is None:
+                    raise ValueError(f"{cfg.nome}: área '{cfg.conteudo}' não existe mais em {url}")
                 raizes = escolher(sopa, cfg.conteudo)
                 if cfg.item_seletor:
                     for raiz in raizes:
@@ -422,6 +427,8 @@ class AdaptadorGenerico(BaseAdapter):
                 if self.fixture:
                     break
         if not trechos:
+            if cfg.vazio_valido:
+                return []
             raise ValueError(f"{cfg.nome}: nenhuma chamada reconhecida em {cfg.url}")
         resultado: list[dict[str, Any]] = []
         vistos: set[str] = set()

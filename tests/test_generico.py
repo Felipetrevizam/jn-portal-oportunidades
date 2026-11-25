@@ -116,3 +116,26 @@ class FapemigTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AreaDeAbertosTests(unittest.TestCase):
+    """FAPEPI (25/11/2026): aba "Abertos" vazia e 25 editais em "Em Execução"."""
+
+    def _coletar(self, conteudo):
+        from dataclasses import replace
+        from funding_intelligence.adapters.fontes_genericas import FONTES
+
+        cfg = replace(next(c for c in FONTES if c.id == "fapepi"), conteudo=conteudo, ler_pdf=False, max_detalhes=0)
+        return criar_adaptador(cfg)(fixture=str(FIXTURES / "fapepi.html"), today=date(2026, 11, 25)).collect()
+
+    def test_aba_de_abertos_vazia_e_resposta_valida(self):
+        self.assertEqual([], self._coletar("#abertos-tab"))
+
+    def test_le_os_editais_quando_a_area_tem_itens(self):
+        itens = self._coletar("#em-execuo-tab")
+        self.assertGreaterEqual(len(itens), 3)
+        self.assertTrue(any("PDCTR" in i["title"] for i in itens))
+
+    def test_area_que_sumiu_do_site_e_erro(self):
+        with self.assertRaises(ValueError):
+            self._coletar("#area-que-nao-existe")

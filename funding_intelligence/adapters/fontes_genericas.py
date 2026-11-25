@@ -64,8 +64,12 @@ FONTES: list[Config] = [
     Config(id="fapespa", nome="FAPESPA", url="https://www.fapespa.pa.gov.br/category/chamadas/", financiador="FAPESPA",
            modo="wp", wp_categorias=("chamadas",), ano_minimo=ANO - 1, geografia=("PA",),
            filtro_titulo=r"chamada|edital|sele[çc][ãa]o|inscri"),
+    # Editais viraram tipo próprio do WordPress (/edital/), sem situação na API;
+    # a página separa a aba "Abertos" (#abertos-tab) da "Em Execução". Aba vazia
+    # é resposta válida: a FAPEPI está sem edital aberto (25/11/2026).
     Config(id="fapepi", nome="FAPEPI", url="https://www.fapepi.pi.gov.br/editais-fapepi/", financiador="FAPEPI",
-           modo="wp", wp_categorias=("editais",), ano_minimo=ANO - 1, geografia=("PI",)),
+           conteudo="#abertos-tab", vazio_valido=True, lista_abertas=True, inicio_titulo=TITULO_EDITAL,
+           geografia=("PI",)),
     Config(id="fapesc", nome="FAPESC", url="https://fapesc.sc.gov.br/chamadas-abertas/", financiador="FAPESC",
            modo="wp", wp_categorias=("chamadas-abertas", "chamadas-em-andamento"), geografia=("SC",)),
     # FAPs com página HTML de editais abertos.
