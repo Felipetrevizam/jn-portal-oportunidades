@@ -269,6 +269,76 @@
   "prazo_no_edital": "2025-05-16",
   "segundos": 99.4
  },
+ "fapac-3-2024": {
+  "arquivo": "fapac-3-2024.md",
+  "convertido_em": "2026-11-25T10:14:51+00:00",
+  "paginas": 4,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://fapac.ac.gov.br/wp-content/uploads/2025/02/DOE-3a-Republicacao-Mentes-Azuis.pdf",
+  "pdf_sha256": "89d08c467d9a4ed49d6625deead96375a8c3997dc4aea569d9a21592f62b5870",
+  "prazo_no_edital": "2025-04-08",
+  "segundos": 35.6
+ },
+ "fapac-4-2025": {
+  "arquivo": "fapac-4-2025.md",
+  "convertido_em": "2026-11-25T10:15:36+00:00",
+  "paginas": 7,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://fapac.ac.gov.br/wp-content/uploads/2025/09/EDITAL-004-2025.pdf",
+  "pdf_sha256": "a1d98871831cfa4e54cd83185f62b2facb09d413d5a57b4987c80b3ca3e66747",
+  "prazo_no_edital": null,
+  "segundos": 42.5
+ },
+ "fapac-5-2025": {
+  "arquivo": "fapac-5-2025.md",
+  "convertido_em": "2026-11-25T10:15:55+00:00",
+  "paginas": 4,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://fapac.ac.gov.br/wp-content/uploads/2025/10/Edital-005.2025-Retificado-03.10.2025.pdf",
+  "pdf_sha256": "9df6f2fdc4e956290260da3421cb7d4d6afa9f1c809b83815dd7c5b4715956d4",
+  "prazo_no_edital": "2025-11-11",
+  "segundos": 17.5
+ },
+ "fapac-52301fc069f7": {
+  "arquivo": "fapac-52301fc069f7.md",
+  "convertido_em": "2026-11-25T10:21:12+00:00",
+  "paginas": 81,
+  "paginas_com_ocr": 1,
+  "pdf_oficial": "https://fapac.ac.gov.br/wp-content/uploads/2024/11/EditalCompilado_Expedicoes-aumento-recurso-Fapac.pdf",
+  "pdf_sha256": "b4ced150f6c89814ca78c6d1cfbe0afbe916a712181946ab33bea7f0c416244a",
+  "prazo_no_edital": "2024-07-30",
+  "segundos": 314.4
+ },
+ "fapac-58b6a522980c": {
+  "arquivo": "fapac-58b6a522980c.md",
+  "convertido_em": "2026-11-25T10:21:16+00:00",
+  "paginas": 2,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://fapac.ac.gov.br/wp-content/uploads/2025/05/EDITAL.pdf",
+  "pdf_sha256": "0b2e62555206a1a322eea9a1bbc55dfd7b8b32dbef4af1af2a6dc2a6615a11f8",
+  "prazo_no_edital": null,
+  "segundos": 2.7
+ },
+ "fapeal-1-2025": {
+  "arquivo": "fapeal-1-2025.md",
+  "convertido_em": "2026-11-25T10:21:36+00:00",
+  "paginas": 8,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2025/04/SEI_31163554_Edital_01_2025.pdf",
+  "pdf_sha256": "83e63aa521b53a92325a06136a2896245e974477be76d64e60a4eb180825cde6",
+  "prazo_no_edital": "2025-06-06",
+  "segundos": 18.3
+ },
+ "fapeal-2-2025": {
+  "arquivo": "fapeal-2-2025.md",
+  "convertido_em": "2026-11-25T10:25:46+00:00",
+  "paginas": 38,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapeal.br/wp-content/uploads/2025/06/13.-Chamada-FAPEAL-N.-02.2025_PPSUS_8aEdicao_I-RETIFICACAO_11.06.2025.pdf",
+  "pdf_sha256": "8f3e74d8b0a831443fd33579f309c5d6d686169b3b0db00681aa79a51313dc60",
+  "prazo_no_edital": "2025-08-29",
+  "segundos": 247.2
+ },
  "fapeg-19-2026": {
   "arquivo": "fapeg-19-2026.md",
   "convertido_em": "2026-11-24T20:58:20+00:00",
