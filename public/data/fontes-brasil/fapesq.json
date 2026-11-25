@@ -4,7 +4,7 @@
     "name": "FAPESQ-PB",
     "url": "https://fapesq.rpp.br/"
   },
-  "checked_at": "2026-11-25T00:42:09+00:00",
+  "checked_at": "2026-11-25T09:26:23+00:00",
   "status": "healthy",
   "error": null,
   "opportunities": [
@@ -15,7 +15,7 @@
         "name": "FAPESQ-PB",
         "official": true,
         "url": "https://fapesq.rpp.br/editais/editais-2025/27-06-25-resultado-parcial-apos-recursos-edital-02_2025-ppsus-programa-pesquisa-para-o-sus_-gestao-compartilhada-em-saude-docx.pdf",
-        "checked_at": "2026-11-25T00:42:09+00:00",
+        "checked_at": "2026-11-25T09:26:23+00:00",
         "stale": false
       },
       "external_id": "2-2025",
@@ -103,7 +103,7 @@
         "name": "FAPESQ-PB",
         "official": true,
         "url": "https://fapesq.rpp.br/editais/2026/edital-no-72-2026-selecao-de-equipes-para-o-circuito-game-dev-quest-3deg-edicao-desenvolvimento-de-jogos-digitais",
-        "checked_at": "2026-11-25T00:42:09+00:00",
+        "checked_at": "2026-11-25T09:26:23+00:00",
         "stale": false
       },
       "external_id": "72-2026",
@@ -156,7 +156,7 @@
         "name": "FAPESQ-PB",
         "official": true,
         "url": "https://fapesq.rpp.br/editais/2026/edital-no-71-2026-apoio-a-organizacao-e-realizacao-de-eventos-cientificos-tecnologicos-e-de-inovacao",
-        "checked_at": "2026-11-25T00:42:09+00:00",
+        "checked_at": "2026-11-25T09:26:23+00:00",
         "stale": false
       },
       "external_id": "71-2026",
@@ -212,7 +212,7 @@
         "name": "FAPESQ-PB",
         "official": true,
         "url": "https://fapesq.rpp.br/editais/2026/edital-no-33-2026-selecao-de-equipes-para-o-programa-celso-furtado-de-inovacao-educacional-e-desenvolvimento-regional-no-sistema-prisional",
-        "checked_at": "2026-11-25T00:42:09+00:00",
+        "checked_at": "2026-11-25T09:26:23+00:00",
         "stale": false
       },
       "external_id": "33-2026",

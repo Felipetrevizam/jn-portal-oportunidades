@@ -1,0 +1,172 @@
+{
+  "source": {
+    "id": "pdil",
+    "name": "PDIL — Ministério da Saúde",
+    "url": "https://www.gov.br/saude/pt-br/composicao/sectics/pdil"
+  },
+  "checked_at": "2026-11-25T09:27:57+00:00",
+  "status": "healthy",
+  "error": null,
+  "opportunities": [
+    {
+      "id": "pdil-orientacoes-elaboracao-e-submissao-propostas-pdil",
+      "source": {
+        "id": "pdil",
+        "name": "PDIL — Ministério da Saúde",
+        "official": true,
+        "url": "https://www.gov.br/saude/pt-br/composicao/sectics/publicacoes/orientacoes-elaboracao-e-submissao-propostas-pdil.pdf",
+        "checked_at": "2026-11-25T09:27:57+00:00",
+        "stale": false
+      },
+      "external_id": "orientacoes-elaboracao-e-submissao-propostas-pdil",
+      "title": "PDIL — submissão de propostas de projeto (Orientações para a elaboração e submissão de propostas de PDIL)",
+      "description": "Ato oficial sobre submissão ao PDIL; o radar não leu o prazo (sem data no texto). Proponente: instituição pública, ICT ou entidade privada sem fins lucrativos (Portaria GM/MS nº 4.473/2024, art. 7º); a empresa entra só como parceira da aliança estratégica.",
+      "funder": "Ministério da Saúde",
+      "instrument": {
+        "type": "outros",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": null,
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "ict",
+          "ict_privada",
+          "universidade",
+          "osc",
+          "hospital",
+          "fundacao_apoio",
+          "estado",
+          "municipio"
+        ],
+        "geography": [
+          "BR"
+        ],
+        "partner_types": [
+          "empresa",
+          "startup"
+        ]
+      },
+      "themes": [
+        "saude",
+        "complexo_economico_industrial_saude",
+        "inovacao",
+        "biotecnologia",
+        "terapias_avancadas",
+        "vacinas",
+        "medicamentos",
+        "diagnostico",
+        "dispositivos_medicos",
+        "saude_digital"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Orientações para a elaboração e submissão de propostas de PDIL",
+          "url": "https://www.gov.br/saude/pt-br/composicao/sectics/publicacoes/orientacoes-elaboracao-e-submissao-propostas-pdil.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      },
+      "partners": [
+        "SECTICS/MS"
+      ]
+    },
+    {
+      "id": "pdil-informe-02-2024",
+      "source": {
+        "id": "pdil",
+        "name": "PDIL — Ministério da Saúde",
+        "official": true,
+        "url": "https://www.gov.br/saude/pt-br/composicao/sectics/pdil/informes-tecnicos/informe-no-02-2024-sectics-ms",
+        "checked_at": "2026-11-25T09:27:57+00:00",
+        "stale": false
+      },
+      "external_id": "informe-02-2024",
+      "title": "PDIL — submissão de propostas de projeto (Informe nº 02/2024 - SECTICS/MS)",
+      "description": "Período de submissão: de 24/06/2024 a 23/09/2024 (Informe nº 02/2024 - SECTICS/MS). Prorrogado até 30/09/2024 pela Nota Informativa nº 5/2024-DECEIIS/SECTICS/MS. Proponente: instituição pública, ICT ou entidade privada sem fins lucrativos (Portaria GM/MS nº 4.473/2024, art. 7º); a empresa entra só como parceira da aliança estratégica.",
+      "funder": "Ministério da Saúde",
+      "instrument": {
+        "type": "outros",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2024-06-25",
+        "deadline": "2024-09-30",
+        "closed": "2024-09-30"
+      },
+      "eligibility": {
+        "organization_types": [
+          "ict",
+          "ict_privada",
+          "universidade",
+          "osc",
+          "hospital",
+          "fundacao_apoio",
+          "estado",
+          "municipio"
+        ],
+        "geography": [
+          "BR"
+        ],
+        "partner_types": [
+          "empresa",
+          "startup"
+        ]
+      },
+      "themes": [
+        "saude",
+        "complexo_economico_industrial_saude",
+        "inovacao",
+        "biotecnologia",
+        "terapias_avancadas",
+        "vacinas",
+        "medicamentos",
+        "diagnostico",
+        "dispositivos_medicos",
+        "saude_digital"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Informe nº 02/2024 - SECTICS/MS",
+          "url": "https://www.gov.br/saude/pt-br/composicao/sectics/pdil/informes-tecnicos/informe-no-02-2024-sectics-ms",
+          "published": "2024-06-25"
+        },
+        {
+          "title": "Nota Informativa nº 5/2024-DECEIIS/SECTICS/MS",
+          "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/estudos-e-notas-informativas/2024/nota-informativa-no-5-2024-deceiis-sectics-ms.pdf",
+          "published": "2024-09-20"
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      },
+      "partners": [
+        "SECTICS/MS"
+      ]
+    }
+  ]
+}

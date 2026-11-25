@@ -1,0 +1,11 @@
+{
+  "source": {
+    "id": "pncp-cpsi",
+    "name": "PNCP · Contratação de solução inovadora (CPSI) e encomenda tecnológica",
+    "url": "https://pncp.gov.br/app/editais?q=%22solu%C3%A7%C3%A3o%20inovadora%22&status=recebendo_proposta"
+  },
+  "checked_at": "2026-11-25T09:27:06+00:00",
+  "status": "error",
+  "error": "RemoteDisconnected: Remote end closed connection without response",
+  "opportunities": []
+}

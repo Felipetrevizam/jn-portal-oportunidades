@@ -1,0 +1,1205 @@
+{
+  "source": {
+    "id": "senai-inovacao",
+    "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+    "url": "https://www.portaldaindustria.com.br/canais/plataforma-inovacao-para-industria/"
+  },
+  "checked_at": "2026-11-25T09:29:37+00:00",
+  "status": "healthy",
+  "error": null,
+  "opportunities": [
+    {
+      "id": "senai-inovacao-667548814f22",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://www.rn.senai.br/chamada-regional/",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "[SENAI RN] CHAMADA REGIONAL - Soluções para Estruturas Autoinstaláveis de Parques Eólicos Offshore",
+      "description": "Lançamento: 28/11/2025 Inscrições: 28/11/2025 a 16/01/2026 [SENAI RN] CHAMADA REGIONAL - Soluções para Estruturas Autoinstaláveis de Parques Eólicos Offshore Selecionar empresas industriais para compor um Arranjo Cooperativo Multilateral, no modelo Joint Industry Project (JIP), Acesse Aqui",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-11-28",
+        "deadline": "2026-01-16",
+        "closed": "2026-01-16"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-993026880eb4",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "http://www.labprocel.com.br",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "[SENAI/RJ] CONCURSO DE INOVAÇÃO PARA SOLUÇÕES EM EFICIÊNCIA ENERGÉTICA - (SENAI RJ/ENBPAR) - CHAMADA 3",
+      "description": "Lançamento: 11/02/2026 Inscrições: a [SENAI/RJ] CONCURSO DE INOVAÇÃO PARA SOLUÇÕES EM EFICIÊNCIA ENERGÉTICA - (SENAI RJ/ENBPAR) - CHAMADA 3 A CP01 Lab Procel II tem como objetivo captar projetos adequados à participação na fase de Aceleração de soluções inovadoras em Economia Circular com ênfase em Eficiência Energética do Lab Procel II, bem como na definição de seus critérios de seleção e permanência. Acesse Aqui",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": "2026-02-11",
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "economia_circular"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-f2f59cf405c6",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/6c/f0/6cf0cbdd-3db9-4872-ba5d-c9feef42f143/edital_sebrae-senai_goias_-_2024_3_e_4_ciclo.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "EDITAL REGIONAL DE INOVAÇÃO PARA MICRO E PEQUENA INDÚSTRIA – SEBRAE/SENAI GOIÁS - 2025 (3° CICLO e 4º CICLO)",
+      "description": "Lançamento: 02/09/2025 Inscrições: 01/09/2025 a 30/09/2025 EDITAL REGIONAL DE INOVAÇÃO PARA MICRO E PEQUENA INDÚSTRIA – SEBRAE/SENAI GOIÁS - 2025 (3° CICLO e 4º CICLO) O Edital de Inovação para a Indústria SEBRAE - SENAI destina-se a todas as micros e pequena empresa industrial que tenha seu domicílio no Estado de Goiás Download do regulamento",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-09-02",
+        "deadline": "2025-09-30",
+        "closed": "2025-09-30"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download do regulamento",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/6c/f0/6cf0cbdd-3db9-4872-ba5d-c9feef42f143/edital_sebrae-senai_goias_-_2024_3_e_4_ciclo.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-15d48e3c047b",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/f3/4a/f34aff18-9bae-4fcb-bd98-edae37e3f36c/chamada_agendatech_bioeconomia_-_cronograma_retificado_-_v2.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA: AGENDA.TECH PARA MAPEAMENTO E AVALIAÇÃO DE TECNOLOGIAS PARA A BIOECONOMIA - 2025",
+      "description": "Lançamento: 08/09/2025 Inscrições: 08/09/2025 a 23/09/2025 CHAMADA: AGENDA.TECH PARA MAPEAMENTO E AVALIAÇÃO DE TECNOLOGIAS PARA A BIOECONOMIA - 2025 O principal objetivo desta Chamada é selecionar uma aliança entre Institutos SENAI de Inovação, Institutos SENAI de Tecnologia e/ou Instituições Científicas, Tecnológicas e de Inovação para realizar um estudo tecnológico e identificar oportunidades de descarbonização no âmbito das bioinovações Download do regulamento",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-09-08",
+        "deadline": "2025-09-23",
+        "closed": "2025-09-23"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "descarbonizacao",
+        "bioeconomia"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download do regulamento",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/f3/4a/f34aff18-9bae-4fcb-bd98-edae37e3f36c/chamada_agendatech_bioeconomia_-_cronograma_retificado_-_v2.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-5807a8449fa2",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/18/6f/186f36c0-6311-4dd2-b555-6570f853342d/agendatech_-_chamada_2025_petrobras_vfinal-errata.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA: AGENDA.TECH PARA MAPEAMENTO DE TECNOLOGIAS PARA INTEGRIDADE DE ATIVOS APLICADO AO SETOR DE EXPLORAÇÃO E PRODUÇÃO DE PETRÓLEO - 2025",
+      "description": "Lançamento: 17/09/2025 Inscrições: 17/09/2025 a 30/09/2025 CHAMADA: AGENDA.TECH PARA MAPEAMENTO DE TECNOLOGIAS PARA INTEGRIDADE DE ATIVOS APLICADO AO SETOR DE EXPLORAÇÃO E PRODUÇÃO DE PETRÓLEO - 2025 A chamada “INTEGRIDADE DE ATIVOS” tem como objetivo selecionar a melhor proposta para o desenvolvimento de um estudo para mapeamento de tecnologias chave, grupos de pesquisa e empresas de base industrial com foco na temática de Integridade de Ativos aplicadas ao setor de petróleo & gás. Download do regulamento",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-09-17",
+        "deadline": "2025-09-30",
+        "closed": "2025-09-30"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download do regulamento",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/18/6f/186f36c0-6311-4dd2-b555-6570f853342d/agendatech_-_chamada_2025_petrobras_vfinal-errata.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-daf3ad316965",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/33/43/33437eee-2158-4d22-aa78-b1deb1292999/agendatech_-_powershoring-abr.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA: AGENDA.TECH MAPEAMENTO DE OPORTUNIDADES E TECNOLOGIAS PARA PARA POWERSHORING NO BRASIL - 2025",
+      "description": "Lançamento: 19/12/2025 Inscrições: 19/12/2025 a 27/03/2026 CHAMADA: AGENDA.TECH MAPEAMENTO DE OPORTUNIDADES E TECNOLOGIAS PARA PARA POWERSHORING NO BRASIL - 2025 A chamada “MAPEAMENTO DE OPORTUNIDADES E TECNOLOGIAS PARA POWERSHORING NO BRASIL” tem como objetivo selecionar a melhor proposta para o desenvolvimento de uma agenda de P,D&I, através do mapeamento de tecnologias-chave Download do regulamento",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-12-19",
+        "deadline": "2026-03-27",
+        "closed": "2026-03-27"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download do regulamento",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/33/43/33437eee-2158-4d22-aa78-b1deb1292999/agendatech_-_powershoring-abr.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-1e81d2e6f785",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/1f/6c/1f6c3c55-8048-463e-9b37-aa9f744a2bb1/projeto_semente_-_ppi_bioinformatica_vfinal.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA: PROJETO SEMENTE DE PROGRAMA PRIORITÁRIO DE INTERESSE (PPI) NACIONAL EM BIOINFORMÁTICA - 2025",
+      "description": "Lançamento: 08/09/2025 Inscrições: 08/09/2025 a 17/09/2025 CHAMADA: PROJETO SEMENTE DE PROGRAMA PRIORITÁRIO DE INTERESSE (PPI) NACIONAL EM BIOINFORMÁTICA - 2025 O principal objetivo desta Chamada é selecionar uma aliança de Institutos SENAI para desenvolver um Projeto Semente. Este projeto deve detalhar a proposta de um novo Programa Prioritário de Interesse Nacional (PPI) em Bioinformática, que será submetida ao Ministério da Ciência, Tecnologia e Inovação Download do regulamento",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-09-08",
+        "deadline": "2025-09-17",
+        "closed": "2025-09-17"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download do regulamento",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/1f/6c/1f6c3c55-8048-463e-9b37-aa9f744a2bb1/projeto_semente_-_ppi_bioinformatica_vfinal.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-14571e24c3fc",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/2c/cc/2ccc2407-0787-4402-a5ec-100572b2623b/projeto_semente_-_chamada_de_projetos_estruturantes_ou_mobilizadores_1.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA: PROJETOS SEMENTE ESTRUTURANTES OU MOBILIZADORES",
+      "description": "Lançamento: 14/11/2025 Inscrições: 14/11/2025 a CHAMADA: PROJETOS SEMENTE ESTRUTURANTES OU MOBILIZADORES O objetivo central é o desenvolvimento de projetos semente para elaboração de projetos estruturantes ou mobilizadores que possam ser submetidos em futuras chamadas de fomento. Download do regulamento",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-11-14",
+        "deadline": "2025-11-14",
+        "closed": "2025-11-14"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download do regulamento",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/2c/cc/2ccc2407-0787-4402-a5ec-100572b2623b/projeto_semente_-_chamada_de_projetos_estruturantes_ou_mobilizadores_1.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-608d3f19d69c",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/b6/ea/b6ea5cbe-ee2d-4e63-86b7-a5a6bef8bde3/chamada_m_dias_branco_2025.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Digital View - Empreendedorismo Industrial - Institutição Âncora_2025 (SENAI/CE)",
+      "description": "Lançamento: 01/07/2025 Inscrições: 01/07/2025 a 31/07/2025 Digital View - Empreendedorismo Industrial - Institutição Âncora_2025 (SENAI/CE) A chamada \" DIGITAL VIEW \" tem como objetivo conectar as demandas da M. Dias Branco com soluções inovadoras ofertadas por startups e empresas de base tecnológica. Esta iniciativa visa promover a transformação digital da indústria, utilizando tecnologias 4.0 para aumentar a eficiência. Download do regulamento",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-07-01",
+        "deadline": "2025-07-31",
+        "closed": "2025-07-31"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "empreendedorismo"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download do regulamento",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/b6/ea/b6ea5cbe-ee2d-4e63-86b7-a5a6bef8bde3/chamada_m_dias_branco_2025.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-6064d217f6c0",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/b6/da/b6daff77-f182-4c4c-ac0b-ee30f5202d1e/edital_de_prorrogacao_chamada_cagece_12022026.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "SANUP - CAGECE/SENAI - Empreendedorismo Industrial - Institutição Âncora_2025 (SENAI/CE)",
+      "description": "Lançamento: 22/08/2025 Inscrições: 31/08/2025 a 07/10/2025 SANUP - CAGECE/SENAI - Empreendedorismo Industrial - Institutição Âncora_2025 (SENAI/CE) A Companhia de Água e Esgoto do Ceará (Cagece), em parceria com o Serviço Nacional de Aprendizagem Industrial (SENAI), no âmbito da Plataforma de Inovação para a Indústria 2025, torna público que realizará licitação na forma eletrônica, para startups de base tecnológica, com CNPJ ativo Download do regulamento",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-08-22",
+        "deadline": "2025-10-07",
+        "closed": "2025-10-07"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "seguranca_hidrica",
+        "empreendedorismo"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download do regulamento",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/b6/da/b6daff77-f182-4c4c-ac0b-ee30f5202d1e/edital_de_prorrogacao_chamada_cagece_12022026.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-509d7d43a045",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://novidades.institutosenaimt.ind.br/agroind2025",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "EDITAL DE CONCURSO 01/2025 - Programa AGRO.IND – Chamada de Inovação Aberta Agroindustrial - Instituição Âncora (SENAI/MT)",
+      "description": "Lançamento: 05/11/2025 Inscrições: 05/11/2025 a 12/12/2025 EDITAL DE CONCURSO 01/2025 - Programa AGRO.IND – Chamada de Inovação Aberta Agroindustrial - Instituição Âncora (SENAI/MT) O Programa Agro.ind é uma iniciativa do SENAI/MT que tem como objetivo promover a inovação aberta, conectando os desafios de empresas demandantes a soluções inovadoras desenvolvidas por startups, acessibilizando a inovação e a transformação digital às indústrias e empresas Acesse Aqui",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-11-05",
+        "deadline": "2025-12-12",
+        "closed": "2025-12-12"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "agroindustria"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-55d66fd35830",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/38/6c/386c86c1-a169-4997-983b-716eb312a269/chamada-startup-tech-senai-ce_transformacao_digital_2025_cronograma_atualizado.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Startup.Tech 2025 – Transformação Digital na Indústria - SENAI/CE",
+      "description": "Lançamento: 18/06/2025 Inscrições: 18/06/2025 a 30/06/2025 Startup.Tech 2025 – Transformação Digital na Indústria - SENAI/CE A Chamada Startup.Tech – Transformação Digital tem como objetivo promover a conexão entre indústrias com desafios relacionados à digitalização de processos, produtos e serviços, e startups ou empresas de base tecnológica que possuam soluções inovadoras para responder a esses desafios. Download do regulamento",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-06-18",
+        "deadline": "2025-06-30",
+        "closed": "2025-06-30"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "transformacao_digital"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download do regulamento",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/38/6c/386c86c1-a169-4997-983b-716eb312a269/chamada-startup-tech-senai-ce_transformacao_digital_2025_cronograma_atualizado.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-d0c4d640a4b1",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/e1/a8/e1a80da2-2e58-4b0a-94c1-1bbd3f2decb0/chamada-habitats-jaragua-do-sulpdf.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Chamada Habitats SENAI de Inovação | São Paulo - São Bernardo do Campo",
+      "description": "Lançamento: 27/02/2025 Inscrições Chamada Habitats SENAI de Inovação | São Paulo - São Bernardo do Campo A Chamada Habitats de Inovação tem como objetivo estabelecer uma relação de parceria em Pesquisa, Desenvolvimento e Inovação entre SENAI-SP e as empresas interessadas, conforme critérios e condições estabelecidos neste Edital, no âmbito da Plataforma Inovação para a Indústria, na categoria Habitats Download do regulamento",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": "2025-02-27",
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download do regulamento",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/e1/a8/e1a80da2-2e58-4b0a-94c1-1bbd3f2decb0/chamada-habitats-jaragua-do-sulpdf.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-df7de7bbe7b0",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/f8/a6/f8a662b9-6c9d-4197-b812-e9895231c3de/chamada-habitats-jaragua-do-sulpdf.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Chamada Habitats SENAI de Inovação | Santa Catarina - Jaraguá do Sul",
+      "description": "Lançamento: 27/02/2025 Inscrições Chamada Habitats SENAI de Inovação | Santa Catarina - Jaraguá do Sul A Chamada Habitats de Inovação tem como objetivo estabelecer uma relação de parceria em Pesquisa, Desenvolvimento e Inovação entre SENAI-SC e as empresas interessadas, conforme critérios e condições estabelecidos neste Edital, no âmbito da Plataforma Inovação para a Indústria, na categoria Habitats Download do regulamento",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": "2025-02-27",
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download do regulamento",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/f8/a6/f8a662b9-6c9d-4197-b812-e9895231c3de/chamada-habitats-jaragua-do-sulpdf.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-1e544dd3f401",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://www.chamadactgbrasilsenai.com.br/",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "Missão Industrial - Monitoramento e Controle de Plantas Aquáticas Submersas em Usinas Hidrelétricas - CTG Brasil",
+      "description": "Lançamento: 11/11/2024 Inscrições: 11/11/2024 a 29/01/2025 Missão Industrial - Monitoramento e Controle de Plantas Aquáticas Submersas em Usinas Hidrelétricas - CTG Brasil A Missão trata de uma chamada para proposição de soluções de monitoramento e controle de plantas aquáticas submersas em reservatórios de hidrelétricas, através de novas tecnologias aplicáveis à cadeia, com o fortalecimento dos stakeholders, tecnologias e projetos de P&D+I Saiba Mais",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2024-11-11",
+        "deadline": "2025-01-29",
+        "closed": "2025-01-29"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-a00fe2508f72",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/d7/82/d78242d5-6eda-417c-98a5-f906106dcded/categoria_saude_conectada_chamada_descarbonizacao.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA TÉCNICA SESI – COP 30 – DESCARBONIZAÇÃO (SESI)",
+      "description": "Lançamento: 24/06/2025 Inscrições: 25/06/2025 a 08/07/2025 CHAMADA TÉCNICA SESI – COP 30 – DESCARBONIZAÇÃO (SESI) Desenvolver soluções tecnológicas e produtos digitais que potencialize o acesso do trabalhador à saúde e, neste caso em específico, tenha como foco contribuir para a descarbonização do sistema de saúde. Download da Chamada",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-06-24",
+        "deadline": "2025-07-08",
+        "closed": "2025-07-08"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "descarbonizacao",
+        "saude"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download da Chamada",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/d7/82/d78242d5-6eda-417c-98a5-f906106dcded/categoria_saude_conectada_chamada_descarbonizacao.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-f870aebedf78",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/d5/97/d5979008-1415-42d8-93e0-0f5c077de3ef/saude_conectada_chamada_regional_lc_cefaleias1.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA TÉCNICA – Linhas de cuidados de DCNT – Cefaleias",
+      "description": "Lançamento: 18/09/2025 Inscrições: 18/09/2025 a 12/12/2025 CHAMADA TÉCNICA – Linhas de cuidados de DCNT – Cefaleias Executar projetos destinados ao desenvolvimento de soluções tecnológicas e produtos digitais que potencialize o acesso do trabalhador à saúde. Este desafio está compreendido no manejo clínico para Cefaleias. Download da Chamada",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-09-18",
+        "deadline": "2025-12-12",
+        "closed": "2025-12-12"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "saude"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download da Chamada",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/d5/97/d5979008-1415-42d8-93e0-0f5c077de3ef/saude_conectada_chamada_regional_lc_cefaleias1.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-4b9580585cb1",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/34/48/3448a1c2-627c-45ea-9d88-d83fad77594f/chamada_lc_na_saude_suplementar_saude_mental_e_emocional.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA TÉCNICA – Saúde Mental e Emocional na População Industrial",
+      "description": "Lançamento: 11/07/2025 Inscrições: 11/07/2025 a 28/07/2025 CHAMADA TÉCNICA – Saúde Mental e Emocional na População Industrial Esta Chamada tem por desafio compreender o estudo do manejo clínico para a linha de cuidado intitulada como \"Saúde Mental e Emocional na População Industrial\". Download da Chamada",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "closed",
+      "dates": {
+        "published": "2025-07-11",
+        "deadline": "2025-07-28",
+        "closed": "2025-07-28"
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "saude"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download da Chamada",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/34/48/3448a1c2-627c-45ea-9d88-d83fad77594f/chamada_lc_na_saude_suplementar_saude_mental_e_emocional.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-a8cac022516d",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/dc/56/dc5655e6-e45d-4cb2-be25-9792b60c33b4/chamada_tecnica_inova_mes_solucoes_ia.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA TÉCNICA - Tecnologias Digitais – Soluções em Inteligência Artificial Aplicadas à Saúde do Trabalhador",
+      "description": "Lançamento: 13/08/2025 Inscrições: Fluxo Contínuo de Inscrição CHAMADA TÉCNICA - Tecnologias Digitais – Soluções em Inteligência Artificial Aplicadas à Saúde do Trabalhador Desenvolver tecnologias digitais aplicadas à saúde do trabalhador, mais especificamente soluções em Inteligência Artificial aplicadas no contexto da Proteção, da Promoção, da Prevenção e da Primeira Atenção/Atenção Primária à Saúde. Download da Chamada",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "contratacao_pdi",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": "2025-08-13",
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "inteligencia_artificial",
+        "tic",
+        "transformacao_digital",
+        "saude"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download da Chamada",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/dc/56/dc5655e6-e45d-4cb2-be25-9792b60c33b4/chamada_tecnica_inova_mes_solucoes_ia.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-8f18340d09c6",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/6e/d2/6ed2b381-1ef5-4502-bc51-17907671310c/chamada_tecnica_inova_mes_estudos_e_pesquisas_dados_e_inteligencia.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA TÉCNICA SESI – INOVA MES SOLUÇÕES - Dados e Inteligência - Edição 2025",
+      "description": "Lançamento: 01/12/2025 Inscrições: Fluxo Contínuo de Inscrição CHAMADA TÉCNICA SESI – INOVA MES SOLUÇÕES - Dados e Inteligência - Edição 2025 Esta Chamada tem por objetivo executar, projetos destinados ao desenvolvimento de estudos e pesquisas em saúde e segurança na indústria, mais especificamente sobre a temática de Dados e Inteligência em Saúde. Download da Chamada",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": "2025-12-01",
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "saude"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download da Chamada",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/6e/d2/6ed2b381-1ef5-4502-bc51-17907671310c/chamada_tecnica_inova_mes_estudos_e_pesquisas_dados_e_inteligencia.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-db7daf6a7e35",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/bf/68/bf6866c9-01bc-4d8e-a5f8-8985fe57e71e/chamada_tecnica_inova_mes_estudos_e_pesquisas_modelos_sustentaveis.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA TÉCNICA SESI – INOVA MES SOLUÇÕES - Modelos Sustentáveis - Edição 2025",
+      "description": "Lançamento: 01/12/2025 Inscrições: Fluxo Contínuo de Inscrição CHAMADA TÉCNICA SESI – INOVA MES SOLUÇÕES - Modelos Sustentáveis - Edição 2025 Esta Chamada tem por objetivo executar, projetos destinados ao desenvolvimento de estudos e pesquisas em saúde, mais especificamente sobre a temática de Modelos Sustentáveis de Saúde Suplementar. Download da Chamada",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": "2025-12-01",
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "saude"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download da Chamada",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/bf/68/bf6866c9-01bc-4d8e-a5f8-8985fe57e71e/chamada_tecnica_inova_mes_estudos_e_pesquisas_modelos_sustentaveis.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    },
+    {
+      "id": "senai-inovacao-9f3dd91fec70",
+      "source": {
+        "id": "senai-inovacao",
+        "name": "SENAI/SESI · Plataforma Inovação para a Indústria",
+        "official": true,
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/f6/be/f6beb903-ae9b-4573-93a4-566ad9fbc65f/chamada_tecnica_inova_mes_estudos_e_pesquisas_saude_mental.pdf",
+        "checked_at": "2026-11-25T09:29:37+00:00",
+        "stale": false
+      },
+      "external_id": null,
+      "title": "CHAMADA TÉCNICA SESI – INOVA MES SOLUÇÕES - Saúde Mental - Edição 2025",
+      "description": "Lançamento: 01/12/2025 Inscrições: Fluxo Contínuo de Inscrição CHAMADA TÉCNICA SESI – INOVA MES SOLUÇÕES - Saúde Mental - Edição 2025 Esta Chamada tem por objetivo executar, projetos destinados ao desenvolvimento de estudos e pesquisas em saúde e segurança na indústria, mais especificamente sobre a temática de Saúde Mental e Emocional dos trabalhadores da indústria. Download da Chamada",
+      "funder": "SENAI / SESI",
+      "instrument": {
+        "type": "auxilio_pesquisa",
+        "repayable": false
+      },
+      "channel": "chamada_publica",
+      "status": "unknown",
+      "dates": {
+        "published": "2025-12-01",
+        "deadline": null
+      },
+      "eligibility": {
+        "organization_types": [
+          "empresa",
+          "startup"
+        ],
+        "geography": [
+          "BR"
+        ]
+      },
+      "themes": [
+        "saude"
+      ],
+      "funding": {
+        "program_budget": null
+      },
+      "documents": [
+        {
+          "title": "Download da Chamada",
+          "url": "https://static.portaldaindustria.com.br/media/filer_public/f6/be/f6beb903-ae9b-4573-93a4-566ad9fbc65f/chamada_tecnica_inova_mes_estudos_e_pesquisas_saude_mental.pdf",
+          "published": null
+        }
+      ],
+      "changes": [],
+      "change_status": "baseline",
+      "matching": {
+        "eligible": false,
+        "ponte_score": 0,
+        "portfolio_tags": [],
+        "matches": []
+      }
+    }
+  ],
+  "requests": {
+    "detalhes": 0,
+    "pdfs": 4
+  }
+}
