@@ -249,6 +249,16 @@
   "prazo_no_edital": "2027-03-12",
   "segundos": 9.7
  },
+ "cnpq-38-2026": {
+  "arquivo": "cnpq-38-2026.md",
+  "convertido_em": "2026-11-26T22:05:42+00:00",
+  "paginas": 23,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-38-2026/Chamada38_2026.pdf",
+  "pdf_sha256": "6bbdd705e08ba90ea06a864dbc98ecde355f47224081013074231292fc42f248",
+  "prazo_no_edital": "2027-04-30",
+  "segundos": 60.3
+ },
  "embrapii-29541": {
   "arquivo": "embrapii-29541.md",
   "convertido_em": "2026-11-25T01:23:08+00:00",
@@ -579,6 +589,26 @@
   "prazo_no_edital": "2026-12-21",
   "segundos": 262.4
  },
+ "fapes-3b64d80089aa": {
+  "arquivo": "fapes-3b64d80089aa.md",
+  "convertido_em": "2026-11-26T22:15:05+00:00",
+  "paginas": 3,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://fapes.es.gov.br/media/Editais/Diretrizes%20Fapes%20Horizon%20Europe%202021-2027-1.pdf?v=1758063154000",
+  "pdf_sha256": "b9af85ece65aaff8542f6d41e97b75a5615557f7dda9fac756ac0ee0d5e66080",
+  "prazo_no_edital": null,
+  "segundos": 12.0
+ },
+ "fapes-9c21ef457c63": {
+  "arquivo": "fapes-9c21ef457c63.md",
+  "convertido_em": "2026-11-26T22:25:03+00:00",
+  "paginas": 22,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://fapes.es.gov.br/media/Editais/call_announcement_chamada-forest-2026.pdf?v=1790870773000",
+  "pdf_sha256": "dab92e98eb0970d8262a97066e946311d2b7aaf17cad6faf39da549d3c019d32",
+  "prazo_no_edital": null,
+  "segundos": 115.0
+ },
  "fapes-b3006a6831bf": {
   "arquivo": "fapes-b3006a6831bf.md",
   "convertido_em": "2026-11-24T22:52:00+00:00",
@@ -598,6 +628,36 @@
   "pdf_sha256": "42fc67fb24399f69f10271bd5c31f756525e35dc8a9517fcdfc6baec7a658582",
   "prazo_no_edital": "2028-06-30",
   "segundos": 477.6
+ },
+ "fapespa-1-2026": {
+  "arquivo": "fapespa-1-2026.md",
+  "convertido_em": "2026-11-26T22:25:09+00:00",
+  "paginas": 1,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapespa.pa.gov.br/wp-content/uploads/2026/08/Decisao-Administrativa-Cronograma-1-Lote-1-TAMIRES-DE-ALMEIDA-PEREIRA-DE-OLIVEIRA.pdf",
+  "pdf_sha256": "8a89114dd74ae692676aa0701e06b6fd3be8c1a00dec4743f93eb2109bd2eecb",
+  "prazo_no_edital": "2026-06-23",
+  "segundos": 1.3
+ },
+ "fapespa-10-2026": {
+  "arquivo": "fapespa-10-2026.md",
+  "convertido_em": "2026-11-26T22:27:26+00:00",
+  "paginas": 27,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapespa.pa.gov.br/wp-content/uploads/2026/07/PROJETO-BOTO-TUCUXI-2.0-EDITALPLANO-DE-PESQUISA-e-TERMO-DE-CONCESSAO-DE-BOLSA-PUBLICACAO.pdf",
+  "pdf_sha256": "a2110380a01ede2f79c841355d390c11b7aa046748515de568ff650ec615b7b4",
+  "prazo_no_edital": "2026-07-27",
+  "segundos": 124.7
+ },
+ "fapespa-11-2026": {
+  "arquivo": "fapespa-11-2026.md",
+  "convertido_em": "2026-11-26T22:29:30+00:00",
+  "paginas": 27,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapespa.pa.gov.br/wp-content/uploads/2026/07/PROJETO-CURUPIRA-3.0-EDITALPLANO-DE-PESQUISA-e-TERMO-DE-CONCESSAO-DE-BOLSA.PUBLICACAO.pdf",
+  "pdf_sha256": "4f2ab875578cf45ff7a7c71da8c0d8875c43e35a14f072c671e1db0ea7d0f19f",
+  "prazo_no_edital": "2026-07-27",
+  "segundos": 115.3
  },
  "fapitec-14-2026": {
   "arquivo": "fapitec-14-2026.md",
