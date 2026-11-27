@@ -4,7 +4,7 @@
     "name": "FAPEAP",
     "url": "https://fapeap.portal.ap.gov.br/"
   },
-  "checked_at": "2026-11-25T09:24:21+00:00",
+  "checked_at": "2026-11-27T19:53:50+00:00",
   "status": "healthy",
   "error": null,
   "opportunities": [
@@ -15,7 +15,7 @@
         "name": "FAPEAP",
         "official": true,
         "url": "https://fapeap.portal.ap.gov.br/pagina/programas/centelha-3",
-        "checked_at": "2026-11-25T09:24:21+00:00",
+        "checked_at": "2026-11-27T19:53:50+00:00",
         "stale": false
       },
       "external_id": null,
@@ -98,7 +98,7 @@
         "name": "FAPEAP",
         "official": true,
         "url": "https://fapeap.portal.ap.gov.br/pagina/programas/rede-ciencias",
-        "checked_at": "2026-11-25T09:24:21+00:00",
+        "checked_at": "2026-11-27T19:53:50+00:00",
         "stale": false
       },
       "external_id": null,
@@ -186,7 +186,7 @@
         "name": "FAPEAP",
         "official": true,
         "url": "https://fapeap.portal.ap.gov.br/pagina/programas/nexbio-amazonia",
-        "checked_at": "2026-11-25T09:24:21+00:00",
+        "checked_at": "2026-11-27T19:53:50+00:00",
         "stale": false
       },
       "external_id": null,
@@ -250,7 +250,7 @@
         "name": "FAPEAP",
         "official": true,
         "url": "https://fapeap.portal.ap.gov.br/pagina/programas/tecnova-iii",
-        "checked_at": "2026-11-25T09:24:21+00:00",
+        "checked_at": "2026-11-27T19:53:50+00:00",
         "stale": false
       },
       "external_id": null,
@@ -318,7 +318,7 @@
         "name": "FAPEAP",
         "official": true,
         "url": "https://fapeap.portal.ap.gov.br/pagina/programas/rede-de-pesquisa-e-desenvolvimento-da-amazonia-legal",
-        "checked_at": "2026-11-25T09:24:21+00:00",
+        "checked_at": "2026-11-27T19:53:50+00:00",
         "stale": false
       },
       "external_id": null,
@@ -456,7 +456,7 @@
         "name": "FAPEAP",
         "official": true,
         "url": "https://fapeap.portal.ap.gov.br/pagina/programas/bolsa-produtividade",
-        "checked_at": "2026-11-25T09:24:21+00:00",
+        "checked_at": "2026-11-27T19:53:50+00:00",
         "stale": false
       },
       "external_id": null,
@@ -539,7 +539,7 @@
         "name": "FAPEAP",
         "official": true,
         "url": "https://fapeap.portal.ap.gov.br/pagina/programas/desafio-startup-amapa-2026",
-        "checked_at": "2026-11-25T09:24:21+00:00",
+        "checked_at": "2026-11-27T19:53:50+00:00",
         "stale": false
       },
       "external_id": null,
@@ -617,7 +617,7 @@
         "name": "FAPEAP",
         "official": true,
         "url": "https://fapeap.portal.ap.gov.br/pagina/programas/premio-roberio-nobre",
-        "checked_at": "2026-11-25T09:24:21+00:00",
+        "checked_at": "2026-11-27T19:53:50+00:00",
         "stale": false
       },
       "external_id": null,

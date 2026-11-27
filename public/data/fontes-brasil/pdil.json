@@ -4,7 +4,7 @@
     "name": "PDIL — Ministério da Saúde",
     "url": "https://www.gov.br/saude/pt-br/composicao/sectics/pdil"
   },
-  "checked_at": "2026-11-25T09:27:57+00:00",
+  "checked_at": "2026-11-27T19:56:58+00:00",
   "status": "healthy",
   "error": null,
   "opportunities": [
@@ -15,7 +15,7 @@
         "name": "PDIL — Ministério da Saúde",
         "official": true,
         "url": "https://www.gov.br/saude/pt-br/composicao/sectics/publicacoes/orientacoes-elaboracao-e-submissao-propostas-pdil.pdf",
-        "checked_at": "2026-11-25T09:27:57+00:00",
+        "checked_at": "2026-11-27T19:56:58+00:00",
         "stale": false
       },
       "external_id": "orientacoes-elaboracao-e-submissao-propostas-pdil",
@@ -92,7 +92,7 @@
         "name": "PDIL — Ministério da Saúde",
         "official": true,
         "url": "https://www.gov.br/saude/pt-br/composicao/sectics/pdil/informes-tecnicos/informe-no-02-2024-sectics-ms",
-        "checked_at": "2026-11-25T09:27:57+00:00",
+        "checked_at": "2026-11-27T19:56:58+00:00",
         "stale": false
       },
       "external_id": "informe-02-2024",

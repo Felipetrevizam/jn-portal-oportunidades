@@ -4,7 +4,7 @@
     "name": "FAPEAM",
     "url": "https://www.fapeam.am.gov.br/wp-admin/admin-ajax.php?action=get-editais&aba=vigentes"
   },
-  "checked_at": "2026-11-25T09:24:15+00:00",
+  "checked_at": "2026-11-27T19:53:44+00:00",
   "status": "healthy",
   "error": null,
   "opportunities": [
@@ -15,7 +15,7 @@
         "name": "FAPEAM",
         "official": true,
         "url": "https://www.fapeam.am.gov.br/editais/diretrizes-especificas-da-fapeam-6/",
-        "checked_at": "2026-11-25T09:24:15+00:00",
+        "checked_at": "2026-11-27T19:53:44+00:00",
         "stale": false
       },
       "external_id": null,
@@ -79,7 +79,7 @@
         "name": "FAPEAM",
         "official": true,
         "url": "https://www.fapeam.am.gov.br/editais/diretrizes-especificas-da-fapeam-chamada-transnacional-conjunta-trajetorias-para-as-florestas-construindo-conhecimento-e-solucoes-para-florestas-resilientes-e-um-futuro-sustentavel-de-base-floresta/",
-        "checked_at": "2026-11-25T09:24:15+00:00",
+        "checked_at": "2026-11-27T19:53:44+00:00",
         "stale": false
       },
       "external_id": null,
