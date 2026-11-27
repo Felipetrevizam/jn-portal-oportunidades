@@ -141,13 +141,13 @@
  },
  "capes-a7e6c76e504d": {
   "arquivo": "capes-a7e6c76e504d.md",
-  "convertido_em": "2026-11-24T22:34:18+00:00",
+  "convertido_em": "2026-11-27T21:40:39+00:00",
   "paginas": 3,
   "paginas_com_ocr": 0,
-  "pdf_oficial": "https://www.gov.br/capes/pt-br/centrais-de-conteudo/editais/edital_2894158_sei_2893573_edital_n__21_2026.pdf/@@display-file/file",
-  "pdf_sha256": "c79f57449fff3e142dc19aeb22701d4871bc163c1ff5fc6f2bfbea3e743793d8",
-  "prazo_no_edital": null,
-  "segundos": 3.8
+  "pdf_oficial": "https://www.gov.br/capes/pt-br/centrais-de-conteudo/editais/edital_2935989_sei_2935908_edital_21_2026___alteracao.pdf/@@display-file/file",
+  "pdf_sha256": "ebcc008155262b5672e3cf6ee225c353b5a9aad33832f06800b01de3f17b1d8f",
+  "prazo_no_edital": "2026-12-14",
+  "segundos": 19.8
  },
  "capes-be605c9ce72e": {
   "arquivo": "capes-be605c9ce72e.md",
@@ -658,6 +658,26 @@
   "pdf_sha256": "4f2ab875578cf45ff7a7c71da8c0d8875c43e35a14f072c671e1db0ea7d0f19f",
   "prazo_no_edital": "2026-07-27",
   "segundos": 115.3
+ },
+ "fapespa-12-2026": {
+  "arquivo": "fapespa-12-2026.md",
+  "convertido_em": "2026-11-27T22:10:06+00:00",
+  "paginas": 44,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapespa.pa.gov.br/wp-content/uploads/2026/07/Chamada-Publica-Bioeconomia-n°.12.2026.pdf",
+  "pdf_sha256": "d5b732b7a91d93d8cb6d78ced7140f92f614dde9ed1ab745ee51bc669aaa9d22",
+  "prazo_no_edital": "2026-08-28",
+  "segundos": 189.2
+ },
+ "fapespa-13-2026": {
+  "arquivo": "fapespa-13-2026.md",
+  "convertido_em": "2026-11-27T22:12:30+00:00",
+  "paginas": 25,
+  "paginas_com_ocr": 0,
+  "pdf_oficial": "https://www.fapespa.pa.gov.br/wp-content/uploads/2026/07/DIPEA-03.-Chamada-Atlas-da-Sustentabilidade-013-2026.pdf",
+  "pdf_sha256": "df113a98fbf89d37134540c04677919826e310e40186888aec2c5752c4bc7f85",
+  "prazo_no_edital": "2026-09-01",
+  "segundos": 141.0
  },
  "fapitec-14-2026": {
   "arquivo": "fapitec-14-2026.md",
